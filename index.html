@@ -1,29 +1,83 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Welcome to My Site</title>
+  <title>Surge5 Configuration</title>
   <style>
     body {
       font-family: Arial, sans-serif;
+      background-color: #1e1e1e;
+      color: #cfcfcf;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      padding: 20px;
+      background: #0177ff;
+      color: white;
       text-align: center;
-      background-color: #f0f0f0;
-      color: #333;
     }
-    h1 {
-      color: #0078ff;
-      font-size: 2.5em;
+    .config-section {
+      padding: 20px;
     }
-    p {
-      font-size: 1.1em;
+    pre {
+      background: #2d2d2d;
+      padding: 15px;
+      border-radius: 5px;
+      overflow: auto;
+      max-width: 90%;
+      margin: 20px auto;
+      color: #e5e5e5;
+      line-height: 1.5em;
+    }
+    footer {
+      background: #333;
+      color: #ccc;
+      text-align: center;
+      padding: 10px 0;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
     }
     a {
-      color: #0078ff;
+      color: #0177ff;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
     }
   </style>
 </head>
 <body>
-  <h1>Welcome to My Site 🚀</h1>
-  <p>Thank you for visiting! Explore more about me and my projects.</p>
-  <a href="https://github.com/Jovanykoch">Check my GitHub</a>
+  <header>
+    <h1>Welcome to My Surge5 Style Site 🚀</h1>
+    <p>Your one-stop solution for Surge5 configurations and tools</p>
+  </header>
+
+  <div class="config-section">
+    <h2>Surge5 Configuration</h2>
+    <p>Here is an example Surge5 configuration file you can use:</p>
+    <pre># Surge 回国配置 (Return-to-China Configuration)
+# 适用于海外用户通过中国代理访问国内服务
+[General]
+loglevel = notify
+dns-server = 223.5.5.5, 114.114.114.114
+ipv6 = false
+[Proxy]
+# Example
+ChinaServer = http, server-address, port, username, password
+[Proxy Group]
+China = select, ChinaServer, DIRECT
+[Rule]
+RULE-SET,https://ruleset.skk.moe/List/ip/domestic.conf,China
+FINAL,DIRECT
+</pre>
+    <p>
+      <a href="Surge.conf" download>👉 Download Surge.conf</a>
+    </p>
+  </div>
+
+  <footer>
+    <p>&copy; 2026 Jovany Koch. All rights reserved.</p>
+  </footer>
 </body>
 </html>
