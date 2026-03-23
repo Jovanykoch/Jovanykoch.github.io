@@ -1,2 +1,1 @@
-Jovanykoch.gith
-ub.io
+Jovanykoch.github.io
