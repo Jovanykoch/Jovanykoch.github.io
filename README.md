@@ -1,1 +1,1 @@
-# Surge iOS 自用配置
+# Surge iOS self-use configuration
