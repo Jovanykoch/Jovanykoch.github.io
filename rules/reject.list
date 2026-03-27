@@ -46,7 +46,7 @@ DOMAIN-SUFFIX,ad.bytedance.com
 DOMAIN-SUFFIX,analytics.bytedance.com
 DOMAIN-SUFFIX,log.byteoversea.com          # telemetry collector (generally safe)
 DOMAIN-SUFFIX,mon.byteoversea.com          # monitoring
-
+DOMAIN-SUFFIX,zijieapi.com
 # -----------------------
 # Amazon / Criteo / Programmatic ad networks
 # -----------------------
