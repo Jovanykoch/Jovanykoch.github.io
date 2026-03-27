@@ -1,0 +1,20 @@
+# Local Network Subnet list for Direct Routing
+# IPv4 Private Address Ranges
+10.0.0.0/8          # Class A Private Network
+172.16.0.0/12       # Class B Private Network
+192.168.0.0/16      # Class C Private Network
+100.64.0.0/10       # Carrier-Grade NAT (CGNAT)
+
+# Localhost and Link-Local Addresses
+127.0.0.0/8         # Loopback
+169.254.0.0/16      # Link-Local
+
+# Reserved IPv4 Multicast/Broadcast
+224.0.0.0/4         # Multicast
+255.255.255.255/32  # Broadcast
+
+# IPv6 Local and Unique Addresses
+::1/128             # IPv6 Loopback
+fc00::/7            # Unique Local Addresses (ULA)
+fe80::/10           # Link-Local Addresses
+ff00::/8            # IPv6 Multicast
