@@ -49,7 +49,7 @@ DOMAIN-SUFFIX,skype.com
 DOMAIN-SUFFIX,teams.microsoft.com
 DOMAIN-SUFFIX,azure.com
 DOMAIN-SUFFIX,windows.net
-
+DOMAIN-SUFFIX,outlook.office365.com
 # -----------------------
 # X (Twitter)
 # -----------------------
