@@ -1,22 +1,157 @@
+# Surge 5 RULE-SET (DOMAIN-SUFFIX rules) - Aggressive Ad/Tracking (YouTube/Instagram/TikTok/Douyin friendly)
+# Action: REJECT
+#
+# Goal:
+# - Block major ad / tracking / telemetry endpoints
+# - Avoid breaking YouTube / Instagram / TikTok / Douyin core playback, login, feeds
+#
+# Usage (recommended order):
+#   [Rule]
+#   RULE-SET,https://your-domain-or-raw-link/allow.list,DIRECT
+#   RULE-SET,https://your-domain-or-raw-link/reject.list,REJECT
+#
+# Notes:
+# - We DO NOT block: facebook.com / fbcdn.net / instagram.com / tiktok.com / googlevideo.com etc.
+# - We DO block: doubleclick, googlesyndication, common programmatic ads, attribution SDKs, and many analytics collectors.
+
+# -----------------------
+# Google ads / marketing (keep YouTube working)
+# -----------------------
 DOMAIN-SUFFIX,doubleclick.net
 DOMAIN-SUFFIX,googlesyndication.com
 DOMAIN-SUFFIX,googleadservices.com
+DOMAIN-SUFFIX,googletagservices.com
+DOMAIN-SUFFIX,googletagmanager.com
 DOMAIN-SUFFIX,adservice.google.com
 DOMAIN-SUFFIX,pagead2.googlesyndication.com
-DOMAIN-SUFFIX,ads-twitter.com
-DOMAIN-SUFFIX,adnxs.com
-DOMAIN-SUFFIX,adsrvr.org
+
+# Google Analytics (web tracking; generally safe to block)
+DOMAIN-SUFFIX,google-analytics.com
+DOMAIN-SUFFIX,analytics.google.com
+
+# -----------------------
+# Meta / Facebook ads & measurement (do NOT block core domains)
+# -----------------------
+DOMAIN-SUFFIX,ads.facebook.com
+DOMAIN-SUFFIX,an.facebook.com              # Meta App Events (may reduce tracking; usually doesn't break app)
+DOMAIN-SUFFIX,connect.facebook.net         # JS SDK (can break web logins/embeds; comment out if needed)
+
+# -----------------------
+# TikTok / ByteDance ads & analytics (do NOT block core video/CDN domains)
+# -----------------------
+DOMAIN-SUFFIX,ads.tiktok.com
+DOMAIN-SUFFIX,analytics.tiktok.com
+DOMAIN-SUFFIX,ads.bytedance.com
+DOMAIN-SUFFIX,ad.bytedance.com
+DOMAIN-SUFFIX,analytics.bytedance.com
+DOMAIN-SUFFIX,log.byteoversea.com          # telemetry collector (generally safe)
+DOMAIN-SUFFIX,mon.byteoversea.com          # monitoring
+
+# -----------------------
+# Amazon / Criteo / Programmatic ad networks
+# -----------------------
+DOMAIN-SUFFIX,amazon-adsystem.com
 DOMAIN-SUFFIX,criteo.com
+DOMAIN-SUFFIX,criteo.net
+DOMAIN-SUFFIX,adsrvr.org
+DOMAIN-SUFFIX,adnxs.com
+DOMAIN-SUFFIX,scorecardresearch.com
 DOMAIN-SUFFIX,taboola.com
 DOMAIN-SUFFIX,outbrain.com
+DOMAIN-SUFFIX,zemanta.com
+DOMAIN-SUFFIX,casalemedia.com
+DOMAIN-SUFFIX,rubiconproject.com
+DOMAIN-SUFFIX,openx.net
+DOMAIN-SUFFIX,smartadserver.com
+DOMAIN-SUFFIX,pubmatic.com
+DOMAIN-SUFFIX,mathtag.com
+DOMAIN-SUFFIX,moatads.com
+DOMAIN-SUFFIX,advertising.com
+DOMAIN-SUFFIX,adform.com
+DOMAIN-SUFFIX,adform.net
+
+# -----------------------
+# App attribution / marketing SDKs (usually safe to block; may affect referrals)
+# -----------------------
 DOMAIN-SUFFIX,appsflyer.com
+DOMAIN-SUFFIX,appsflyersdk.com
 DOMAIN-SUFFIX,adjust.com
+DOMAIN-SUFFIX,adjust.io
 DOMAIN-SUFFIX,branch.io
-DOMAIN-SUFFIX,hotjar.com
-DOMAIN-SUFFIX,googletagmanager.com
-DOMAIN-SUFFIX,googletagservices.com
-DOMAIN-SUFFIX,analytics.twitter.com
+DOMAIN-SUFFIX,singular.net
+DOMAIN-SUFFIX,tenjin.com
+DOMAIN-SUFFIX,kochava.com
+
+# -----------------------
+# Analytics / session replay (aggressive)
+# -----------------------
 DOMAIN-SUFFIX,segment.com
+DOMAIN-SUFFIX,segment.io
+DOMAIN-SUFFIX,cdn.segment.com
 DOMAIN-SUFFIX,mixpanel.com
+DOMAIN-SUFFIX,api.mixpanel.com
 DOMAIN-SUFFIX,amplitude.com
-DOMAIN-SUFFIX,admob.com
+DOMAIN-SUFFIX,api.amplitude.com
+DOMAIN-SUFFIX,cdn.amplitude.com
+DOMAIN-SUFFIX,heapanalytics.com
+DOMAIN-SUFFIX,hotjar.com
+DOMAIN-SUFFIX,static.hotjar.com
+DOMAIN-SUFFIX,mouseflow.com
+DOMAIN-SUFFIX,fullstory.com
+DOMAIN-SUFFIX,logrocket.com
+DOMAIN-SUFFIX,cdn.logrocket.com
+DOMAIN-SUFFIX,optimizely.com
+DOMAIN-SUFFIX,visualwebsiteoptimizer.com
+DOMAIN-SUFFIX,vwo.com
+
+# -----------------------
+# Crash/monitoring (may reduce crash reporting; usually doesn't break apps)
+# -----------------------
+DOMAIN-SUFFIX,crashlytics.com
+DOMAIN-SUFFIX,firebase-settings.crashlytics.com
+DOMAIN-SUFFIX,sentry.io
+DOMAIN-SUFFIX,ingest.sentry.io
+DOMAIN-SUFFIX,newrelic.com
+DOMAIN-SUFFIX,datadoghq.com
+
+# -----------------------
+# Microsoft ads/telemetry (avoid blocking bing.com to reduce breakage)
+# -----------------------
+DOMAIN-SUFFIX,bat.bing.com
+DOMAIN-SUFFIX,clarity.ms
+DOMAIN-SUFFIX,vortex.data.microsoft.com
+DOMAIN-SUFFIX,telemetry.microsoft.com
+
+# -----------------------
+# China ad/analytics (commonly safe to block; may affect some CN apps)
+# -----------------------
+DOMAIN-SUFFIX,cnzz.com
+DOMAIN-SUFFIX,umeng.com
+DOMAIN-SUFFIX,umengcloud.com
+DOMAIN-SUFFIX,mmstat.com
+
+# -----------------------
+# Push marketing / in-app notification ad platforms
+# -----------------------
+DOMAIN-SUFFIX,onesignal.com
+DOMAIN-SUFFIX,pushwoosh.com
+DOMAIN-SUFFIX,airship.com
+DOMAIN-SUFFIX,urbanairship.com
+
+# -----------------------
+# Mobile ad networks (aggressive)
+# -----------------------
+DOMAIN-SUFFIX,adcolony.com
+DOMAIN-SUFFIX,applovin.com
+DOMAIN-SUFFIX,applvn.com
+DOMAIN-SUFFIX,ironsrc.com
+DOMAIN-SUFFIX,chartboost.com
+DOMAIN-SUFFIX,inmobi.com
+DOMAIN-SUFFIX,vungle.com
+
+# -----------------------
+# "Sketchy" ad networks (aggressive, web-heavy)
+# -----------------------
+DOMAIN-SUFFIX,exoclick.com
+DOMAIN-SUFFIX,trafficjunky.com
+DOMAIN-SUFFIX,juicyads.com
