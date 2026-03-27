@@ -1,0 +1,115 @@
+# Surge 5 RULE-SET (DOMAIN-SUFFIX rules)
+# Target Policy: DIRECT
+# Tested style: Surge 5 iOS (5.17.1)
+#
+# Usage:
+#   [Rule]
+#   RULE-SET,https://your-domain-or-raw-link/china.list,DIRECT
+#
+# Notes:
+# - This file is intentionally "broad" for CN ecosystems (Alibaba/Tencent/Baidu/ByteDance/etc.).
+# - Put your PROXY rule-sets (e.g., github.list) ABOVE this in Surge rules order.
+# - For the most complete CN-direct behavior, also add: GEOIP,CN,DIRECT (see below).
+
+# --- Mainland China TLDs ---
+DOMAIN-SUFFIX,cn
+DOMAIN-SUFFIX,xn--fiqs8s      # 中国
+DOMAIN-SUFFIX,xn--55qx5d      # 公司
+DOMAIN-SUFFIX,xn--io0a7i      # 网络
+
+# --- Alibaba / Ant / Aliyun / Taobao / Tmall / CDN ---
+DOMAIN-SUFFIX,alibaba.com
+DOMAIN-SUFFIX,alipay.com
+DOMAIN-SUFFIX,antgroup.com
+DOMAIN-SUFFIX,aliyun.com
+DOMAIN-SUFFIX,aliyuncs.com
+DOMAIN-SUFFIX,alicdn.com
+DOMAIN-SUFFIX,taobao.com
+DOMAIN-SUFFIX,tmall.com
+DOMAIN-SUFFIX,1688.com
+DOMAIN-SUFFIX,hichina.com
+DOMAIN-SUFFIX,mmstat.com
+DOMAIN-SUFFIX,umeng.com
+
+# --- Tencent / WeChat / Qcloud / CDN ---
+DOMAIN-SUFFIX,tencent.com
+DOMAIN-SUFFIX,tencentcloud.com
+DOMAIN-SUFFIX,tencent-cloud.com
+DOMAIN-SUFFIX,myqcloud.com
+DOMAIN-SUFFIX,qcloud.com
+DOMAIN-SUFFIX,qq.com
+DOMAIN-SUFFIX,gtimg.com
+DOMAIN-SUFFIX,wechat.com
+DOMAIN-SUFFIX,weixin.qq.com
+DOMAIN-SUFFIX,tenpay.com
+
+# --- Baidu ---
+DOMAIN-SUFFIX,baidu.com
+DOMAIN-SUFFIX,bdimg.com
+DOMAIN-SUFFIX,bdstatic.com
+
+# --- ByteDance / Douyin / Toutiao / Feishu ---
+DOMAIN-SUFFIX,bytedance.com
+DOMAIN-SUFFIX,toutiao.com
+DOMAIN-SUFFIX,douyin.com
+DOMAIN-SUFFIX,ixigua.com
+DOMAIN-SUFFIX,feishu.cn
+DOMAIN-SUFFIX,pangle.io
+
+# --- JD / logistics assets ---
+DOMAIN-SUFFIX,jd.com
+DOMAIN-SUFFIX,360buyimg.com
+DOMAIN-SUFFIX,jdpay.com
+
+# --- Meituan / Dianping ---
+DOMAIN-SUFFIX,meituan.com
+DOMAIN-SUFFIX,dianping.com
+
+# --- Bilibili ---
+DOMAIN-SUFFIX,bilibili.com
+DOMAIN-SUFFIX,biliapi.net
+DOMAIN-SUFFIX,hdslb.com
+
+# --- NetEase ---
+DOMAIN-SUFFIX,163.com
+DOMAIN-SUFFIX,126.com
+DOMAIN-SUFFIX,netease.com
+
+# --- Weibo / Zhihu / Douban / news portals ---
+DOMAIN-SUFFIX,weibo.com
+DOMAIN-SUFFIX,zhihu.com
+DOMAIN-SUFFIX,douban.com
+DOMAIN-SUFFIX,sohu.com
+DOMAIN-SUFFIX,sina.com.cn
+
+# --- Xiaomi / Huawei / Oppo / Vivo ---
+DOMAIN-SUFFIX,mi.com
+DOMAIN-SUFFIX,xiaomi.com
+DOMAIN-SUFFIX,huawei.com
+DOMAIN-SUFFIX,vmall.com
+DOMAIN-SUFFIX,oppo.com
+DOMAIN-SUFFIX,vivo.com
+
+# --- 360 / security / CDN ---
+DOMAIN-SUFFIX,360.cn
+DOMAIN-SUFFIX,qhimg.com
+DOMAIN-SUFFIX,qihucdn.com
+
+# --- UnionPay ---
+DOMAIN-SUFFIX,unionpay.com
+
+# --- DNSPod (often used by CN apps) ---
+DOMAIN-SUFFIX,dnspod.cn
+DOMAIN-SUFFIX,dnspod.com
+DOMAIN-SUFFIX,dnspod.net
+
+# --- Mainland code hosting (optional) ---
+DOMAIN-SUFFIX,gitee.com
+
+# --- China carriers (optional) ---
+DOMAIN-SUFFIX,chinatelecom.com.cn
+DOMAIN-SUFFIX,10000.com
+DOMAIN-SUFFIX,chinaunicom.com
+DOMAIN-SUFFIX,10010.com
+DOMAIN-SUFFIX,chinamobile.com
+DOMAIN-SUFFIX,10086.cn
