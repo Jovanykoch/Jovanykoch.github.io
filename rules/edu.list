@@ -13,7 +13,9 @@
 # Joliet Junior College
 DOMAIN-SUFFIX,jjc.edu
 
+# Campus
 DOMAIN-SUFFIX,canvaslms.com
+DOMAIN-SUFFIX,icampus.instructure.com
 
 # California State University, Northridge
 DOMAIN-SUFFIX,csun.edu
