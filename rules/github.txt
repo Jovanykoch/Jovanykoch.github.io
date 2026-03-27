@@ -1,0 +1,77 @@
+# Surge RULE-SET (domain list)
+# Policy: Proxy
+# Purpose: Route GitHub + Actions + Packages/Registry + Pages + assets/CDNs through Proxy.
+#
+# Usage (Surge):
+#   [Rule]
+#   RULE-SET,https://your-domain-or-raw-link/github.list,Proxy
+#
+# Notes:
+# - This is a DOMAIN list (not DOMAIN-SUFFIX lines).
+# - Kept practical: includes the most common GitHub endpoints used by web, git, releases,
+#   Actions logs/artifacts, and Packages registries.
+
+# Core
+github.com
+www.github.com
+api.github.com
+uploads.github.com
+codeload.github.com
+raw.github.com
+gist.github.com
+www.gist.github.com
+
+# Assets / static
+githubassets.com
+github.githubassets.com
+collector.githubassets.com
+
+# User content / blobs / avatars / media
+githubusercontent.com
+raw.githubusercontent.com
+user-images.githubusercontent.com
+avatars.githubusercontent.com
+avatars0.githubusercontent.com
+avatars1.githubusercontent.com
+avatars2.githubusercontent.com
+avatars3.githubusercontent.com
+avatars4.githubusercontent.com
+avatars5.githubusercontent.com
+avatars6.githubusercontent.com
+avatars7.githubusercontent.com
+avatars8.githubusercontent.com
+avatars9.githubusercontent.com
+objects.githubusercontent.com
+media.githubusercontent.com
+camo.githubusercontent.com
+cloud.githubusercontent.com
+favicons.githubusercontent.com
+private-user-images.githubusercontent.com
+
+# Pages
+github.io
+www.github.io
+
+# Releases / downloads (common endpoints)
+github-releases.githubusercontent.com
+github-registry-files.githubusercontent.com
+
+# App / OAuth related
+githubapp.com
+api.githubapp.com
+
+# Actions (logs/artifacts often land on these GitHub-owned hosts)
+actions.githubusercontent.com
+
+# Packages / registries (GitHub Packages)
+pkg.github.com
+npm.pkg.github.com
+maven.pkg.github.com
+nuget.pkg.github.com
+rubygems.pkg.github.com
+docker.pkg.github.com
+container.pkg.github.com
+
+# Status (optional but useful when troubleshooting)
+githubstatus.com
+www.githubstatus.com
