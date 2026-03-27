@@ -1,19 +1,104 @@
-DOMAIN-SUFFIX,google.com
-DOMAIN-SUFFIX,googleapis.com
-DOMAIN-SUFFIX,gstatic.com
-DOMAIN-SUFFIX,github.com
-DOMAIN-SUFFIX,githubusercontent.com
+# Surge 5 RULE-SET (DOMAIN-SUFFIX rules)
+# Target Policy: Proxy
+# Includes:
+#   - Swiftgram/Telegram
+#   - Microsoft (selected consumer/dev)
+#   - X (Twitter)
+#   - OpenAI (ChatGPT/API)
+#   - Spotify
+#   - Meta (FB/IG/WhatsApp/Messenger + CDNs)
+#   - PayPal
+# Plus a few common extras (Discord/Reddit/Wikipedia).
+#
+# Usage (Surge):
+#   [Rule]
+#   RULE-SET,https://your-domain-or-raw-link/proxy.list,Proxy
+#
+# Recommended order:
+#   RULE-SET,allow.list,DIRECT
+#   RULE-SET,reject.list,REJECT
+#   RULE-SET,apple.list,DIRECT
+#   RULE-SET,github.list,Proxy
+#   RULE-SET,proxy.list,Proxy
+#   RULE-SET,china.list,DIRECT
+#   GEOIP,CN,DIRECT
+#   FINAL,Proxy
+
+# -----------------------
+# Telegram / Swiftgram
+# -----------------------
+DOMAIN-SUFFIX,telegram.org
+DOMAIN-SUFFIX,t.me
+DOMAIN-SUFFIX,tdesktop.com
+DOMAIN-SUFFIX,telegra.ph
+DOMAIN-SUFFIX,telegram.me
+DOMAIN-SUFFIX,telegram.dog
+DOMAIN-SUFFIX,telesco.pe
+
+# -----------------------
+# Microsoft (selected)
+# -----------------------
+DOMAIN-SUFFIX,microsoft.com
+DOMAIN-SUFFIX,live.com
+DOMAIN-SUFFIX,outlook.com
+DOMAIN-SUFFIX,office.com
+DOMAIN-SUFFIX,office.net
+DOMAIN-SUFFIX,onedrive.com
+DOMAIN-SUFFIX,sharepoint.com
+DOMAIN-SUFFIX,skype.com
+DOMAIN-SUFFIX,teams.microsoft.com
+DOMAIN-SUFFIX,azure.com
+DOMAIN-SUFFIX,windows.net
+
+# -----------------------
+# X (Twitter)
+# -----------------------
+DOMAIN-SUFFIX,x.com
+DOMAIN-SUFFIX,twitter.com
+DOMAIN-SUFFIX,t.co
+DOMAIN-SUFFIX,twimg.com
+
+# -----------------------
+# OpenAI / ChatGPT
+# -----------------------
 DOMAIN-SUFFIX,openai.com
 DOMAIN-SUFFIX,chatgpt.com
-DOMAIN-KEYWORD,telegram
-DOMAIN-SUFFIX,t.me
-DOMAIN-SUFFIX,twitter.com
-DOMAIN-SUFFIX,x.com
-DOMAIN-SUFFIX,instagram.com
-DOMAIN-SUFFIX,youtube.com
-DOMAIN-SUFFIX,ytimg.com
-DOMAIN-SUFFIX,netflix.com
+DOMAIN-SUFFIX,oaistatic.com
+DOMAIN-SUFFIX,oaiusercontent.com
+# Auth flows sometimes traverse this (broad; remove if you don't want it proxied)
+DOMAIN-SUFFIX,auth0.com
+
+# -----------------------
+# Spotify
+# -----------------------
 DOMAIN-SUFFIX,spotify.com
-DOMAIN-SUFFIX,tiktok.com
-DOMAIN-SUFFIX,tiktokv.com
-DOMAIN-SUFFIX,tiktokcdn.com
+DOMAIN-SUFFIX,spotifycdn.com
+DOMAIN-SUFFIX,scdn.co
+DOMAIN-SUFFIX,spoti.fi
+DOMAIN-SUFFIX,spotifycharts.com
+DOMAIN-SUFFIX,spotifyforbrands.com
+
+# -----------------------
+# Meta (Instagram )
+# -----------------------
+DOMAIN-SUFFIX,cdninstagram.com
+DOMAIN-SUFFIX,instagram.com
+
+# -----------------------
+# PayPal
+# -----------------------
+DOMAIN-SUFFIX,paypal.com
+DOMAIN-SUFFIX,paypalobjects.com
+DOMAIN-SUFFIX,pypl.com
+
+# -----------------------
+# Common extras
+# -----------------------
+DOMAIN-SUFFIX,discord.com
+DOMAIN-SUFFIX,discord.gg
+DOMAIN-SUFFIX,discordapp.com
+DOMAIN-SUFFIX,discordapp.net
+DOMAIN-SUFFIX,reddit.com
+DOMAIN-SUFFIX,redd.it
+DOMAIN-SUFFIX,wikipedia.org
+DOMAIN-SUFFIX,wikimedia.org
