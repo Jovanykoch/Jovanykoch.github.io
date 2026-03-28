@@ -36,7 +36,7 @@ DOMAIN-SUFFIX,ads.facebook.com
 DOMAIN-SUFFIX,an.facebook.com              # Meta App Events (may reduce tracking; usually doesn't break app)
 DOMAIN-SUFFIX,connect.facebook.net         # JS SDK (can break web logins/embeds; comment out if needed)
 DOMAIN-KEYWORD,netseer
-DOMAIN-KEYWORD,fbcdn
+# DOMAIN-KEYWORD,fbcdn
 # -----------------------
 # TikTok / ByteDance ads & analytics (do NOT block core video/CDN domains)
 # -----------------------
