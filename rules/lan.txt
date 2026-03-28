@@ -1,0 +1,99 @@
+# Surge RULE-SET (LAN / LOCAL / PRIVATE)
+# Target Policy: DIRECT
+# Purpose:
+# - Keep LAN, private IP ranges, router admin portals, and local service discovery DIRECT
+# - Avoid sending RFC1918 / link-local / multicast traffic to proxy
+#
+# Tested style: Surge iOS (Surge 5/6 compatible syntax)
+# Last updated: 2026-03-28
+#
+# Usage (Surge):
+#   [Rule]
+#   RULE-SET,https://your-domain-or-raw-link/lan.list,DIRECT
+#
+# Notes:
+# - Keep this file strictly "LAN/Local". Do NOT put normal Internet domains here.
+# - If you want to DIRECT some app/service (e.g. Steam test domains), create a separate direct_misc.list.
+# - Malaysia ISP/customer-portal domains are optional; keep only what you actually use.
+
+# -----------------------
+# Router / AP / Controller admin portals (exact hostnames)
+# -----------------------
+DOMAIN,asusrouter.com
+DOMAIN,router.asus.com
+DOMAIN,www.asusrouter.com
+
+DOMAIN,instant.arubanetworks.com
+DOMAIN,setmeup.arubanetworks.com
+
+DOMAIN,oasisauth.h3c.com
+
+# Common router portals (low-risk additions)
+DOMAIN,routerlogin.com
+DOMAIN,routerlogin.net
+DOMAIN,tplinkwifi.net
+
+# -----------------------
+# Local naming / service discovery
+# -----------------------
+# mDNS / local domains (commonly used on iOS/macOS/home networks)
+DOMAIN-SUFFIX,local
+DOMAIN-SUFFIX,home.arpa
+DOMAIN-SUFFIX,localdomain
+
+# Vendor / home gateway local domains (keep only if you actually see them)
+DOMAIN-SUFFIX,my.router
+DOMAIN-SUFFIX,router.ctc
+DOMAIN-SUFFIX,zte.home
+
+# Tailscale MagicDNS / internal
+DOMAIN-SUFFIX,ts.net
+
+# Plex local direct
+DOMAIN-SUFFIX,plex.direct
+
+# -----------------------
+# Malaysia ISP / local access portals (optional)
+# -----------------------
+DOMAIN-SUFFIX,tm.com.my
+DOMAIN-SUFFIX,unifi.com.my
+DOMAIN-SUFFIX,maxis.com.my
+
+# Some ONT/gateway local domains (often LAN-side, not ISP-side)
+DOMAIN-SUFFIX,fiberhome.home
+
+# -----------------------
+# Reverse DNS / ARPA (keep LAN reverse lookups local)
+# -----------------------
+DOMAIN-SUFFIX,in-addr.arpa
+DOMAIN-SUFFIX,ip6.arpa
+
+# -----------------------
+# IPv4 private / reserved ranges (DIRECT, no-resolve)
+# -----------------------
+IP-CIDR,0.0.0.0/8,no-resolve
+IP-CIDR,10.0.0.0/8,no-resolve
+IP-CIDR,100.64.0.0/10,no-resolve
+IP-CIDR,127.0.0.0/8,no-resolve
+IP-CIDR,169.254.0.0/16,no-resolve
+IP-CIDR,172.16.0.0/12,no-resolve
+IP-CIDR,192.0.0.0/24,no-resolve
+IP-CIDR,192.0.2.0/24,no-resolve
+IP-CIDR,192.168.0.0/16,no-resolve
+IP-CIDR,192.88.99.0/24,no-resolve
+IP-CIDR,198.18.0.0/15,no-resolve
+IP-CIDR,198.51.100.0/24,no-resolve
+IP-CIDR,203.0.113.0/24,no-resolve
+IP-CIDR,224.0.0.0/3,no-resolve
+
+# -----------------------
+# IPv6 local / reserved ranges (DIRECT, no-resolve)
+# -----------------------
+IP-CIDR6,::/128,no-resolve
+IP-CIDR6,::1/128,no-resolve
+IP-CIDR6,::ffff:0:0/96,no-resolve
+IP-CIDR6,64:ff9b::/96,no-resolve
+IP-CIDR6,fc00::/7,no-resolve
+IP-CIDR6,fe80::/10,no-resolve
+IP-CIDR6,ff00::/8,no-resolve
+IP-CIDR6,2001:db8::/32,no-resolve
