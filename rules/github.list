@@ -1,5 +1,5 @@
 # Surge RULE-SET (explicit DOMAIN / DOMAIN-SUFFIX)
-# Policy: Proxy
+# Policy: US
 # Purpose: Route GitHub + Actions + Packages/Registry + Pages + assets/CDNs through Proxy.
 #
 # Usage (Surge):

@@ -1,5 +1,5 @@
 # Surge 5 RULE-SET (DOMAIN-SUFFIX rules)
-# Target Policy: Proxy
+# Target Policy: US
 # Purpose: Force proxy for specific education domains requested.
 #
 # Usage (Surge):
