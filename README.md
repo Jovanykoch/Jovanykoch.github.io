@@ -29,3 +29,8 @@ This repository documents my personal learning projects and experiments. It serv
 ├── configs/             # Configuration files for different tools and clients
 ├── documentation/       # Guides and notes for reference
 └── scripts/             # Automation scripts for setup and management
+
+
+License
+
+This repository is for personal learning purposes and is not intended for production use. Respect all relevant licensing when using third-party tools and configurations documented here.
