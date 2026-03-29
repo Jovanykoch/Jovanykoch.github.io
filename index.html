@@ -1,83 +1,201 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="zh-Hans">
 <head>
-  <title>Surge5 Configuration</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="color-scheme" content="dark light" />
+  <title>Surge 配置与分流 - jkoch14.me</title>
+  <meta name="description" content="Surge iOS 自用配置与分流规则订阅（US Snell + self-hosted rules）" />
+
   <style>
-    body {
-      font-family: Arial, sans-serif;
-      background-color: #1e1e1e;
-      color: #cfcfcf;
-      margin: 0;
-      padding: 0;
+    :root{
+      --bg:#0f1115;
+      --panel:#161a22;
+      --panel2:#111521;
+      --text:#e6e6e6;
+      --muted:#aeb6c2;
+      --border:#2a3140;
+      --brand:#2f81f7;
+      --brand2:#1f6feb;
+      --danger:#ff4d4f;
+      --ok:#33d17a;
+      --mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+      --sans: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji","Segoe UI Emoji";
     }
-    header {
-      padding: 20px;
-      background: #0177ff;
-      color: white;
-      text-align: center;
+    *{ box-sizing:border-box; }
+    body{
+      margin:0;
+      font-family:var(--sans);
+      background: radial-gradient(1200px 500px at 50% -10%, rgba(47,129,247,.25), transparent 60%),
+                  linear-gradient(180deg, var(--bg), #0b0d12);
+      color:var(--text);
     }
-    .config-section {
-      padding: 20px;
+    a{ color:var(--brand); text-decoration:none; }
+    a:hover{ text-decoration:underline; }
+    .wrap{ max-width:980px; margin:0 auto; padding:24px; }
+    header{
+      border:1px solid var(--border);
+      background: linear-gradient(180deg, rgba(47,129,247,.18), rgba(22,26,34,.9));
+      border-radius:14px;
+      padding:22px 18px;
     }
-    pre {
-      background: #2d2d2d;
-      padding: 15px;
-      border-radius: 5px;
-      overflow: auto;
-      max-width: 90%;
-      margin: 20px auto;
-      color: #e5e5e5;
-      line-height: 1.5em;
+    header h1{ margin:0 0 6px; font-size:22px; }
+    header p{ margin:0; color:var(--muted); line-height:1.5; }
+    .grid{
+      display:grid;
+      grid-template-columns: 1fr;
+      gap:14px;
+      margin-top:14px;
     }
-    footer {
-      background: #333;
-      color: #ccc;
-      text-align: center;
-      padding: 10px 0;
-      position: fixed;
-      bottom: 0;
-      width: 100%;
+    @media (min-width: 880px){
+      .grid{ grid-template-columns: 1.2fr .8fr; }
     }
-    a {
-      color: #0177ff;
-      text-decoration: none;
+    .card{
+      border:1px solid var(--border);
+      background:rgba(22,26,34,.86);
+      border-radius:14px;
+      padding:16px;
     }
-    a:hover {
-      text-decoration: underline;
+    .card h2{ margin:0 0 10px; font-size:16px; }
+    .card p{ margin:8px 0; color:var(--muted); line-height:1.6; }
+    .btns{ display:flex; flex-wrap:wrap; gap:10px; margin-top:10px; }
+    .btn{
+      display:inline-flex;
+      align-items:center;
+      gap:8px;
+      padding:10px 12px;
+      border-radius:10px;
+      border:1px solid var(--border);
+      background: linear-gradient(180deg, rgba(47,129,247,.20), rgba(47,129,247,.10));
+      color:var(--text);
+      font-weight:600;
+      text-decoration:none !important;
     }
+    .btn:hover{ border-color: rgba(47,129,247,.7); }
+    .btn.secondary{
+      background: rgba(17,21,33,.6);
+    }
+    .btn.danger{
+      background: rgba(255,77,79,.10);
+      border-color: rgba(255,77,79,.35);
+    }
+    code, pre{
+      font-family:var(--mono);
+    }
+    pre{
+      margin:10px 0 0;
+      padding:12px;
+      border-radius:12px;
+      border:1px solid var(--border);
+      background: rgba(17,21,33,.7);
+      overflow:auto;
+      line-height:1.55;
+      font-size:12.5px;
+      color:#e9eef7;
+    }
+    ul{ margin:10px 0 0; padding-left:18px; }
+    li{ margin:6px 0; color:var(--muted); }
+    .tag{
+      display:inline-block;
+      font-size:12px;
+      padding:2px 8px;
+      border-radius:999px;
+      border:1px solid var(--border);
+      color:var(--muted);
+      background: rgba(17,21,33,.6);
+      margin-left:6px;
+    }
+    footer{
+      margin:18px 0 0;
+      color:var(--muted);
+      font-size:13px;
+      text-align:center;
+      padding:16px 0 6px;
+    }
+    .note{
+      border-left:3px solid var(--brand2);
+      padding:10px 12px;
+      background: rgba(47,129,247,.08);
+      border-radius:10px;
+      color:var(--muted);
+      margin-top:10px;
+    }
+    .small{ font-size:12.5px; }
   </style>
 </head>
+
 <body>
-  <header>
-    <h1>Welcome to My Surge5 Style Site 🚀</h1>
-    <p>Your one-stop solution for Surge5 configurations and tools</p>
-  </header>
+  <div class="wrap">
+    <header>
+      <h1>Surge 配置与分流订阅</h1>
+      <p>
+        当前配置：<strong>US Snell</strong> + <strong>自建 rules</strong>（不依赖第三方 ruleset）。
+        适用于 iOS Surge 直接订阅 / 一键导入���
+      </p>
+      <div class="note small">
+        提醒：仓库为公开时，不要把真实节点 <code>SERVER_IP / PORT / PSK</code> 写进公开配置文件。
+        推荐在 Surge 内本地维护节点信息。
+      </div>
+    </header>
 
-  <div class="config-section">
-    <h2>Surge5 Configuration</h2>
-    <p>Here is an example Surge5 configuration file you can use:</p>
-    <pre># Surge 回国配置 (Return-to-China Configuration)
-# 适用于海外用户通过中国代理访问国内服务
-[General]
-loglevel = notify
-dns-server = 223.5.5.5, 114.114.114.114
-ipv6 = false
-[Proxy]
-# Example
-ChinaServer = http, server-address, port, username, password
-[Proxy Group]
-China = select, ChinaServer, DIRECT
-[Rule]
-RULE-SET,https://ruleset.skk.moe/List/ip/domestic.conf,China
-FINAL,DIRECT
+    <div class="grid">
+      <section class="card">
+        <h2>一键导入 / 下载</h2>
+        <p>iOS Safari 上可直接点“一键导入”。如果在电脑上，��议直接下载配置文件。</p>
+
+        <div class="btns">
+          <a class="btn" href="surge:///install-config?url=https%3A%2F%2Fjkoch14.me%2FSurge.conf">
+            一键导入 Surge.conf
+            <span class="tag">iOS</span>
+          </a>
+          <a class="btn secondary" href="/Surge.conf">打开 Surge.conf</a>
+          <a class="btn secondary" href="/Surge.conf" download>下载 Surge.conf</a>
+        </div>
+
+        <pre># 当前 Surge.conf 关键点（摘要）
+# - rules 来源：https://jkoch14.me/rules/*.list
+# - direct-domain-set 来源：https://jkoch14.me/rules/direct-domain-set.list
+# - 默认 FINAL -> US（Snell 美国节点）
+# - allow.list 在 reject.list 前（避免误杀）
 </pre>
-    <p>
-      <a href="Surge.conf" download>👉 Download Surge.conf</a>
-    </p>
-  </div>
+      </section>
 
-  <footer>
-    <p>&copy; 2026 Jovany Koch. All rights reserved.</p>
-  </footer>
+      <aside class="card">
+        <h2>订阅链接（rules）</h2>
+        <p>这些文件可在 Surge 规则订阅中直接使用。</p>
+        <ul>
+          <li><a href="/rules/allow.list">allow.list</a> <span class="tag">DIRECT 白名单</span></li>
+          <li><a href="/rules/reject.list">reject.list</a> <span class="tag" style="color:#ffb4b4;border-color:rgba(255,77,79,.35)">REJECT</span></li>
+          <li><a href="/rules/direct-domain-set.list">direct-domain-set.list</a> <span class="tag" style="color:#b8ffd5;border-color:rgba(51,209,122,.35)">DOMAIN-SET</span></li>
+          <li><a href="/rules/lan.list">lan.list</a></li>
+          <li><a href="/rules/china.list">china.list</a> <span class="tag">DIRECT</span></li>
+          <li><a href="/rules/apple.list">apple.list</a> <span class="tag">DIRECT</span></li>
+          <li><a href="/rules/bytedance.list">bytedance.list</a> <span class="tag">US</span></li>
+          <li><a href="/rules/github.list">github.list</a> <span class="tag">US</span></li>
+          <li><a href="/rules/proxy.list">proxy.list</a> <span class="tag">US</span></li>
+          <li><a href="/rules/edu.list">edu.list</a> <span class="tag">US</span></li>
+        </ul>
+        <p class="small">如果你后续加了 HK/MY 节点，我可以把这里升级成多节点测速选择页。</p>
+      </aside>
+    </div>
+
+    <section class="card" style="margin-top:14px;">
+      <h2>使用说明（Surge 分流逻辑）</h2>
+      <ul>
+        <li><strong>allow.list</strong>：白名单，优先 DIRECT（防止被广告规则误杀）</li>
+        <li><strong>reject.list</strong>：广告/追踪拦截（REJECT）</li>
+        <li><strong>direct-domain-set</strong>：你手工维护的精确直连域名（DOMAIN-SET）</li>
+        <li><strong>china/apple</strong>：默认 DIRECT</li>
+        <li><strong>github/proxy/edu/bytedance</strong>：走 US（Snell）</li>
+        <li><strong>FINAL</strong>：默认走 US</li>
+      </ul>
+      <p class="small">站点域名：<code>jkoch14.me</code>（避免 301 跳转导致部分客户端订阅不稳定）。</p>
+    </section>
+
+    <footer>
+      <div>&copy; 2026 Jovany Koch</div>
+      <div class="small">Powered by GitHub Pages</div>
+    </footer>
+  </div>
 </body>
 </html>
