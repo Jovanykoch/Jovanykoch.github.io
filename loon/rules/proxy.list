@@ -1,0 +1,26 @@
+# Loon RULE-SET (PROXY)
+# Target Policy: Proxy
+# Purpose:
+# - Services that often work better / only work via Proxy
+#
+# Recommended order in Surge [Rule]:
+#   ...
+#   RULE-SET,https://jovanykoch.github.io/loon/rules/proxy.list,Proxy
+#   ...
+
+# Google / YouTube
+DOMAIN-SUFFIX,google.com
+DOMAIN-SUFFIX,googleapis.com
+DOMAIN-SUFFIX,gstatic.com
+DOMAIN-SUFFIX,youtube.com
+DOMAIN-SUFFIX,ytimg.com
+
+# Telegram
+DOMAIN-SUFFIX,telegram.org
+DOMAIN-SUFFIX,t.me
+
+# OpenAI / ChatGPT
+DOMAIN-SUFFIX,openai.com
+DOMAIN-SUFFIX,chatgpt.com
+DOMAIN-SUFFIX,oaistatic.com
+DOMAIN-SUFFIX,oaiusercontent.com
