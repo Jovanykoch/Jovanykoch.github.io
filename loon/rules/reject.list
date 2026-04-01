@@ -6,19 +6,28 @@
 # - Block high-value ads/trackers/telemetry domains with low breakage risk.
 # - Keep list curated for iOS stability.
 #
+# Notes:
+# - Intentionally NOT blocking googletagmanager.com (higher breakage risk on modern sites/apps).
+#
 # GitHub Pages:
 # - https://jovanykoch.github.io/loon/rules/reject.list
 
-# Google Ads / DoubleClick
-DOMAIN-SUFFIX,doubleclick.net
-DOMAIN-SUFFIX,googlesyndication.com
-DOMAIN-SUFFIX,googleadservices.com
-DOMAIN-SUFFIX,googletagmanager.com
-DOMAIN-SUFFIX,googletagservices.com
-DOMAIN,adservice.google.com
-DOMAIN,pagead2.googlesyndication.com
 
+############################
+# Google Ads / DoubleClick
+############################
+DOMAIN-SUFFIX,doubleclick.net
+DOMAIN,g.doubleclick.net
+DOMAIN-SUFFIX,googlesyndication.com
+DOMAIN,pagead2.googlesyndication.com
+DOMAIN-SUFFIX,googleadservices.com
+DOMAIN,adservice.google.com
+DOMAIN-SUFFIX,googletagservices.com
+
+
+################################
 # Mobile attribution / analytics
+################################
 DOMAIN-SUFFIX,appsflyer.com
 DOMAIN-SUFFIX,adjust.com
 DOMAIN-SUFFIX,branch.io
@@ -28,17 +37,30 @@ DOMAIN-SUFFIX,amplitude.com
 DOMAIN-SUFFIX,hotjar.com
 DOMAIN-SUFFIX,statsig.com
 
-# Meta tracking (pixel / sdk endpoints only; not facebook.com)
+
+#############################################
+# Meta tracking (pixel / sdk endpoints only)
+#############################################
 DOMAIN,connect.facebook.net
+DOMAIN-SUFFIX,pixel.facebook.com
 DOMAIN-SUFFIX,facebook-analytics.com
 
+
+####################
 # Crash / telemetry
+####################
 DOMAIN-SUFFIX,crashlytics.com
 DOMAIN-SUFFIX,appcenter.ms
 
+
+###########
 # Beacons
+###########
 DOMAIN-SUFFIX,scorecardresearch.com
 DOMAIN-SUFFIX,quantserve.com
 
+
+#######################
 # Cryptomining (legacy)
+#######################
 DOMAIN-SUFFIX,coinhive.com
