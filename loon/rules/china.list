@@ -1,15 +1,8 @@
-# Loon Rule List (DOMAIN-SUFFIX) - Mainland China DIRECT (EXTENDED)
+# Loon Rule List (DOMAIN-SUFFIX) - Mainland China DIRECT
 # Target Policy: DIRECT
 #
 # Usage (Loon):
-# - Add this as a remote/local rule list and assign policy: DIRECT
-#
-# Recommended order in Loon:
-# 1) PROXY lists (OpenAI/GitHub/Proxy/etc.)
-# 2) REJECT list (ads) if you use it
-# 3) This china.list (DIRECT)
-# 4) GEOIP,CN,DIRECT
-# 5) FINAL,Proxy (or your default)
+# - Add as Remote Rule List and set policy: DIRECT
 #
 # Notes:
 # - Vendor/service domains only (NO broad TLD like .cn) to reduce misroute.
