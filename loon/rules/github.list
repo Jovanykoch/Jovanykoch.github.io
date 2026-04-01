@@ -1,0 +1,18 @@
+# Surge RULE-SET (GITHUB)
+# Target Policy: Proxy
+# Purpose:
+# - Force GitHub related traffic through Proxy when needed
+#
+# Recommended order in Surge [Rule]:
+#   ...
+#   RULE-SET,https://jovanykoch.github.io/loon/rules/github.list,Proxy
+#   ...
+
+DOMAIN-SUFFIX,github.com
+DOMAIN-SUFFIX,githubusercontent.com
+DOMAIN-SUFFIX,githubassets.com
+DOMAIN-SUFFIX,githubapp.com
+
+DOMAIN,api.github.com
+DOMAIN,raw.githubusercontent.com
+DOMAIN-SUFFIX,github.io
