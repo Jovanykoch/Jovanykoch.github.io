@@ -1,26 +1,15 @@
-# Surge RULE-SET (ALLOW / WHITELIST)
+# Loon Rule List (ALLOW / WHITELIST)
 # Target Policy: DIRECT
+#
+# Usage (Loon):
+# - Add as Remote Rule List and set policy: DIRECT
+#
 # Purpose:
-# - Whitelist critical services that must NOT be blocked by reject.list
-# - Whitelist Malaysia local services to keep low latency + reduce risk (banking/OTP/government)
-#
-# Recommended order in Surge [Rule]:
-#   RULE-SET,https://your-domain-or-raw-link/allow.list,DIRECT
-#   RULE-SET,https://your-domain-or-raw-link/reject.list,REJECT
-#   RULE-SET,https://your-domain-or-raw-link/apple.list,DIRECT
-#   RULE-SET,https://your-domain-or-raw-link/github.list,Proxy
-#   RULE-SET,https://your-domain-or-raw-link/proxy.list,Proxy
-#   RULE-SET,https://your-domain-or-raw-link/china.list,DIRECT
-#   GEOIP,CN,DIRECT
-#   FINAL,Proxy
-#
-# Notes:
-# - Keep this list small and high-value.
-# - Prefer DOMAIN for exact hosts, DOMAIN-SUFFIX for whole service domains.
-# - Avoid broad TLD rules like DOMAIN-SUFFIX,my.
+# - Whitelist critical services that should stay DIRECT (avoid being affected by reject/proxy lists)
+# - Include Malaysia local services for stability (banking/OTP/government)
 
 # -----------------------
-# iOS / Apple connectivity (safe, prevents false "no internet")
+# iOS / Apple connectivity
 # -----------------------
 DOMAIN,captive.apple.com
 DOMAIN-SUFFIX,apple.com
@@ -28,13 +17,13 @@ DOMAIN-SUFFIX,icloud.com
 DOMAIN-SUFFIX,push.apple.com
 
 # -----------------------
-# Malaysia: Government / national services (common .gov.my / .my)
+# Malaysia: Government / national services
 # -----------------------
 DOMAIN-SUFFIX,gov.my
 DOMAIN-SUFFIX,hasil.gov.my
 
 # -----------------------
-# Malaysia: Banks / payments (DIRECT recommended; add/remove as you use)
+# Malaysia: Banks / payments
 # -----------------------
 DOMAIN-SUFFIX,maybank2u.com.my
 DOMAIN-SUFFIX,maybank.com
@@ -53,7 +42,7 @@ DOMAIN-SUFFIX,uob.com.my
 DOMAIN-SUFFIX,ocbc.com.my
 DOMAIN-SUFFIX,standardchartered.com.my
 
-# DuitNow / PayNet / FPX (Malaysia payment rails)
+# DuitNow / PayNet / FPX
 DOMAIN-SUFFIX,paynet.my
 DOMAIN-SUFFIX,fpx.com.my
 DOMAIN-SUFFIX,duitnow.my
@@ -62,16 +51,16 @@ DOMAIN-SUFFIX,duitnow.my
 DOMAIN-SUFFIX,tngdigital.com.my
 DOMAIN-SUFFIX,touchngo.com.my
 
-# Grab (often used in MY for rides/food/pay)
+# Grab
 DOMAIN-SUFFIX,grab.com
 DOMAIN-SUFFIX,grabpay.com
 
-# Shopee / Lazada (MY shopping; keep local routing stable)
+# Shopee / Lazada (MY)
 DOMAIN-SUFFIX,shopee.com.my
 DOMAIN-SUFFIX,lazada.com.my
 
 # -----------------------
-# Malaysia: Telcos / ISP portals (DIRECT)
+# Malaysia: Telcos / ISP portals
 # -----------------------
 DOMAIN-SUFFIX,tm.com.my
 DOMAIN-SUFFIX,unifi.com.my
@@ -81,14 +70,11 @@ DOMAIN-SUFFIX,maxis.com.my
 DOMAIN-SUFFIX,u.com.my
 
 # -----------------------
-# Captive portal / Wi-Fi login (generic; add if you often hit captive portals)
+# Captive portal / Wi-Fi login (optional)
 # -----------------------
 DOMAIN-SUFFIX,hotspot.t-mobile.com
 
-# -----------------------
-# Optional: Put PayPal DIRECT here if you want to avoid risk controls
-# (If you intentionally proxy PayPal, remove these)
-# -----------------------
+# Optional: PayPal DIRECT (uncomment if needed)
 # DOMAIN-SUFFIX,paypal.com
 # DOMAIN-SUFFIX,paypalobjects.com
 # DOMAIN-SUFFIX,pypl.com
