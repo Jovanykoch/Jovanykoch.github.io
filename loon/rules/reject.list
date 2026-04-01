@@ -1,0 +1,9 @@
+# This is a Surge RULE-SET compatible rejections list
+# Contains high-value ad/tracker/malware domains intended for REJECT
+
+# Example entry:
+# domain.com
+
+example-ad1.com
+example-tracker1.com
+malware-domain1.com
