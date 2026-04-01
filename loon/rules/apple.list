@@ -1,0 +1,31 @@
+# Surge RULE-SET (APPLE / iOS)
+# Target Policy: DIRECT
+# Purpose:
+# - Keep iOS/Apple critical connectivity stable
+# - Reduce false "No Internet" / App Store / Push failures
+#
+# Recommended order in Surge [Rule]:
+#   RULE-SET,https://jovanykoch.github.io/loon/rules/allow.list,DIRECT
+#   RULE-SET,https://jovanykoch.github.io/loon/rules/reject.list,REJECT
+#   RULE-SET,https://jovanykoch.github.io/loon/rules/apple.list,DIRECT
+#   ...
+
+# Captive / connectivity
+DOMAIN,captive.apple.com
+
+# Core Apple domains
+DOMAIN-SUFFIX,apple.com
+DOMAIN-SUFFIX,icloud.com
+DOMAIN-SUFFIX,apple-dns.net
+
+# Push / APNs
+DOMAIN-SUFFIX,push.apple.com
+
+# Common Apple service endpoints (safe additions)
+DOMAIN-SUFFIX,apple-cloudkit.com
+DOMAIN-SUFFIX,apple-mapkit.com
+DOMAIN-SUFFIX,appstore.com
+DOMAIN,itunes.apple.com
+DOMAIN-SUFFIX,cdn-apple.com
+DOMAIN-SUFFIX,icloud-content.com
+DOMAIN-SUFFIX,me.com
