@@ -1,29 +1,11 @@
-# Loon RULE-SET (Douyin / ByteDance CN) - Force US
-# Target Policy: Proxy (US)
-#
-# How to use (Loon):
-# 1) Create/ensure a policy group that always picks US nodes (recommended):
-#    [Remote Filter]
-#    美国节点 = NameRegex, FilterKey = "^(?=.*((?i)🇺🇸|US|USA|United States|美国|洛杉矶|圣何塞|硅谷|西雅图|纽约|达拉斯|芝加哥))(?!. *((?i)群|邀请|返利|循环|官网|客服|网站|网址|获取|订阅|流量|到期|机场|下次|版本|官址|备用|过期|已用|联系|邮箱|工单|贩卖|通知|倒卖|防止|地址|频道|无法|说明|使用|提示|特别|访问|支持|(\b(USE|USED|TOTAL|EXPIRE|EMAIL|Panel)\b|(\d{4}-\d{2}-\d{2}|\dG)))).*$"
-#
-#    [Proxy Group]
-#    US = select,美国节点
-#
-# 2) Add this list in [Remote Rule] (recommended order: above china.list):
-#    https://YOUR-DOMAIN/loon/rules/douyin-us.list, policy=US, tag=douyin-us, enabled=true
-#
-# Notes:
-# - Put this list ABOVE china.list to prevent ByteDance being matched by CN DIRECT rules.
-# - This list is Douyin/TikTok/ByteDance family coverage; keep it tight to reduce side effects.
+# Loon Rule List - Douyin/ByteDance Force US
+# Put this list ABOVE china.list in [Remote Rule].
 
-# =======================
-# Douyin / ByteDance (Main)
-# =======================
 DOMAIN-SUFFIX,douyin.com
 DOMAIN-SUFFIX,iesdouyin.com
 DOMAIN-SUFFIX,amemv.com
-DOMAIN-SUFFIX,douyinvod.com
 DOMAIN-SUFFIX,douyincdn.com
+DOMAIN-SUFFIX,douyinvod.com
 DOMAIN-SUFFIX,douyinstatic.com
 
 DOMAIN-SUFFIX,bytedance.com
@@ -35,15 +17,5 @@ DOMAIN-SUFFIX,byteimg.com
 DOMAIN-SUFFIX,ibytedtos.com
 DOMAIN-SUFFIX,ipstatp.com
 
-# =======================
-# TikTok (optional but usually desired with same policy)
-# =======================
-DOMAIN-SUFFIX,tiktok.com
-DOMAIN-SUFFIX,tiktokv.com
-DOMAIN-SUFFIX,tiktokcdn.com
-
-# =======================
-# ByteDance Ads / Tracking (optional)
-# =======================
+# Optional: ads/track used by Douyin family
 DOMAIN-SUFFIX,pangle.io
-DOMAIN-SUFFIX,byteads.com
