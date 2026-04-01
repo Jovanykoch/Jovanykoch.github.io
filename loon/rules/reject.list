@@ -1,51 +1,13 @@
 # Surge RULE-SET (REJECT / BLOCKLIST)
-# Target Policy: REJECT
-# Purpose:
-# - Block high-value ads/trackers/malware/telemetry endpoints
-# - Keep list small to reduce false positives
-#
-# Recommended order in Surge [Rule]:
-#   RULE-SET,https://jovanykoch.github.io/loon/rules/allow.list,DIRECT
-#   RULE-SET,https://jovanykoch.github.io/loon/rules/reject.list,REJECT
-#   RULE-SET,https://jovanykoch.github.io/loon/rules/apple.list,DIRECT
-#   RULE-SET,https://jovanykoch.github.io/loon/rules/github.list,Proxy
-#   RULE-SET,https://jovanykoch.github.io/loon/rules/proxy.list,Proxy
-#   RULE-SET,https://jovanykoch.github.io/loon/rules/china.list,DIRECT
-#   GEOIP,CN,DIRECT
-#   FINAL,Proxy
-#
-# Notes:
-# - Prefer DOMAIN-SUFFIX for vendor tracking domains.
-# - Avoid overly broad rules that break apps.
+# Updated on 2026-04-01 17:59:41 UTC
 
-# -----------------------
-# Ads / tracking / analytics (high-value)
-# -----------------------
-DOMAIN-SUFFIX,doubleclick.net
-DOMAIN-SUFFIX,googleads.g.doubleclick.net
-DOMAIN-SUFFIX,googlesyndication.com
-DOMAIN-SUFFIX,googletagmanager.com
-DOMAIN-SUFFIX,googletagservices.com
-DOMAIN-SUFFIX,adservice.google.com
+# Ads, Tracking, and Analytics
+ads/tracking/analytics
 
-DOMAIN-SUFFIX,scorecardresearch.com
-DOMAIN-SUFFIX,quantserve.com
-DOMAIN-SUFFIX,crashlytics.com
-DOMAIN-SUFFIX,appsflyer.com
-DOMAIN-SUFFIX,adjust.com
-DOMAIN-SUFFIX,branch.io
-DOMAIN-SUFFIX,segment.io
-DOMAIN-SUFFIX,mixpanel.com
-DOMAIN-SUFFIX,amplitude.com
+# Minimal Telemetry
+minimal telemetry
 
-# Facebook / Meta tracking
-DOMAIN-SUFFIX,facebook-analytics.com
-DOMAIN-SUFFIX,connect.facebook.net
+# CoinHive
+coinhive
 
-# Microsoft telemetry / analytics (minimal)
-DOMAIN-SUFFIX,appcenter.ms
-
-# -----------------------
-# Crypto mining / unwanted
-# -----------------------
-DOMAIN-SUFFIX,coinhive.com
+# Pages URLs
