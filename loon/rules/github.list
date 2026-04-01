@@ -1,12 +1,8 @@
-# Surge RULE-SET (GITHUB)
+# Loon Rule List (GITHUB)
 # Target Policy: Proxy
-# Purpose:
-# - Force GitHub related traffic through Proxy when needed
 #
-# Recommended order in Surge [Rule]:
-#   ...
-#   RULE-SET,https://jovanykoch.github.io/loon/rules/github.list,Proxy
-#   ...
+# Usage (Loon):
+# - Add as Remote Rule List and set policy: Proxy
 
 DOMAIN-SUFFIX,github.com
 DOMAIN-SUFFIX,githubusercontent.com
