@@ -18,10 +18,6 @@
 # =======================
 # Mainland China TLDs
 # =======================
-DOMAIN-SUFFIX,cn
-DOMAIN-SUFFIX,xn--fiqs8s        # 中国
-DOMAIN-SUFFIX,xn--55qx5d        # 公司
-DOMAIN-SUFFIX,xn--io0a7i        # 网络
 
 # =======================
 # Alibaba / Ant / Aliyun / E-commerce / CDN
