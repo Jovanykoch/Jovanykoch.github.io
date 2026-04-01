@@ -1,13 +1,19 @@
-# Surge RULE-SET (REJECT / BLOCKLIST)
-# Updated on 2026-04-01 17:59:41 UTC
+# Loon Reject Rules
+# Generated on 2026-04-01 18:13:10 UTC
+# GitHub Pages URL: https://jovanykoch.github.io/
 
-# Ads, Tracking, and Analytics
-ads/tracking/analytics
+# Ad and Tracker Domains
+DOMAIN-SUFFIX, ad.doubleclick.net
+DOMAIN-SUFFIX, analytics.google.com
+DOMAIN-SUFFIX, facebook.com
+DOMAIN-SUFFIX, twitter.com
+DOMAIN-SUFFIX, google-analytics.com
+DOMAIN-SUFFIX, track.example.com
 
-# Minimal Telemetry
-minimal telemetry
+# Malware Domains
+DOMAIN-SUFFIX, malwaredomain.com
+DOMAIN-SUFFIX, malicious.example.com
 
-# CoinHive
-coinhive
-
-# Pages URLs
+# Telemetry Domains
+DOMAIN-SUFFIX, telemetry.example.com
+DOMAIN-SUFFIX, tracker.example.com
