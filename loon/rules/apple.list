@@ -1,14 +1,11 @@
-# Surge RULE-SET (APPLE / iOS)
+# Loon Rule List (APPLE / iOS)
 # Target Policy: DIRECT
-# Purpose:
-# - Keep iOS/Apple critical connectivity stable
-# - Reduce false "No Internet" / App Store / Push failures
 #
-# Recommended order in Surge [Rule]:
-#   RULE-SET,https://jovanykoch.github.io/loon/rules/allow.list,DIRECT
-#   RULE-SET,https://jovanykoch.github.io/loon/rules/reject.list,REJECT
-#   RULE-SET,https://jovanykoch.github.io/loon/rules/apple.list,DIRECT
-#   ...
+# Usage (Loon):
+# - Add as Remote Rule List and set policy: DIRECT
+#
+# Purpose:
+# - Keep iOS/Apple connectivity stable (App Store / Push / iCloud)
 
 # Captive / connectivity
 DOMAIN,captive.apple.com
@@ -21,7 +18,7 @@ DOMAIN-SUFFIX,apple-dns.net
 # Push / APNs
 DOMAIN-SUFFIX,push.apple.com
 
-# Common Apple service endpoints (safe additions)
+# Common Apple service endpoints
 DOMAIN-SUFFIX,apple-cloudkit.com
 DOMAIN-SUFFIX,apple-mapkit.com
 DOMAIN-SUFFIX,appstore.com
