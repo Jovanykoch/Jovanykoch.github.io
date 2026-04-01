@@ -1,0 +1,23 @@
+# Allowlist for Loon/Surge Usage
+
+# Social Media
+- DOMAIN-SUFFIX,facebook.com
+- DOMAIN-SUFFIX,twitter.com
+- DOMAIN-SUFFIX,instagram.com
+
+# Search Engines
+- DOMAIN-SUFFIX,google.com
+- DOMAIN-SUFFIX,bing.com
+
+# News Websites
+- DOMAIN-SUFFIX,bbc.com
+- DOMAIN-SUFFIX,cnn.com
+
+# Utilities
+- DOMAIN-SUFFIX,cloudflare.com
+- DOMAIN-SUFFIX,github.com
+
+# Add additional rules as needed below:
+
+# Example Rule
+# - DOMAIN-SUFFIX,example.com
