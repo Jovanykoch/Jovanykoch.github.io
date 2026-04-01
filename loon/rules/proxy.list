@@ -1,12 +1,8 @@
-# Loon RULE-SET (PROXY)
+# Loon Rule List (PROXY)
 # Target Policy: Proxy
-# Purpose:
-# - Services that often work better / only work via Proxy
 #
-# Recommended order in Surge [Rule]:
-#   ...
-#   RULE-SET,https://jovanykoch.github.io/loon/rules/proxy.list,Proxy
-#   ...
+# Usage (Loon):
+# - Add as Remote Rule List and set policy: Proxy
 
 # Google / YouTube
 DOMAIN-SUFFIX,google.com
