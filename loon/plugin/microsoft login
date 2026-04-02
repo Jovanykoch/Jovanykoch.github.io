@@ -1,0 +1,25 @@
+#!name=Microsoft Login via US
+#!desc=Route all Microsoft login/auth traffic to US node only
+#!author=Copilot
+
+[Rule]
+# 🔐 Microsoft 登录核心
+DOMAIN-SUFFIX,login.microsoftonline.com,US
+DOMAIN-SUFFIX,login.live.com,US
+DOMAIN-SUFFIX,microsoftonline.com,US
+DOMAIN-SUFFIX,office.com,US
+
+# 🔑 MFA / Authenticator 必要
+DOMAIN-SUFFIX,msauth.net,US
+DOMAIN-SUFFIX,msauthimages.net,US
+DOMAIN-SUFFIX,msftauth.net,US
+DOMAIN-SUFFIX,msftauthimages.net,US
+DOMAIN-SUFFIX,azureedge.net,US
+DOMAIN-SUFFIX,aka.ms,US
+
+# 💬 ChatGPT EDU
+DOMAIN-SUFFIX,openai.com,US
+DOMAIN-SUFFIX,chat.openai.com,US
+DOMAIN-SUFFIX,api.openai.com,US
+DOMAIN-SUFFIX,oaistatic.com,US
+DOMAIN-SUFFIX,auth0.openai.com,US
