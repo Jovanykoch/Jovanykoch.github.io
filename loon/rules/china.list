@@ -1,11 +1,12 @@
-# Loon Rule List (DOMAIN-SUFFIX) - Mainland China DIRECT
-# Target Policy: DIRECT
+# Loon Rule List (DOMAIN-SUFFIX) - Return-to-China (适配马来西亚回国)
+# Target Policy: PROXY (Back to China)
 #
 # Usage (Loon):
-# - Add as Remote Rule List and set policy: DIRECT
+# - Add as Remote Rule List and set policy: PROXY
 #
 # Notes:
-# - Vendor/service domains only (NO broad TLD like .cn) to reduce misroute.
+# - Includes mainland China services and key domains for streaming, shopping, etc.
+# - Optimized based on common use cases for Malaysia-based users.
 
 # --- Alibaba / Ant / Aliyun / Taobao / Tmall / CDN ---
 DOMAIN-SUFFIX,alibaba.com
@@ -21,7 +22,7 @@ DOMAIN-SUFFIX,hichina.com
 DOMAIN-SUFFIX,mmstat.com
 DOMAIN-SUFFIX,umeng.com
 
-# --- Tencent / WeChat / Qcloud / CDN ---
+# --- Tencent / WeChat / QQ / Qcloud / CDN ---
 DOMAIN-SUFFIX,tencent.com
 DOMAIN-SUFFIX,tencentcloud.com
 DOMAIN-SUFFIX,tencent-cloud.com
@@ -29,11 +30,12 @@ DOMAIN-SUFFIX,myqcloud.com
 DOMAIN-SUFFIX,qcloud.com
 DOMAIN-SUFFIX,qq.com
 DOMAIN-SUFFIX,gtimg.com
+DOMAIN-SUFFIX,gdt.qq.com
 DOMAIN-SUFFIX,wechat.com
 DOMAIN-SUFFIX,weixin.qq.com
 DOMAIN-SUFFIX,tenpay.com
 
-# --- Baidu ---
+# --- Baidu / Search Engines ---
 DOMAIN-SUFFIX,baidu.com
 DOMAIN-SUFFIX,bdimg.com
 DOMAIN-SUFFIX,bdstatic.com
@@ -43,6 +45,7 @@ DOMAIN-SUFFIX,bytedance.com
 DOMAIN-SUFFIX,toutiao.com
 DOMAIN-SUFFIX,douyin.com
 DOMAIN-SUFFIX,ixigua.com
+DOMAIN-SUFFIX,huoshan.com
 DOMAIN-SUFFIX,feishu.cn
 DOMAIN-SUFFIX,pangle.io
 
@@ -55,24 +58,33 @@ DOMAIN-SUFFIX,jdpay.com
 DOMAIN-SUFFIX,meituan.com
 DOMAIN-SUFFIX,dianping.com
 
-# --- Bilibili ---
+# --- Chinese Streaming Platforms / Video ---
 DOMAIN-SUFFIX,bilibili.com
 DOMAIN-SUFFIX,biliapi.net
 DOMAIN-SUFFIX,hdslb.com
+DOMAIN-SUFFIX,iqiyi.com
+DOMAIN-SUFFIX,pps.tv
+DOMAIN-SUFFIX,youku.com
+DOMAIN-SUFFIX,ykimg.com
+DOMAIN-SUFFIX,mgtv.com
+DOMAIN-SUFFIX,le.com
+DOMAIN-SUFFIX,letv.com
 
-# --- NetEase ---
+# --- NetEase / Apps / Games ---
 DOMAIN-SUFFIX,163.com
 DOMAIN-SUFFIX,126.com
 DOMAIN-SUFFIX,netease.com
+DOMAIN-SUFFIX,yy.com
 
-# --- Weibo / Zhihu / Douban / news portals ---
+# --- Social Media / News ---
 DOMAIN-SUFFIX,weibo.com
 DOMAIN-SUFFIX,zhihu.com
 DOMAIN-SUFFIX,douban.com
 DOMAIN-SUFFIX,sohu.com
 DOMAIN-SUFFIX,sina.com.cn
+DOMAIN-SUFFIX,eastday.com
 
-# --- Xiaomi / Huawei / Oppo / Vivo ---
+# --- Chinese Electronics (Xiaomi, Huawei, etc.) ---
 DOMAIN-SUFFIX,mi.com
 DOMAIN-SUFFIX,xiaomi.com
 DOMAIN-SUFFIX,huawei.com
@@ -80,26 +92,35 @@ DOMAIN-SUFFIX,vmall.com
 DOMAIN-SUFFIX,oppo.com
 DOMAIN-SUFFIX,vivo.com
 
-# --- 360 / security / CDN ---
+# --- 360 / Security / CDN ---
 DOMAIN-SUFFIX,360.cn
 DOMAIN-SUFFIX,qhimg.com
 DOMAIN-SUFFIX,qihucdn.com
 
-# --- UnionPay ---
+# --- UnionPay / Financial ---
 DOMAIN-SUFFIX,unionpay.com
 
-# --- DNSPod (often used by CN apps) ---
-DOMAIN-SUFFIX,dnspod.cn
-DOMAIN-SUFFIX,dnspod.com
-DOMAIN-SUFFIX,dnspod.net
-
-# --- Mainland code hosting (optional) ---
+# --- Mainland Code Hosting ---
 DOMAIN-SUFFIX,gitee.com
 
-# --- China carriers (optional) ---
+# --- Return-to-China-Specific Additions (Malaysia Scope) ---
+DOMAIN-SUFFIX,cctv.com
+DOMAIN-SUFFIX,icbc.com.cn
+DOMAIN-SUFFIX,ctrip.com
+DOMAIN-SUFFIX,qyer.com
+DOMAIN-SUFFIX,ctriptravel.com
+DOMAIN-SUFFIX,fliggy.com
+
+# --- China Telecom / ISP Carriers ---
 DOMAIN-SUFFIX,chinatelecom.com.cn
 DOMAIN-SUFFIX,10000.com
 DOMAIN-SUFFIX,chinaunicom.com
 DOMAIN-SUFFIX,10010.com
 DOMAIN-SUFFIX,chinamobile.com
 DOMAIN-SUFFIX,10086.cn
+
+# --- Options for Xiaomi, Huawei App Store accesses ---
+DOMAIN-SUFFIX,miui.com
+DOMAIN-SUFFIX,vivo.com.cn
+DOMAIN-SUFFIX,myapp.com
+DOMAIN-SUFFIX,hicloud.com
