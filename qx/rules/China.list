@@ -4,31 +4,31 @@
 #############################################
 
 # Common CN
-host-suffix, cn
+host-suffix,cn
 
 # Baidu
-host-suffix, baidu.com
-host-suffix, bdstatic.com
+host-suffix,baidu.com
+host-suffix,bdstatic.com
 
 # Alibaba
-host-suffix, taobao.com
-host-suffix, tmall.com
-host-suffix, alipay.com
-host-suffix, alicdn.com
+host-suffix,taobao.com
+host-suffix,tmall.com
+host-suffix,alipay.com
+host-suffix,alicdn.com
 
 # JD
-host-suffix, jd.com
-host-suffix, jdcdn.com
+host-suffix,jd.com
+host-suffix,jdcdn.com
 
 # NetEase
-host-suffix, 163.com
-host-suffix, netease.com
+host-suffix,163.com
+host-suffix,netease.com
 
 # Weibo
-host-suffix, weibo.com
-host-suffix, sina.com.cn
+host-suffix,weibo.com
+host-suffix,sina.com.cn
 
 # Tencent (注意：QQ/微信有时候指定 DNS 会出问题，你 DNS 注释也写了)
-host-suffix, qq.com
-host-suffix, qpic.cn
-host-suffix, weixin.qq.com
+host-suffix,qq.com
+host-suffix,qpic.cn
+host-suffix,weixin.qq.com
