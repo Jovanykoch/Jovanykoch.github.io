@@ -1,0 +1,40 @@
+#############################################
+# ForeignMedia.list
+# Purpose: International streaming services
+#############################################
+
+# Netflix
+host-suffix, netflix.com
+host-suffix, nflximg.net
+host-suffix, nflxvideo.net
+host-suffix, nflxso.net
+host-suffix, nflxext.com
+
+# Disney+
+host-suffix, disneyplus.com
+host-suffix, disney-plus.net
+host-suffix, dssott.com
+host-suffix, bamgrid.com
+
+# Prime Video
+host-suffix, primevideo.com
+host-suffix, media-amazon.com
+host-suffix, amazonvideo.com
+
+# HBO / Max
+host-suffix, max.com
+host-suffix, hbomax.com
+host-suffix, hbo.com
+
+# YouTube
+host-suffix, youtube.com
+host-suffix, ytimg.com
+host-suffix, googlevideo.com
+
+# Spotify
+host-suffix, spotify.com
+host-suffix, scdn.co
+
+# Hulu
+host-suffix, hulu.com
+host-suffix, hulustream.com
