@@ -1,8 +1,9 @@
 # Loon Rule List (PROXY)
 # Target Policy: Proxy
 #
-# Usage (Loon):
-# - Add as Remote Rule List and set policy: Proxy
+# 适用场景：
+# - 在马来西亚（MY）访问需要“国际出口/更稳定国际链路”的服务
+# - 与回国（china.list）不冲突：回国只管 CN 服务；这里管国际受限/加速服务
 
 # Google / YouTube
 DOMAIN-SUFFIX,google.com
@@ -20,3 +21,10 @@ DOMAIN-SUFFIX,openai.com
 DOMAIN-SUFFIX,chatgpt.com
 DOMAIN-SUFFIX,oaistatic.com
 DOMAIN-SUFFIX,oaiusercontent.com
+
+# Common AI / Dev acceleration (low-risk additions)
+DOMAIN-SUFFIX,anthropic.com
+DOMAIN-SUFFIX,claude.ai
+DOMAIN-SUFFIX,perplexity.ai
+DOMAIN-SUFFIX,cloudflare.com
+DOMAIN-SUFFIX,cloudflare-dns.com
