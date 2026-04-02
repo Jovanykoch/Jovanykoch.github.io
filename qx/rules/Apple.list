@@ -1,0 +1,26 @@
+# Apple.list
+# Apple services — route directly to avoid unnecessary proxy latency
+# Action: DIRECT
+
+# --- App Store / software updates
+host-suffix,apple.com,DIRECT
+host-suffix,mzstatic.com,DIRECT
+host-suffix,phobos.apple.com,DIRECT
+host-suffix,itunes.apple.com,DIRECT
+host-suffix,appstore.com,DIRECT
+
+# --- iCloud
+host-suffix,icloud.com,DIRECT
+host-suffix,icloud-content.com,DIRECT
+host-suffix,me.com,DIRECT
+host-suffix,mac.com,DIRECT
+
+# --- CDN / static assets (Apple-specific)
+host-suffix,aaplimg.com,DIRECT
+host-suffix,cdn-apple.com,DIRECT
+
+# --- Device services
+host-suffix,push.apple.com,DIRECT
+host-suffix,gs.apple.com,DIRECT
+host-suffix,captive.apple.com,DIRECT
+host-suffix,configurator.apple.com,DIRECT

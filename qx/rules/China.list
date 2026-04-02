@@ -1,0 +1,129 @@
+# China.list
+# Domestic Chinese sites and services — route directly
+# Action: DIRECT
+
+# --- JD.com (e-commerce)
+host-suffix,jd.com,DIRECT
+host-suffix,jdpay.com,DIRECT
+host-suffix,360buyimg.com,DIRECT
+
+# --- Xiaomi / Jinshan / WPS
+host-suffix,mi.com,DIRECT
+host-suffix,miui.com,DIRECT
+host-suffix,miwifi.com,DIRECT
+host-suffix,xiaomi.com,DIRECT
+host-suffix,xiaomi.net,DIRECT
+host-suffix,wps.cn,DIRECT
+host-suffix,ksosoft.com,DIRECT
+
+# --- ByteDance
+host-suffix,pstatp.com,DIRECT
+host-suffix,snssdk.com,DIRECT
+host-suffix,iesdouyin.com,DIRECT
+host-suffix,toutiao.com,DIRECT
+host-suffix,douyin.com,DIRECT
+host-suffix,douyincdn.com,DIRECT
+
+# --- Baidu
+host-suffix,baidu.com,DIRECT
+host-suffix,baidubcr.com,DIRECT
+host-suffix,bdstatic.com,DIRECT
+host-suffix,bdimg.com,DIRECT
+host-suffix,yunjiasu-cdn.net,DIRECT
+
+# --- Alibaba / Taobao / Alipay / DingTalk
+host-suffix,alibaba.com,DIRECT
+host-suffix,alicdn.com,DIRECT
+host-suffix,alipay.com,DIRECT
+host-suffix,alipayobjects.com,DIRECT
+host-suffix,aliyun.com,DIRECT
+host-suffix,amap.com,DIRECT
+host-suffix,autonavi.com,DIRECT
+host-suffix,taobao.com,DIRECT
+host-suffix,tmall.com,DIRECT
+host-suffix,dingtalk.com,DIRECT
+
+# --- Tencent / WeChat / QQ
+host-suffix,qq.com,DIRECT
+host-suffix,tencent.com,DIRECT
+host-suffix,tencent-cloud.net,DIRECT
+host-suffix,tenpay.com,DIRECT
+host-suffix,weixin.qq.com,DIRECT
+host-suffix,gtimg.com,DIRECT
+host-suffix,idqqimg.com,DIRECT
+
+# --- Weibo / Sina
+host-suffix,weibo.com,DIRECT
+host-suffix,weibo.cn,DIRECT
+host-suffix,weibocdn.com,DIRECT
+host-suffix,sina.com,DIRECT
+host-suffix,sinaimg.cn,DIRECT
+host-suffix,sinaimg.com,DIRECT
+
+# --- NetEase
+host-suffix,163.com,DIRECT
+host-suffix,126.net,DIRECT
+host-suffix,163yun.com,DIRECT
+host-suffix,netease.com,DIRECT
+host-suffix,ydstatic.com,DIRECT
+
+# --- Zhihu
+host-suffix,zhihu.com,DIRECT
+host-suffix,zhimg.com,DIRECT
+
+# --- Xiaohongshu (RED)
+host-suffix,xiaohongshu.com,DIRECT
+host-suffix,xhscdn.com,DIRECT
+
+# --- Meituan / Dianping
+host-suffix,meituan.com,DIRECT
+host-suffix,meituan.net,DIRECT
+host-suffix,maoyan.com,DIRECT
+host-suffix,dianping.com,DIRECT
+
+# --- Didi
+host-suffix,didi.cn,DIRECT
+host-suffix,didiglobal.com,DIRECT
+host-suffix,udache.com,DIRECT
+
+# --- Boss Zhipin / 58.com
+host-suffix,bosszhipin.com,DIRECT
+host-suffix,zhipin.com,DIRECT
+host-suffix,58.com,DIRECT
+
+# --- Finance / banking
+host-suffix,eastmoney.com,DIRECT
+host-suffix,dfcfw.com,DIRECT
+host-suffix,futunn.com,DIRECT
+host-suffix,cmbchina.com,DIRECT
+host-suffix,cmbimg.com,DIRECT
+host-suffix,abchina.com,DIRECT
+
+# --- Common domestic CDN
+host-suffix,qiniu.com,DIRECT
+host-suffix,qiniudn.com,DIRECT
+host-suffix,qiniucdn.com,DIRECT
+host-suffix,upyun.com,DIRECT
+host-suffix,upaiyun.com,DIRECT
+host-suffix,ccgslb.com,DIRECT
+host-suffix,ccgslb.net,DIRECT
+host-suffix,xunlei.com,DIRECT
+host-suffix,sandai.net,DIRECT
+
+# --- Misc commonly-used domestic sites
+host-suffix,douban.com,DIRECT
+host-suffix,doubanio.com,DIRECT
+host-suffix,sspai.com,DIRECT
+host-suffix,jianshu.com,DIRECT
+host-suffix,smzdm.com,DIRECT
+host-suffix,ithome.com,DIRECT
+host-suffix,36kr.com,DIRECT
+host-suffix,caiyunapp.com,DIRECT
+host-suffix,youdao.com,DIRECT
+host-suffix,12306.cn,DIRECT
+
+# --- Fallback: GeoIP match for China
+geoip,CN,DIRECT
+
+# --- Optional: catch-all for .cn TLD (uncomment if needed)
+# host-suffix,cn,DIRECT
