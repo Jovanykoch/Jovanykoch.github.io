@@ -1,0 +1,33 @@
+#############################################
+# Global.list
+# Purpose: Global websites / apps
+#############################################
+
+# Google
+host-suffix, google.com
+host-suffix, googleapis.com
+host-suffix, gstatic.com
+host-suffix, gvt1.com
+host-suffix, gvt2.com
+
+# GitHub
+host-suffix, github.com
+host-suffix, githubusercontent.com
+host-suffix, githubassets.com
+
+# Telegram
+host-suffix, telegram.org
+host-suffix, t.me
+
+# X / Twitter
+host-suffix, x.com
+host-suffix, twitter.com
+host-suffix, twimg.com
+
+# Reddit
+host-suffix, reddit.com
+host-suffix, redd.it
+
+# OpenAI
+host-suffix, openai.com
+host-suffix, chatgpt.com
