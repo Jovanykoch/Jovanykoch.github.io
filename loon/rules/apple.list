@@ -1,11 +1,11 @@
 # Loon Rule List (APPLE / iOS)
 # Target Policy: DIRECT
 #
-# Usage (Loon):
-# - Add as Remote Rule List and set policy: DIRECT
+# Applicable scenarios:
+# - iOS/Apple-related services try to stay DIRECT to reduce push/store/positioning abnormalities
 #
-# Purpose:
-# - Keep iOS/Apple connectivity stable (App Store / Push / iCloud)
+# Usage (Loon):
+# - As a list of remote rules, policy selection: directly
 
 # Captive / connectivity
 DOMAIN,captive.apple.com
