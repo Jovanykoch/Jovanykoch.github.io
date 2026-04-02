@@ -1,0 +1,35 @@
+#############################################
+# DomesticMedia.list
+# Purpose: China domestic streaming services (optional)
+#############################################
+
+# Bilibili
+host-suffix, bilibili.com
+host-suffix, biliapi.net
+host-suffix, bilivideo.com
+host-suffix, b23.tv
+
+# Tencent Video
+host-suffix, v.qq.com
+host-suffix, video.qq.com
+host-suffix, qq.com
+host-suffix, qpic.cn
+
+# iQIYI
+host-suffix, iqiyi.com
+host-suffix, qiyi.com
+host-suffix, qiyipic.com
+
+# Youku
+host-suffix, youku.com
+host-suffix, soku.com
+host-suffix, alicdn.com
+
+# Mango TV
+host-suffix, mgtv.com
+
+# Douyin / TikTok CN ecosystem
+host-suffix, douyin.com
+host-suffix, snssdk.com
+host-suffix, byteimg.com
+host-suffix, bytedance.com
