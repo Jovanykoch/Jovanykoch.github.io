@@ -1,10 +1,15 @@
 # ======== Rule Section ========
+# File: mail.list
+# Purpose: Route only common mail hostnames for jjc.edu (strict mode)
+
 [Rule]
-# jcc.edu 域名（邮箱流量分流）
-DOMAIN-SUFFIX,jjc.edu
-DOMAIN-SUFFIX,smtp.jjc.edu
-DOMAIN-SUFFIX,imap.jjc.edu
-DOMAIN-SUFFIX,pop.jjc.edu
-DOMAIN-SUFFIX,mail.jjc.edu
+
+# Common mail endpoints
+DOMAIN,mail.jjc.edu
+DOMAIN,smtp.jjc.edu
+DOMAIN,imap.jjc.edu
+DOMAIN,pop.jjc.edu
+DOMAIN,autodiscover.jjc.edu
+DOMAIN,webmail.jjc.edu
 
 # ======== END ========
