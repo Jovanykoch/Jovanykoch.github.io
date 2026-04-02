@@ -1,0 +1,7 @@
+# Hijacking.list
+# ISP hijack / scams / malicious apps
+# Action: REJECT
+
+host-suffix,adups.com,REJECT
+host-suffix,cnzz.com,REJECT
+host-suffix,umeng.com,REJECT
