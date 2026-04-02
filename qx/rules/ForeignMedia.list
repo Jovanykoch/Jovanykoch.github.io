@@ -1,31 +1,24 @@
 # ForeignMedia.list
-# International streaming / media / entertainment services
+# International streaming services
 # Action: PROXY
 
-# --- Video streaming
+# Netflix
 host-suffix,netflix.com,PROXY
-host-suffix,nflximg.net,PROXY
 host-suffix,nflxvideo.net,PROXY
+host-suffix,nflximg.net,PROXY
 host-suffix,nflxso.net,PROXY
+
+# YouTube
 host-suffix,youtube.com,PROXY
-host-suffix,youtu.be,PROXY
 host-suffix,googlevideo.com,PROXY
-host-suffix,hulu.com,PROXY
+host-suffix,ytimg.com,PROXY
+
+# Disney+
 host-suffix,disneyplus.com,PROXY
 host-suffix,dssott.com,PROXY
-host-suffix,hbomax.com,PROXY
-host-suffix,max.com,PROXY
-host-suffix,primevideo.com,PROXY
-host-suffix,aiv-cdn.net,PROXY
+host-suffix,bamgrid.com,PROXY
+
+# Spotify
 host-suffix,spotify.com,PROXY
 host-suffix,scdn.co,PROXY
-host-suffix,twitch.tv,PROXY
-host-suffix,twitchsvc.net,PROXY
-host-suffix,bbc.co.uk,PROXY
-host-suffix,bbci.co.uk,PROXY
-
-# --- Music
-host-suffix,tidal.com,PROXY
-host-suffix,deezer.com,PROXY
-host-suffix,soundcloud.com,PROXY
-host-suffix,sndcdn.com,PROXY
+host-suffix,spotifycdn.com,PROXY

@@ -1,56 +1,15 @@
 # Global.list
-# General international / blocked services that require a proxy
+# Global apps / websites
 # Action: PROXY
 
-# --- Google
 host-suffix,google.com,PROXY
 host-suffix,googleapis.com,PROXY
-host-suffix,googleusercontent.com,PROXY
 host-suffix,gstatic.com,PROXY
-host-suffix,ggpht.com,PROXY
-host-suffix,gvt1.com,PROXY
-host-suffix,gvt2.com,PROXY
-
-# --- Facebook / Meta
-host-suffix,facebook.com,PROXY
-host-suffix,fbcdn.net,PROXY
-host-suffix,instagram.com,PROXY
-host-suffix,cdninstagram.com,PROXY
-host-suffix,whatsapp.com,PROXY
-host-suffix,whatsapp.net,PROXY
-
-# --- Twitter / X
-host-suffix,twitter.com,PROXY
-host-suffix,x.com,PROXY
-host-suffix,twimg.com,PROXY
-host-suffix,t.co,PROXY
-
-# --- Telegram
-host-suffix,telegram.org,PROXY
-host-suffix,t.me,PROXY
-host-suffix,telegra.ph,PROXY
-
-# --- GitHub / Microsoft
 host-suffix,github.com,PROXY
 host-suffix,githubusercontent.com,PROXY
-host-suffix,githubassets.com,PROXY
-
-# --- Reddit
-host-suffix,reddit.com,PROXY
-host-suffix,redd.it,PROXY
-host-suffix,redditmedia.com,PROXY
-host-suffix,reddituploads.com,PROXY
-host-suffix,redditstatic.com,PROXY
-
-# --- OpenAI / AI services
-host-suffix,openai.com,PROXY
-host-suffix,oaistatic.com,PROXY
-host-suffix,oaiusercontent.com,PROXY
-host-suffix,anthropic.com,PROXY
-
-# --- Misc blocked / geo-restricted
+host-suffix,telegram.org,PROXY
+host-suffix,t.me,PROXY
 host-suffix,wikipedia.org,PROXY
-host-suffix,wikimedia.org,PROXY
-host-suffix,dropbox.com,PROXY
-host-suffix,dropboxstatic.com,PROXY
-host-suffix,notion.so,PROXY
+host-suffix,reddit.com,PROXY
+host-suffix,openai.com,PROXY
+host-suffix,chatgpt.com,PROXY

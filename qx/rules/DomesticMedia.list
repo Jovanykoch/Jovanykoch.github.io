@@ -1,42 +1,23 @@
 # DomesticMedia.list
-# Domestic (Chinese) streaming / media / entertainment services
+# Mainland China streaming services
 # Action: DIRECT
 
-# --- iQIYI
+# iQIYI
 host-suffix,iqiyi.com,DIRECT
-host-suffix,qiyi.com,DIRECT
 host-suffix,qiyipic.com,DIRECT
-host-suffix,71.am,DIRECT
 
-# --- Youku (Alibaba)
+# Tencent Video
+host-suffix,v.qq.com,DIRECT
+
+# Youku
 host-suffix,youku.com,DIRECT
 host-suffix,ykimg.com,DIRECT
-host-suffix,soku.com,DIRECT
 
-# --- Bilibili
+# Bilibili
 host-suffix,bilibili.com,DIRECT
-host-suffix,bilivideo.com,DIRECT
-host-suffix,acgvideo.com,DIRECT
 host-suffix,hdslb.com,DIRECT
 
-# --- Tencent Video
-host-suffix,v.qq.com,DIRECT
-host-suffix,myqcloud.com,DIRECT
-
-# --- Mango TV (Hunan)
-host-suffix,mgtv.com,DIRECT
-host-suffix,hitv.com,DIRECT
-
-# --- Douyu / Huya live streaming
+# Live
 host-suffix,douyu.com,DIRECT
-host-suffix,douyucdn.cn,DIRECT
+host-suffix,douyu.tv,DIRECT
 host-suffix,huya.com,DIRECT
-host-suffix,huyaimg.com,DIRECT
-
-# --- NetEase Music / Cloud
-host-suffix,music.163.com,DIRECT
-host-suffix,163yun.com,DIRECT
-
-# --- Ximalaya (podcast)
-host-suffix,ximalaya.com,DIRECT
-host-suffix,xmcdn.com,DIRECT
