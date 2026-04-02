@@ -1,0 +1,10 @@
+# ======== Rule Section ========
+[Rule]
+# jcc.edu 域名（邮箱流量分流）
+DOMAIN-SUFFIX,jjc.edu
+DOMAIN-SUFFIX,smtp.jjc.edu
+DOMAIN-SUFFIX,imap.jjc.edu
+DOMAIN-SUFFIX,pop.jjc.edu
+DOMAIN-SUFFIX,mail.jjc.edu
+
+# ======== END ========
