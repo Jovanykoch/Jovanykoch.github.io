@@ -63,6 +63,10 @@ DOMAIN-SUFFIX,osrecovery.apple.com
 DOMAIN-SUFFIX,albert.apple.com
 DOMAIN-SUFFIX,deviceenrollment.apple.com
 
+# --- Apple Pay ---
+DOMAIN-SUFFIX,apple-pay-gateway.apple.com
+DOMAIN-SUFFIX,cdn-apple-static.net # TODO verify ownership
+
 # --- Apple News (optional) ---
 DOMAIN-SUFFIX,apple.news
 
