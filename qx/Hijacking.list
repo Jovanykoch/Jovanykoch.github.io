@@ -1,20 +1,24 @@
-# Hijacking.list
-# DNS hijacking / malicious redirect / phishing / man-in-the-middle domains
-# Action: REJECT
-
-# --- Known hijacking / phishing domains (representative examples)
-host-suffix,10010.com.uelink.com.cn,REJECT
-host-suffix,114so.cn,REJECT
-host-suffix,2345.com,REJECT
-host-suffix,hao123.net,REJECT
-host-suffix,hao2.com,REJECT
-host-suffix,open.taobao.com.hijack.example,REJECT
+# Quantumult X RuleSet - Hijacking.list (Pure Rules)
+# Repo: Jovanykoch/Jovanykoch.github.io
+# Updated: 2026-04-03
+#
+# Notes:
+# - This file contains ONLY rules (no trailing policy like ",REJECT").
+# - In your .conf use:
+#   [filter_remote]
+#   https://<your-domain>/qx/Hijacking.list, tag=Hijacking, force-policy=reject, update-interval=86400, opt-parser=false, enabled=true
+#
+# --- Known hijacking / phishing domains
+host-suffix,10010.com.uelink.com.cn
+host-suffix,114so.cn
+host-suffix,2345.com
+host-suffix,hao123.net
+host-suffix,hao2.com
 
 # --- ISP DNS hijack endpoints (common CN ISP redirect domains)
-host-suffix,wap.cmwap.com,REJECT
-host-suffix,10086.cn.hijack.example,REJECT
+host-suffix,wap.cmwap.com
 
-# --- Malware / stalkerware C2 (representative)
-host-suffix,mobogenie.com,REJECT
-host-suffix,vdpsp.com,REJECT
-host-suffix,adbantuan.com,REJECT
+# --- Malware / stalkerware C2
+host-suffix,mobogenie.com
+host-suffix,vdpsp.com
+host-suffix,adbantuan.com
