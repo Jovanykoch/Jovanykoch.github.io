@@ -1,0 +1,110 @@
+# Quantumult X RuleSet - china.list (host-suffix / host)
+# Repo: Jovanykoch/Jovanykoch.github.io
+# Updated: 2026-04-03
+#
+# Usage (Quantumult X):
+# [filter_remote]
+# https://jkoch14.me/qx/china.list, tag=china.list, force-policy=DIRECT, update-interval=86400, opt-parser=false, enabled=true
+
+# --- Mainland China TLDs ---
+host-suffix,cn
+host-suffix,xn--fiqs8s
+host-suffix,xn--55qx5d
+host-suffix,xn--io0a7i
+
+# --- Alibaba / Ant / Aliyun / Taobao / Tmall / CDN ---
+host-suffix,alibaba.com
+host-suffix,alipay.com
+host-suffix,antgroup.com
+host-suffix,aliyun.com
+host-suffix,aliyuncs.com
+host-suffix,alicdn.com
+host-suffix,taobao.com
+host-suffix,tmall.com
+host-suffix,1688.com
+host-suffix,hichina.com
+host-suffix,mmstat.com
+host-suffix,umeng.com
+
+# --- Tencent / WeChat / Qcloud / CDN ---
+host-suffix,tencent.com
+host-suffix,tencentcloud.com
+host-suffix,tencent-cloud.com
+host-suffix,myqcloud.com
+host-suffix,qcloud.com
+host-suffix,qq.com
+host-suffix,gtimg.com
+host-suffix,wechat.com
+host-suffix,weixin.qq.com
+host-suffix,tenpay.com
+
+# --- Baidu ---
+host-suffix,baidu.com
+host-suffix,bdimg.com
+host-suffix,bdstatic.com
+
+# --- ByteDance / Douyin / Toutiao / Feishu ---
+host-suffix,bytedance.com
+host-suffix,toutiao.com
+host-suffix,douyin.com
+host-suffix,ixigua.com
+host-suffix,feishu.cn
+host-suffix,pangle.io
+
+# --- JD / logistics assets ---
+host-suffix,jd.com
+host-suffix,360buyimg.com
+host-suffix,jdpay.com
+
+# --- Meituan / Dianping ---
+host-suffix,meituan.com
+host-suffix,dianping.com
+
+# --- Bilibili ---
+host-suffix,bilibili.com
+host-suffix,biliapi.net
+host-suffix,hdslb.com
+
+# --- NetEase ---
+host-suffix,163.com
+host-suffix,126.com
+host-suffix,netease.com
+
+# --- Weibo / Zhihu / Douban / news portals ---
+host-suffix,weibo.com
+host-suffix,zhihu.com
+host-suffix,douban.com
+host-suffix,sohu.com
+host-suffix,sina.com.cn
+
+# --- Xiaomi / Huawei / Oppo / Vivo ---
+host-suffix,mi.com
+host-suffix,xiaomi.com
+host-suffix,huawei.com
+host-suffix,vmall.com
+host-suffix,oppo.com
+host-suffix,vivo.com
+
+# --- 360 / security / CDN ---
+host-suffix,360.cn
+host-suffix,qhimg.com
+host-suffix,qihucdn.com
+
+# --- UnionPay ---
+host-suffix,unionpay.com
+
+# --- DNSPod (often used by CN apps) ---
+host-suffix,dnspod.cn
+host-suffix,dnspod.com
+host-suffix,dnspod.net
+
+# --- Mainland code hosting (optional) ---
+host-suffix,gitee.com
+
+# --- China carriers (optional) ---
+host-suffix,chinatelecom.com.cn
+host-suffix,10000.com
+host-suffix,chinaunicom.com
+host-suffix,10010.com
+host-suffix,chinamobile.com
+host-suffix,10086.cn
