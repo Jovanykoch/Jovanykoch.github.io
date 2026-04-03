@@ -1,0 +1,12 @@
+# Apple.list
+# Apple services
+# Action: DIRECT
+
+host-suffix,apple.com,DIRECT
+host-suffix,icloud.com,DIRECT
+host-suffix,appstore.com,DIRECT
+host-suffix,itunes.apple.com,DIRECT
+host-suffix,apps.apple.com,DIRECT
+host-suffix,icloud-content.com,DIRECT
+host-suffix,apple-dns.net,DIRECT
+host-suffix,push.apple.com,DIRECT

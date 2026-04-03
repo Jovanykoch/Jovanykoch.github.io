@@ -1,0 +1,23 @@
+# DomesticMedia.list
+# Mainland China streaming services
+# Action: DIRECT
+
+# iQIYI
+host-suffix,iqiyi.com,DIRECT
+host-suffix,qiyipic.com,DIRECT
+
+# Tencent Video
+host-suffix,v.qq.com,DIRECT
+
+# Youku
+host-suffix,youku.com,DIRECT
+host-suffix,ykimg.com,DIRECT
+
+# Bilibili
+host-suffix,bilibili.com,DIRECT
+host-suffix,hdslb.com,DIRECT
+
+# Live
+host-suffix,douyu.com,DIRECT
+host-suffix,douyu.tv,DIRECT
+host-suffix,huya.com,DIRECT

@@ -1,0 +1,15 @@
+# Global.list
+# Global apps / websites
+# Action: PROXY
+
+host-suffix,google.com,PROXY
+host-suffix,googleapis.com,PROXY
+host-suffix,gstatic.com,PROXY
+host-suffix,github.com,PROXY
+host-suffix,githubusercontent.com,PROXY
+host-suffix,telegram.org,PROXY
+host-suffix,t.me,PROXY
+host-suffix,wikipedia.org,PROXY
+host-suffix,reddit.com,PROXY
+host-suffix,openai.com,PROXY
+host-suffix,chatgpt.com,PROXY

@@ -1,0 +1,20 @@
+# Hijacking.list
+# DNS hijacking / malicious redirect / phishing / man-in-the-middle domains
+# Action: REJECT
+
+# --- Known hijacking / phishing domains (representative examples)
+host-suffix,10010.com.uelink.com.cn,REJECT
+host-suffix,114so.cn,REJECT
+host-suffix,2345.com,REJECT
+host-suffix,hao123.net,REJECT
+host-suffix,hao2.com,REJECT
+host-suffix,open.taobao.com.hijack.example,REJECT
+
+# --- ISP DNS hijack endpoints (common CN ISP redirect domains)
+host-suffix,wap.cmwap.com,REJECT
+host-suffix,10086.cn.hijack.example,REJECT
+
+# --- Malware / stalkerware C2 (representative)
+host-suffix,mobogenie.com,REJECT
+host-suffix,vdpsp.com,REJECT
+host-suffix,adbantuan.com,REJECT

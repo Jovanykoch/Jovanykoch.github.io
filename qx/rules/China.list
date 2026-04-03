@@ -1,0 +1,32 @@
+# China.list
+# Mainland China apps / websites
+# Action: DIRECT
+
+# Major ecosystems
+host-suffix,alibaba.com,DIRECT
+host-suffix,alicdn.com,DIRECT
+host-suffix,alipay.com,DIRECT
+host-suffix,alipayobjects.com,DIRECT
+host-suffix,aliyun.com,DIRECT
+host-suffix,taobao.com,DIRECT
+host-suffix,tmall.com,DIRECT
+host-suffix,jd.com,DIRECT
+host-suffix,360buyimg.com,DIRECT
+host-suffix,tencent.com,DIRECT
+host-suffix,qq.com,DIRECT
+host-suffix,weibo.com,DIRECT
+host-suffix,baidu.com,DIRECT
+host-suffix,bdstatic.com,DIRECT
+host-suffix,snssdk.com,DIRECT
+host-suffix,toutiao.com,DIRECT
+host-suffix,iesdouyin.com,DIRECT
+host-suffix,zhihu.com,DIRECT
+host-suffix,zhimg.com,DIRECT
+host-suffix,netease.com,DIRECT
+host-suffix,163.com,DIRECT
+
+# Fallback
+geoip,CN,DIRECT
+
+# Optional catch-all (use with caution)
+# host-suffix,cn,DIRECT
