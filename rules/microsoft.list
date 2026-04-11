@@ -80,7 +80,6 @@ DOMAIN-SUFFIX,bingapis.com
 DOMAIN-SUFFIX,bing.net
 DOMAIN-SUFFIX,msn.cn
 DOMAIN-SUFFIX,copilot.microsoft.com
-DOMAIN-SUFFIX,microsoft.com
 
 # -----------------------
 # Microsoft-owned telemetry / update infrastructure commonly needed

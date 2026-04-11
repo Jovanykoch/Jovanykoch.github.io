@@ -48,11 +48,7 @@ DOMAIN-SUFFIX,baidu.com
 DOMAIN-SUFFIX,bdimg.com
 DOMAIN-SUFFIX,bdstatic.com
 
-# --- ByteDance / Douyin / Toutiao / Feishu ---
-DOMAIN-SUFFIX,bytedance.com
-DOMAIN-SUFFIX,toutiao.com
-DOMAIN-SUFFIX,douyin.com
-DOMAIN-SUFFIX,ixigua.com
+# --- ByteDance / Douyin / Toutiao / Feishu - Note: Use bytedance.list for full coverage
 DOMAIN-SUFFIX,feishu.cn
 DOMAIN-SUFFIX,pangle.io
 

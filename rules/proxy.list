@@ -2,7 +2,6 @@
 # Target Policy: US
 # Includes:
 #   - Swiftgram/Telegram
-#   - Microsoft (selected consumer/dev)
 #   - X (Twitter)
 #   - OpenAI (ChatGPT/API)
 #   - Spotify
@@ -35,21 +34,6 @@ DOMAIN-SUFFIX,telegram.me
 DOMAIN-SUFFIX,telegram.dog
 DOMAIN-SUFFIX,telesco.pe
 
-# -----------------------
-# Microsoft (selected)
-# -----------------------
-DOMAIN-SUFFIX,microsoft.com
-DOMAIN-SUFFIX,live.com
-DOMAIN-SUFFIX,outlook.com
-DOMAIN-SUFFIX,office.com
-DOMAIN-SUFFIX,office.net
-DOMAIN-SUFFIX,onedrive.com
-DOMAIN-SUFFIX,sharepoint.com
-DOMAIN-SUFFIX,skype.com
-DOMAIN-SUFFIX,teams.microsoft.com
-DOMAIN-SUFFIX,azure.com
-DOMAIN-SUFFIX,windows.net
-DOMAIN-SUFFIX,outlook.office365.com
 # -----------------------
 # X (Twitter)
 # -----------------------
