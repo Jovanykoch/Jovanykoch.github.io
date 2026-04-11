@@ -1,17 +1,62 @@
-# My Learning Journey Repository
+# Jovanykoch's Network Rule Sets and Configurations
 
-This repository documents my personal learning projects and experiments. It serves as a central hub for exploring, practicing, and improving my skills in system administration, networking, and configuration management.
+This repository serves as a comprehensive collection of network rule sets and configurations primarily designed for proxy tools such as **Surge**, **Loon**, and **Quantumult X (QX)**. It aims to provide optimized and categorized domain lists to enhance network control, privacy, and browsing experience.
 
+## Features
 
+*   **Categorized Rule Sets**: Domain lists are meticulously categorized for various purposes, including direct connections, proxy routing, and ad/tracker blocking.
+*   **Multi-Tool Compatibility**: Configurations and rule sets are structured to be compatible with popular network proxy applications.
+*   **Optimized for Performance**: Redundant entries are regularly reviewed and removed to ensure lean and efficient rule processing.
+*   **Easy Integration**: Designed for straightforward integration via subscription links or direct file import.
 
-License
+## Supported Tools
 
-This repository is for personal learning purposes and is not intended for production use. Respect all relevant licensing when using third-party tools and configurations documented here.
+This repository provides configurations and rule sets for the following applications:
 
-### Key Improvements:
-- Organized content into logical sections.
-- Highlighted your core focus areas and learning objectives.
-- Made the repository beginner-friendly with clear instructions and descriptions.
-- Added an example configuration to demonstrate its practical use.
+*   **Surge**: Advanced network utility for iOS and macOS.
+*   **Loon**: Rule-based proxy utility for iOS.
+*   **Quantumult X (QX)**: Powerful network proxy and web developer tool for iOS.
 
-Feel free to adjust or expand this further based on additional details or preferences!
+## Rule Categories Overview
+
+The `rules/` directory contains various domain lists, each serving a specific purpose:
+
+| File Name             | Description                                                                 | Policy (Typical) |
+| :-------------------- | :-------------------------------------------------------------------------- | :--------------- |
+| `allow.list`          | Domains that should always be directly connected.                           | DIRECT           |
+| `reject.list`         | Domains to be blocked (e.g., ads, trackers, malicious sites).               | REJECT           |
+| `china.list`          | Domains primarily for Mainland China services, routed directly.             | DIRECT           |
+| `proxy.list`          | Domains typically routed through a proxy server (e.g., international services). | PROXY            |
+| `apple.list`          | Apple-related services.                                                     | DIRECT           |
+| `microsoft.list`      | Microsoft-related services (e.g., Office, Azure, OneDrive).                 | PROXY            |
+| `github.list`         | GitHub and related services.                                                | PROXY            |
+| `bytedance.list`      | ByteDance services (e.g., TikTok, Douyin, Toutiao).                         | DIRECT           |
+| `Copilot.list`        | Rules specific to GitHub Copilot.                                           | PROXY            |
+| `direct-domain-set.list` | A comprehensive list of domains for direct connection.                     | DIRECT           |
+| `edu.list`            | Educational institution related domains.                                    | DIRECT           |
+| `httpdns-block.list`  | Domains to block HTTP DNS requests.                                         | REJECT           |
+| `lan.list`            | Local Area Network (LAN) related domains.                                   | DIRECT           |
+
+Similar categorized rule sets can be found within the `loon/rules/` and `qx/rules/` subdirectories, tailored for their respective applications.
+
+## Usage and Subscription
+
+To utilize these rule sets, you can typically subscribe to the raw `.list` files directly within your chosen proxy application (Surge, Loon, QX). For example, to use `proxy.list` in Surge, you would add a rule like:
+
+```
+[Rule]
+RULE-SET,https://jovanykoch.github.io/rules/proxy.list,Proxy
+```
+
+**Important Notes:**
+*   Always ensure the correct policy (DIRECT, PROXY, REJECT) is applied according to your needs.
+*   The order of rules in your configuration matters. Generally, more specific rules should come before more general ones.
+*   Consider using `GEOIP,CN,DIRECT` as a final rule for Mainland China traffic if not explicitly covered by other rules.
+
+## Contribution
+
+Suggestions for improvements, bug reports, or new rule additions are welcome. Please open an issue or submit a pull request.
+
+## License
+
+This repository is intended for personal use and learning purposes. While the configurations are shared publicly, users are responsible for ensuring compliance with all relevant laws and terms of service when using these rule sets. Please respect all relevant licensing when using third-party tools and configurations documented here.
