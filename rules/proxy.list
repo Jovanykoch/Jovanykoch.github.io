@@ -2,7 +2,8 @@
 # Target Policy: Proxy
 # Includes:
 #   - Swiftgram/Telegram
-#   - Microsoft (selected consumer/dev)
+#   - Microsoft (Full list merged)
+#   - Education (Merged)
 #   - X (Twitter)
 #   - OpenAI (ChatGPT/API)
 #   - Spotify
