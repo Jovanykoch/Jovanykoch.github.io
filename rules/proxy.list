@@ -28,6 +28,10 @@
 # -----------------------
 # Telegram / Swiftgram
 # -----------------------
+DOMAIN-SUFFIX,swiftgram.app
+DOMAIN-SUFFIX,swiftgram.org
+DOMAIN-SUFFIX,swiftgram.net
+DOMAIN-SUFFIX,swiftgram.pro    # TODO verify ownership
 DOMAIN-SUFFIX,telegram.org
 DOMAIN-SUFFIX,t.me
 DOMAIN-SUFFIX,tdesktop.com
