@@ -130,7 +130,7 @@
       <h1>Surge 配置与分流订阅</h1>
       <p>
         当前配置：<strong>US Snell</strong> + <strong>自建 rules</strong>（不依赖第三方 ruleset）。
-        适用于 iOS Surge 直接订阅 / 一键导入���
+        适用于 iOS Surge 直接订阅 / 一键导入。
       </p>
       <div class="note small">
         提醒：仓库为公开时，不要把真实节点 <code>SERVER_IP / PORT / PSK</code> 写进公开配置文件。
@@ -141,7 +141,7 @@
     <div class="grid">
       <section class="card">
         <h2>一键导入 / 下载</h2>
-        <p>iOS Safari 上可直接点“一键导入”。如果在电脑上，��议直接下载配置文件。</p>
+        <p>iOS Safari 上可直接点“一键导入”。如果在电脑上，建议直接下载配置文件。</p>
 
         <div class="btns">
           <a class="btn" href="surge:///install-config?url=https%3A%2F%2Fjkoch14.me%2FSurge.conf">
@@ -154,7 +154,7 @@
 
         <pre># 当前 Surge.conf 关键点（摘要）
 # - rules 来源：https://jkoch14.me/rules/*.list
-# - direct-domain-set 来源：https://jkoch14.me/rules/direct-domain-set.list
+# - direct 来源：https://jkoch14.me/rules/direct.list
 # - 默认 FINAL -> US（Snell 美国节点）
 # - allow.list 在 reject.list 前（避免误杀）
 </pre>
@@ -166,16 +166,14 @@
         <ul>
           <li><a href="/rules/allow.list">allow.list</a> <span class="tag">DIRECT 白名单</span></li>
           <li><a href="/rules/reject.list">reject.list</a> <span class="tag" style="color:#ffb4b4;border-color:rgba(255,77,79,.35)">REJECT</span></li>
-          <li><a href="/rules/direct-domain-set.list">direct-domain-set.list</a> <span class="tag" style="color:#b8ffd5;border-color:rgba(51,209,122,.35)">DOMAIN-SET</span></li>
+          <li><a href="/rules/direct.list">direct.list</a> <span class="tag" style="color:#b8ffd5;border-color:rgba(51,209,122,.35)">DOMAIN-SET</span></li>
           <li><a href="/rules/lan.list">lan.list</a></li>
           <li><a href="/rules/china.list">china.list</a> <span class="tag">DIRECT</span></li>
           <li><a href="/rules/apple.list">apple.list</a> <span class="tag">DIRECT</span></li>
           <li><a href="/rules/bytedance.list">bytedance.list</a> <span class="tag">US</span></li>
-          <li><a href="/rules/github.list">github.list</a> <span class="tag">US</span></li>
-          <li><a href="/rules/proxy.list">proxy.list</a> <span class="tag">US</span></li>
-          <li><a href="/rules/edu.list">edu.list</a> <span class="tag">US</span></li>
+          <li><a href="/rules/proxy.list">proxy.list</a> <span class="tag">US (Merged)</span></li>
         </ul>
-        <p class="small">如果你后续加了 HK/MY 节点，我可以把这里升级成多节点测速选择页。</p>
+        <p class="small">注：Microsoft, GitHub, Copilot, Edu 规则已合并至 proxy.list。</p>
       </aside>
     </div>
 
@@ -184,9 +182,9 @@
       <ul>
         <li><strong>allow.list</strong>：白名单，优先 DIRECT（防止被广告规则误杀）</li>
         <li><strong>reject.list</strong>：广告/追踪拦截（REJECT）</li>
-        <li><strong>direct-domain-set</strong>：你手工维护的精确直连域名（DOMAIN-SET）</li>
+        <li><strong>direct.list</strong>：你手工维护的精确直连域名（DOMAIN-SET）</li>
         <li><strong>china/apple</strong>：默认 DIRECT</li>
-        <li><strong>github/proxy/edu/bytedance</strong>：走 US（Snell）</li>
+        <li><strong>proxy/bytedance</strong>：走 US（Snell），其中 proxy 已包含 Microsoft/GitHub/Edu 等</li>
         <li><strong>FINAL</strong>：默认走 US</li>
       </ul>
       <p class="small">站点域名：<code>jkoch14.me</code>（避免 301 跳转导致部分客户端订阅不稳定）。</p>
