@@ -26,16 +26,14 @@ The `rules/` directory contains various domain lists, each serving a specific pu
 | `allow.list`          | Domains that should always be directly connected.                           | DIRECT           |
 | `reject.list`         | Domains to be blocked (e.g., ads, trackers, malicious sites).               | REJECT           |
 | `china.list`          | Domains primarily for Mainland China services, routed directly.             | DIRECT           |
-| `proxy.list`          | Domains typically routed through a proxy server (e.g., international services). | PROXY            |
+| `proxy.list`          | **Comprehensive Proxy List**: Includes International services, **Microsoft (Full)**, **GitHub**, **OpenAI**, **Telegram**, and **Education** domains. | PROXY            |
 | `apple.list`          | Apple-related services.                                                     | DIRECT           |
-| `microsoft.list`      | Microsoft-related services (e.g., Office, Azure, OneDrive).                 | PROXY            |
-| `github.list`         | GitHub and related services.                                                | PROXY            |
 | `bytedance.list`      | ByteDance services (e.g., TikTok, Douyin, Toutiao).                         | DIRECT           |
-| `Copilot.list`        | Rules specific to GitHub Copilot.                                           | PROXY            |
 | `direct-domain-set.list` | A comprehensive list of domains for direct connection.                     | DIRECT           |
-| `edu.list`            | Educational institution related domains.                                    | DIRECT           |
-| `httpdns-block.list`  | Domains to block HTTP DNS requests.                                         | REJECT           |
+| `httpdns-block.list`  | Domains to block HTTP DNS DNS requests.                                     | REJECT           |
 | `lan.list`            | Local Area Network (LAN) related domains.                                   | DIRECT           |
+
+> **Note**: `microsoft.list`, `github.list`, `Copilot.list`, and `edu.list` have been merged into `proxy.list` for easier maintenance and better performance.
 
 Similar categorized rule sets can be found within the `loon/rules/` and `qx/rules/` subdirectories, tailored for their respective applications.
 
