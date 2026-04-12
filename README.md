@@ -29,7 +29,7 @@ The `rules/` directory contains various domain lists, each serving a specific pu
 | `proxy.list`          | **Comprehensive Proxy List**: Includes International services, **Microsoft (Full)**, **GitHub**, **OpenAI**, **Telegram**, and **Education** domains. | PROXY            |
 | `apple.list`          | Apple-related services.                                                     | DIRECT           |
 | `bytedance.list`      | ByteDance services (e.g., TikTok, Douyin, Toutiao).                         | DIRECT           |
-| `direct-domain-set.list` | A comprehensive list of domains for direct connection.                     | DIRECT           |
+| `direct.list` | A comprehensive list of domains for direct connection.                     | DIRECT           |
 | `httpdns-block.list`  | Domains to block HTTP DNS DNS requests.                                     | REJECT           |
 | `lan.list`            | Local Area Network (LAN) related domains.                                   | DIRECT           |
 
