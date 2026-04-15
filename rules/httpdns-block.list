@@ -33,3 +33,34 @@ DOMAIN-KEYWORD,dns.api
 
 # WeChat
 DOMAIN-KEYWORD,dns.weixin
+
+# ===== Douyin HTTPDNS / 内置DNS =====
+
+# 字节官方 HTTPDNS
+DOMAIN-SUFFIX,httpdns.bytedance.com
+DOMAIN-SUFFIX,httpdns.volcengineapi.com
+
+# 抖音/字节 DNS 调度（非常关键）
+DOMAIN-SUFFIX,bytedns.net
+DOMAIN-KEYWORD,bytedns
+
+# 抖音 API 中常见 DNS 行为
+DOMAIN-KEYWORD,aweme
+DOMAIN-KEYWORD,amemv
+
+# 抖音 HTTPDNS 变种（抓包常见）
+DOMAIN-KEYWORD,httpdns
+DOMAIN-KEYWORD,httpsdns
+
+# CDN + DNS 混合调度（容易绕过）
+DOMAIN-KEYWORD,dnscdn
+DOMAIN-KEYWORD,cdndns
+
+# 字节 CDN 调度（间接影响解析）
+DOMAIN-SUFFIX,byteimg.com
+DOMAIN-SUFFIX,bytescm.com
+DOMAIN-SUFFIX,bytedance.net
+
+# 可疑 API DNS（部分版本使用）
+DOMAIN-KEYWORD,dnsapi
+DOMAIN-KEYWORD,apidns
