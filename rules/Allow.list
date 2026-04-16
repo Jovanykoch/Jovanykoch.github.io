@@ -1,0 +1,62 @@
+# Surge RULE-SET (ALLOW - CLEAN VERSION)
+# Policy: DIRECT
+# Optimized for Surge iOS
+
+# -----------------------
+# iOS Connectivity (must be directly connected, otherwise it will be fake offline)
+# -----------------------
+DOMAIN,captive.apple.com
+DOMAIN,init.ess.apple.com
+DOMAIN,time.apple.com
+
+# -----------------------
+# Apple Push (can be connected directly)
+# -----------------------
+DOMAIN-SUFFIX,push.apple.com
+
+# ⚠️ Note: NO LONGER FULL DIRECT apple.com
+
+# -----------------------
+# Malaysia Gov / Payment (must be connected directly)
+# -----------------------
+DOMAIN-SUFFIX,gov.my
+DOMAIN-SUFFIX,hasil.gov.my
+
+DOMAIN-SUFFIX,paynet.my
+DOMAIN-SUFFIX,fpx.com.my
+DOMAIN-SUFFIX,duitnow.my
+
+# 银行（保留核心）
+DOMAIN-SUFFIX,maybank2u.com.my
+DOMAIN-SUFFIX,cimbclicks.com.my
+DOMAIN-SUFFIX,publicbank.com.my
+DOMAIN-SUFFIX,hlb.com.my
+DOMAIN-SUFFIX,rhbgroup.com
+DOMAIN-SUFFIX,bankislam.biz
+
+# -----------------------
+# Telco / ISP Portal（登录用）
+# -----------------------
+DOMAIN-SUFFIX,tm.com.my
+DOMAIN-SUFFIX,unifi.com.my
+DOMAIN-SUFFIX,maxis.com.my
+
+# -----------------------
+# Captive Portal
+# -----------------------
+DOMAIN-SUFFIX,hotspot.t-mobile.com
+
+# -----------------------
+# 必要 API（避免误拦截）
+# -----------------------
+DOMAIN,clientservices.googleapis.com
+
+# -----------------------
+# 局部白名单（保守保留）
+# -----------------------
+DOMAIN,analytics.strava.com
+
+# -----------------------
+# Keywords（谨慎保留）
+# -----------------------
+DOMAIN-KEYWORD,anti-ad.net
