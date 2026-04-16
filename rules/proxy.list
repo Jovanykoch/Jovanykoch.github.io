@@ -220,7 +220,8 @@ DOMAIN-SUFFIX,spokane.edu
 DOMAIN-KEYWORD,spokane
 DOMAIN-SUFFIX,sfcollege.edu
 DOMAIN-KEYWORD,sfcollege
-
+DOMAIN-SUFFIX,duosecurity.com
+DOMAIN-KEYWORD,duo
 # -----------------------
 # Microsoft (Merged from microsoft.list)
 # -----------------------
