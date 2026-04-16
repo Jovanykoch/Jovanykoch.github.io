@@ -209,6 +209,7 @@ DOMAIN,githubcopilot.com
 # -----------------------
 DOMAIN-SUFFIX,stujjc.edu
 DOMAIN-SUFFIX,jjc.edu
+DOMAIN-KEYWORD,jjc
 DOMAIN-SUFFIX,canvaslms.com
 DOMAIN-SUFFIX,icampus.instructure.com
 DOMAIN-SUFFIX,jjc.instructure.com
@@ -216,7 +217,9 @@ DOMAIN-SUFFIX,csun.edu
 DOMAIN-KEYWORD,csun
 DOMAIN-SUFFIX,scc.spokane.edu
 DOMAIN-SUFFIX,spokane.edu
+DOMAIN-KEYWORD,spokane
 DOMAIN-SUFFIX,sfcollege.edu
+DOMAIN-KEYWORD,sfcollege
 
 # -----------------------
 # Microsoft (Merged from microsoft.list)
