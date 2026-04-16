@@ -1,0 +1,194 @@
+# Adblock Rule-Set for Surge
+# Purpose: Block ads, trackers, and malware domains
+# Strict mode: Production-optimized blocking
+# Last updated: 2026-04-04
+# Usage: RULE-SET,https://jkoch14.me/rules/adblock.list,REJECT
+
+# === Google Tracking & Analytics ===
+DOMAIN-SUFFIX,google-analytics.com
+DOMAIN-SUFFIX,analytics.google.com
+DOMAIN-SUFFIX,googletagmanager.com
+DOMAIN-SUFFIX,googletagservices.com
+DOMAIN-SUFFIX,doubleclick.net
+DOMAIN-SUFFIX,googleadservices.com
+DOMAIN-SUFFIX,googlesyndication.com
+DOMAIN-SUFFIX,adservice.google.com
+
+# === Facebook Tracking & Ads ===
+DOMAIN-SUFFIX,facebook.com
+DOMAIN-SUFFIX,fbcdn.net
+DOMAIN-SUFFIX,facebook.net
+DOMAIN-SUFFIX,fbsbx.com
+
+# === Instagram Tracking ===
+DOMAIN-SUFFIX,instagram.com
+DOMAIN-SUFFIX,cdninstagram.com
+DOMAIN-SUFFIX,instagramstatic.com
+
+# === Amazon Advertising ===
+DOMAIN-SUFFIX,amazon-adsystem.com
+DOMAIN-SUFFIX,amazonserver.com
+DOMAIN-SUFFIX,amazonaax.com
+
+# === Tencent Tracking (腾讯追踪) ===
+DOMAIN-SUFFIX,gdt.qq.com
+DOMAIN-SUFFIX,adsense.qq.com
+DOMAIN-SUFFIX,beacon.qq.com
+DOMAIN-SUFFIX,tcss.qq.com
+DOMAIN-SUFFIX,tcloudbase.com
+DOMAIN-SUFFIX,tencent.com
+
+# === Alibaba Tracking (阿里巴巴追踪) ===
+DOMAIN-SUFFIX,mmstat.com
+DOMAIN-SUFFIX,tanx.com
+DOMAIN-SUFFIX,adxmz.com
+
+# === Baidu Tracking (百度追踪) ===
+DOMAIN-SUFFIX,tongji.baidu.com
+DOMAIN-SUFFIX,hm.baidu.com
+DOMAIN-SUFFIX,qihucdn.com
+DOMAIN-SUFFIX,baidustatic.com
+
+# === Sina Tracking (新浪追踪) ===
+DOMAIN-SUFFIX,sjs.sinajs.cn
+DOMAIN-SUFFIX,sinaimg.cn
+
+# === Netease Tracking (网易追踪) ===
+DOMAIN-SUFFIX,analytics.163.com
+DOMAIN-SUFFIX,lixian.163.com
+
+# === ByteDance Tracking (字节跳动追踪) ===
+DOMAIN-SUFFIX,bytedance.com
+DOMAIN-SUFFIX,byteimg.com
+DOMAIN-SUFFIX,pstatp.com
+DOMAIN-SUFFIX,snssdk.com
+DOMAIN-SUFFIX,sspai.com
+
+# === Chinese Ad Networks (中文广告网络) ===
+DOMAIN-SUFFIX,51.la
+DOMAIN-SUFFIX,99click.com
+DOMAIN-SUFFIX,admax.com.cn
+DOMAIN-SUFFIX,adsame.com
+DOMAIN-SUFFIX,adspeaker.com
+DOMAIN-SUFFIX,adsunion.com
+DOMAIN-SUFFIX,adwo.com
+DOMAIN-SUFFIX,cnads.com
+DOMAIN-SUFFIX,d.ifeng.com
+DOMAIN-SUFFIX,float.qiyi.com
+DOMAIN-SUFFIX,gads.sina.com.cn
+DOMAIN-SUFFIX,joyad.com
+DOMAIN-SUFFIX,pangolin.com
+DOMAIN-SUFFIX,adv.sec.miui.com
+DOMAIN-SUFFIX,ad.xiaomi.com
+DOMAIN-SUFFIX,ads.mopub.com
+DOMAIN-SUFFIX,union.meituan.com
+
+# === Major Ad Networks ===
+DOMAIN-SUFFIX,adroll.com
+DOMAIN-SUFFIX,adzerk.net
+DOMAIN-SUFFIX,bidvertiser.com
+DOMAIN-SUFFIX,criteo.com
+DOMAIN-SUFFIX,fastclick.net
+DOMAIN-SUFFIX,mediawhiz.com
+DOMAIN-SUFFIX,nextag.com
+DOMAIN-SUFFIX,overture.com
+DOMAIN-SUFFIX,undertone.com
+DOMAIN-SUFFIX,undertone.net
+DOMAIN-SUFFIX,valueclick.com
+
+# === Advertising Exchanges ===
+DOMAIN-SUFFIX,appnexus.com
+DOMAIN-SUFFIX,openx.com
+DOMAIN-SUFFIX,pubmatic.com
+DOMAIN-SUFFIX,rubicon.com
+DOMAIN-SUFFIX,sovrn.com
+DOMAIN-SUFFIX,spotxchange.com
+DOMAIN-SUFFIX,tremor.com
+
+# === Mobile Ad Networks ===
+DOMAIN-SUFFIX,admob.google.com
+DOMAIN-SUFFIX,applift.com
+DOMAIN-SUFFIX,appsflyer.com
+DOMAIN-SUFFIX,flurry.com
+DOMAIN-SUFFIX,inner-active.mobi
+DOMAIN-SUFFIX,inmobi.com
+DOMAIN-SUFFIX,jumptap.com
+DOMAIN-SUFFIX,leadbolt.net
+DOMAIN-SUFFIX,millennial.com
+DOMAIN-SUFFIX,mojiva.com
+DOMAIN-SUFFIX,smaato.com
+DOMAIN-SUFFIX,vdopia.com
+
+# === Third-Party Analytics (第三方分析工具) ===
+DOMAIN-SUFFIX,mixpanel.com
+DOMAIN-SUFFIX,segment.com
+DOMAIN-SUFFIX,amplitude.com
+DOMAIN-SUFFIX,branch.io
+DOMAIN-SUFFIX,bugsnag.com
+DOMAIN-SUFFIX,logrocket.com
+DOMAIN-SUFFIX,hotjar.com
+DOMAIN-SUFFIX,mouseflow.com
+DOMAIN-SUFFIX,fullstory.com
+
+# === Email Marketing ===
+DOMAIN-SUFFIX,aweber.com
+DOMAIN-SUFFIX,constantcontact.com
+DOMAIN-SUFFIX,getresponse.com
+DOMAIN-SUFFIX,icontact.com
+DOMAIN-SUFFIX,mailchimp.com
+DOMAIN-SUFFIX,pardot.com
+DOMAIN-SUFFIX,verticalresponse.com
+
+# === Social Media Tracking ===
+DOMAIN-SUFFIX,platform.twitter.com
+DOMAIN-SUFFIX,t.co
+DOMAIN-SUFFIX,platform.linkedin.com
+DOMAIN-SUFFIX,ytimg.com
+
+# === Video Ad Platforms ===
+DOMAIN-SUFFIX,adap.tv
+DOMAIN-SUFFIX,brightroll.com
+DOMAIN-SUFFIX,video-stats.video.google.com
+
+# === Popunder & Popup Networks ===
+DOMAIN-SUFFIX,adinterax.com
+DOMAIN-SUFFIX,adpopcorn.com
+DOMAIN-SUFFIX,popunder.net
+DOMAIN-SUFFIX,popupads.net
+DOMAIN-SUFFIX,popupsafari.com
+DOMAIN-SUFFIX,ssstation.com
+
+# === Banner Ads & Ad Serving ===
+DOMAIN-SUFFIX,adserverpub.com
+DOMAIN-SUFFIX,adsbygoogle.com
+DOMAIN-SUFFIX,cpmstar.com
+DOMAIN-SUFFIX,adserver.adtechus.com
+DOMAIN-SUFFIX,adsserver.com
+
+# === Malware & Phishing Domains ===
+DOMAIN-SUFFIX,adobeupdates.com
+DOMAIN-SUFFIX,badssl.com
+DOMAIN-SUFFIX,blocklist.de
+DOMAIN-SUFFIX,feeds.gs
+DOMAIN-SUFFIX,flashupdate.com
+DOMAIN-SUFFIX,javscript.com
+DOMAIN-SUFFIX,js-metrics.com
+DOMAIN-SUFFIX,jsminer.net
+DOMAIN-SUFFIX,malwaredb.com
+DOMAIN-SUFFIX,malwaretips.com
+DOMAIN-SUFFIX,notavirus.net
+DOMAIN-SUFFIX,phishing-filter.appspot.com
+DOMAIN-SUFFIX,phishing.rg
+DOMAIN-SUFFIX,virusshield.org
+
+# === Performance & Session Recording (可选屏蔽，可能影响功能) ===
+# DOMAIN-SUFFIX,intercom.io
+# DOMAIN-SUFFIX,pendo.io
+# DOMAIN-SUFFIX,uservoice.com
+# DOMAIN-SUFFIX,apptentive.com
+
+# === Firebase (Google统计服务，谨慎屏蔽) ===
+# DOMAIN-SUFFIX,firebase.google.com
+# DOMAIN-SUFFIX,firebaseapp.com
+# DOMAIN-SUFFIX,firebaseio.com
+# DOMAIN-SUFFIX,crashlytics.com
