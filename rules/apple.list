@@ -1,0 +1,47 @@
+# Apple Clean RULE-SET (Optimized for MY)
+# Only real Apple services, no CDN pollution
+
+# === Core ===
+DOMAIN-SUFFIX,apple.com
+DOMAIN-SUFFIX,icloud.com
+DOMAIN-SUFFIX,icloud-content.com
+DOMAIN-SUFFIX,me.com
+DOMAIN-SUFFIX,mac.com
+
+# === Apple ID / Auth ===
+DOMAIN-SUFFIX,appleid.com
+DOMAIN-SUFFIX,identity.apple.com
+DOMAIN-SUFFIX,setup.icloud.com
+
+# === App Store ===
+DOMAIN-SUFFIX,apps.apple.com
+DOMAIN-SUFFIX,appstore.com
+DOMAIN-SUFFIX,itunes.com
+DOMAIN-SUFFIX,itunes.apple.com
+
+# === Media ===
+DOMAIN-SUFFIX,music.apple.com
+DOMAIN-SUFFIX,tv.apple.com
+DOMAIN-SUFFIX,applemusic.com
+
+# === Maps ===
+DOMAIN-SUFFIX,ls.apple.com
+
+# === Push / System ===
+DOMAIN-SUFFIX,push.apple.com
+DOMAIN-SUFFIX,ess.apple.com
+
+# === Connectivity ===
+DOMAIN-SUFFIX,captive.apple.com
+
+# === Apple CDN（仅官方）===
+DOMAIN-SUFFIX,mzstatic.com
+DOMAIN-SUFFIX,applecdn.com
+DOMAIN-SUFFIX,cdn-apple.com
+
+# === Private Relay ===
+DOMAIN-SUFFIX,mask.icloud.com
+DOMAIN-SUFFIX,mask-h2.icloud.com
+
+# === Apple IP ===
+IP-CIDR,17.0.0.0/8
