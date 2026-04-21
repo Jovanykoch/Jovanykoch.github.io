@@ -9,26 +9,15 @@
 # - Include Malaysia local services for stability (banking/OTP/government)
 
 # -----------------------
-# iOS / Apple connectivity
-# -----------------------
-DOMAIN,captive.apple.com
-DOMAIN-SUFFIX,apple.com
-DOMAIN-SUFFIX,icloud.com
-DOMAIN-SUFFIX,push.apple.com
-
-# -----------------------
-# Malaysia: Government / national services
+# Malaysia Government
 # -----------------------
 DOMAIN-SUFFIX,gov.my
-DOMAIN-SUFFIX,hasil.gov.my
 
 # -----------------------
-# Malaysia: Banks / payments
+# Malaysia Banks
 # -----------------------
-DOMAIN-SUFFIX,maybank2u.com.my
-DOMAIN-SUFFIX,maybank.com
+DOMAIN-SUFFIX,maybank.com.my
 DOMAIN-SUFFIX,cimb.com
-DOMAIN-SUFFIX,cimbclicks.com.my
 DOMAIN-SUFFIX,publicbank.com.my
 DOMAIN-SUFFIX,hongleongconnect.my
 DOMAIN-SUFFIX,hlb.com.my
@@ -42,25 +31,19 @@ DOMAIN-SUFFIX,uob.com.my
 DOMAIN-SUFFIX,ocbc.com.my
 DOMAIN-SUFFIX,standardchartered.com.my
 
-# DuitNow / PayNet / FPX
+# -----------------------
+# Payment
+# -----------------------
 DOMAIN-SUFFIX,paynet.my
 DOMAIN-SUFFIX,fpx.com.my
 DOMAIN-SUFFIX,duitnow.my
 
-# Touch 'n Go eWallet
+# TNG
 DOMAIN-SUFFIX,tngdigital.com.my
 DOMAIN-SUFFIX,touchngo.com.my
 
-# Grab
-DOMAIN-SUFFIX,grab.com
-DOMAIN-SUFFIX,grabpay.com
-
-# Shopee / Lazada (MY)
-DOMAIN-SUFFIX,shopee.com.my
-DOMAIN-SUFFIX,lazada.com.my
-
 # -----------------------
-# Malaysia: Telcos / ISP portals
+# Telco
 # -----------------------
 DOMAIN-SUFFIX,tm.com.my
 DOMAIN-SUFFIX,unifi.com.my
@@ -68,13 +51,3 @@ DOMAIN-SUFFIX,celcom.com.my
 DOMAIN-SUFFIX,digi.com.my
 DOMAIN-SUFFIX,maxis.com.my
 DOMAIN-SUFFIX,u.com.my
-
-# -----------------------
-# Captive portal / Wi-Fi login (optional)
-# -----------------------
-DOMAIN-SUFFIX,hotspot.t-mobile.com
-
-# Optional: PayPal DIRECT (uncomment if needed)
-# DOMAIN-SUFFIX,paypal.com
-# DOMAIN-SUFFIX,paypalobjects.com
-# DOMAIN-SUFFIX,pypl.com
