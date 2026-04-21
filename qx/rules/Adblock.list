@@ -1,0 +1,198 @@
+# Adblock Rule-Set for Quantumult-X
+# Purpose: Block ads, trackers, and malware domains
+# Strict mode: Production-optimized blocking
+# Last updated: 2026-04-04
+# Usage: RULE-SET,https://jkoch14.me/rules/adblock.list,REJECT
+
+# ================= Quantumult X 分流兼容 =================
+# 用法：复制至 [filter_local] 或 [filter_remote]，每行为一条过滤规则
+# 实例：host-suffix,google-analytics.com,reject
+
+# === Google Tracking & Analytics ===
+host-suffix,google-analytics.com,reject
+host-suffix,analytics.google.com,reject
+host-suffix,googletagmanager.com,reject
+host-suffix,googletagservices.com,reject
+host-suffix,doubleclick.net,reject
+host-suffix,googleadservices.com,reject
+host-suffix,googlesyndication.com,reject
+host-suffix,adservice.google.com,reject
+
+# === Facebook Tracking & Ads ===
+host-suffix,facebook.com,reject
+host-suffix,fbcdn.net,reject
+host-suffix,facebook.net,reject
+host-suffix,fbsbx.com,reject
+
+# === Instagram Tracking ===
+host-suffix,instagram.com,reject
+host-suffix,cdninstagram.com,reject
+host-suffix,instagramstatic.com,reject
+
+# === Amazon Advertising ===
+host-suffix,amazon-adsystem.com,reject
+host-suffix,amazonserver.com,reject
+host-suffix,amazonaax.com,reject
+
+# === Tencent Tracking (腾讯追踪) ===
+host-suffix,gdt.qq.com,reject
+host-suffix,adsense.qq.com,reject
+host-suffix,beacon.qq.com,reject
+host-suffix,tcss.qq.com,reject
+host-suffix,tcloudbase.com,reject
+host-suffix,tencent.com,reject
+
+# === Alibaba Tracking (阿里巴巴追踪) ===
+host-suffix,mmstat.com,reject
+host-suffix,tanx.com,reject
+host-suffix,adxmz.com,reject
+
+# === Baidu Tracking (百度追踪) ===
+host-suffix,tongji.baidu.com,reject
+host-suffix,hm.baidu.com,reject
+host-suffix,qihucdn.com,reject
+host-suffix,baidustatic.com,reject
+
+# === Sina Tracking (新浪追踪) ===
+host-suffix,sjs.sinajs.cn,reject
+host-suffix,sinaimg.cn,reject
+
+# === Netease Tracking (网易追踪) ===
+host-suffix,analytics.163.com,reject
+host-suffix,lixian.163.com,reject
+
+# === ByteDance Tracking (字节跳动追踪) ===
+host-suffix,bytedance.com,reject
+host-suffix,byteimg.com,reject
+host-suffix,pstatp.com,reject
+host-suffix,snssdk.com,reject
+host-suffix,sspai.com,reject
+
+# === Chinese Ad Networks (中文广告网络) ===
+host-suffix,51.la,reject
+host-suffix,99click.com,reject
+host-suffix,admax.com.cn,reject
+host-suffix,adsame.com,reject
+host-suffix,adspeaker.com,reject
+host-suffix,adsunion.com,reject
+host-suffix,adwo.com,reject
+host-suffix,cnads.com,reject
+host-suffix,d.ifeng.com,reject
+host-suffix,float.qiyi.com,reject
+host-suffix,gads.sina.com.cn,reject
+host-suffix,joyad.com,reject
+host-suffix,pangolin.com,reject
+host-suffix,adv.sec.miui.com,reject
+host-suffix,ad.xiaomi.com,reject
+host-suffix,ads.mopub.com,reject
+host-suffix,union.meituan.com,reject
+
+# === Major Ad Networks ===
+host-suffix,adroll.com,reject
+host-suffix,adzerk.net,reject
+host-suffix,bidvertiser.com,reject
+host-suffix,criteo.com,reject
+host-suffix,fastclick.net,reject
+host-suffix,mediawhiz.com,reject
+host-suffix,nextag.com,reject
+host-suffix,overture.com,reject
+host-suffix,undertone.com,reject
+host-suffix,undertone.net,reject
+host-suffix,valueclick.com,reject
+
+# === Advertising Exchanges ===
+host-suffix,appnexus.com,reject
+host-suffix,openx.com,reject
+host-suffix,pubmatic.com,reject
+host-suffix,rubicon.com,reject
+host-suffix,sovrn.com,reject
+host-suffix,spotxchange.com,reject
+host-suffix,tremor.com,reject
+
+# === Mobile Ad Networks ===
+host-suffix,admob.google.com,reject
+host-suffix,applift.com,reject
+host-suffix,appsflyer.com,reject
+host-suffix,flurry.com,reject
+host-suffix,inner-active.mobi,reject
+host-suffix,inmobi.com,reject
+host-suffix,jumptap.com,reject
+host-suffix,leadbolt.net,reject
+host-suffix,millennial.com,reject
+host-suffix,mojiva.com,reject
+host-suffix,smaato.com,reject
+host-suffix,vdopia.com,reject
+
+# === Third-Party Analytics (第三方分析工具) ===
+host-suffix,mixpanel.com,reject
+host-suffix,segment.com,reject
+host-suffix,amplitude.com,reject
+host-suffix,branch.io,reject
+host-suffix,bugsnag.com,reject
+host-suffix,logrocket.com,reject
+host-suffix,hotjar.com,reject
+host-suffix,mouseflow.com,reject
+host-suffix,fullstory.com,reject
+
+# === Email Marketing ===
+host-suffix,aweber.com,reject
+host-suffix,constantcontact.com,reject
+host-suffix,getresponse.com,reject
+host-suffix,icontact.com,reject
+host-suffix,mailchimp.com,reject
+host-suffix,pardot.com,reject
+host-suffix,verticalresponse.com,reject
+
+# === Social Media Tracking ===
+host-suffix,platform.twitter.com,reject
+host-suffix,t.co,reject
+host-suffix,platform.linkedin.com,reject
+host-suffix,ytimg.com,reject
+
+# === Video Ad Platforms ===
+host-suffix,adap.tv,reject
+host-suffix,brightroll.com,reject
+host-suffix,video-stats.video.google.com,reject
+
+# === Popunder & Popup Networks ===
+host-suffix,adinterax.com,reject
+host-suffix,adpopcorn.com,reject
+host-suffix,popunder.net,reject
+host-suffix,popupads.net,reject
+host-suffix,popupsafari.com,reject
+host-suffix,ssstation.com,reject
+
+# === Banner Ads & Ad Serving ===
+host-suffix,adserverpub.com,reject
+host-suffix,adsbygoogle.com,reject
+host-suffix,cpmstar.com,reject
+host-suffix,adserver.adtechus.com,reject
+host-suffix,adsserver.com,reject
+
+# === Malware & Phishing Domains ===
+host-suffix,adobeupdates.com,reject
+host-suffix,badssl.com,reject
+host-suffix,blocklist.de,reject
+host-suffix,feeds.gs,reject
+host-suffix,flashupdate.com,reject
+host-suffix,javscript.com,reject
+host-suffix,js-metrics.com,reject
+host-suffix,jsminer.net,reject
+host-suffix,malwaredb.com,reject
+host-suffix,malwaretips.com,reject
+host-suffix,notavirus.net,reject
+host-suffix,phishing-filter.appspot.com,reject
+host-suffix,phishing.rg,reject
+host-suffix,virusshield.org,reject
+
+# === Performance & Session Recording (可选屏蔽，可能影响功能) ===
+# host-suffix,intercom.io,reject
+# host-suffix,pendo.io,reject
+# host-suffix,uservoice.com,reject
+# host-suffix,apptentive.com,reject
+
+# === Firebase (Google统计服务，谨慎屏蔽) ===
+# host-suffix,firebase.google.com,reject
+# host-suffix,firebaseapp.com,reject
+# host-suffix,firebaseio.com,reject
+# host-suffix,crashlytics.com,reject
