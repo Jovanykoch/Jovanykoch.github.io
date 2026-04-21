@@ -1,28 +1,41 @@
-# Loon Rule List (APPLE / iOS)
-# Target Policy: DIRECT
-#
-# Applicable scenarios:
-# - iOS/Apple-related services try to stay DIRECT to reduce push/store/positioning abnormalities
-#
-# Usage (Loon):
-# - As a list of remote rules, policy selection: directly
+# Loon Rule List (APPLE / Optimized for MY + China Routing)
 
-# Captive / connectivity
+# -----------------------
+# MUST be DIRECT (Core connectivity)
+# -----------------------
+
+# Captive portal detection
 DOMAIN,captive.apple.com
 
-# Core Apple domains
-DOMAIN-SUFFIX,apple.com
-DOMAIN-SUFFIX,icloud.com
-DOMAIN-SUFFIX,apple-dns.net
-
-# Push / APNs
+# APNs (push notifications - latency sensitive)
+DOMAIN,push.apple.com
 DOMAIN-SUFFIX,push.apple.com
 
-# Common Apple service endpoints
-DOMAIN-SUFFIX,apple-cloudkit.com
-DOMAIN-SUFFIX,apple-mapkit.com
-DOMAIN-SUFFIX,appstore.com
-DOMAIN,itunes.apple.com
-DOMAIN-SUFFIX,cdn-apple.com
-DOMAIN-SUFFIX,icloud-content.com
-DOMAIN-SUFFIX,me.com
+# Apple DNS (avoid resolution issues)
+DOMAIN-SUFFIX,apple-dns.net
+
+
+# -----------------------
+# China-specific Apple services (Route via China Proxy)
+# ⚠️ Requires a "China Proxy" policy group
+# -----------------------
+
+DOMAIN-SUFFIX,apple.com.cn
+DOMAIN-SUFFIX,icloud.com.cn
+DOMAIN-SUFFIX,cn.apple.com
+
+# Apple Maps data (China region)
+DOMAIN-SUFFIX,gspe1-ssl.ls.apple.com
+
+
+# -----------------------
+# IMPORTANT: Do NOT include global Apple domains here
+# -----------------------
+# ❗ Avoid adding the following:
+# - apple.com
+# - icloud.com
+# - cdn-apple.com
+# - icloud-content.com
+#
+# 👉 These should be handled in your main rule section
+#    (e.g., Proxy / US / CN routing strategies)
