@@ -13,3 +13,33 @@ host-suffix,wikipedia.org,PROXY
 host-suffix,reddit.com,PROXY
 host-suffix,openai.com,PROXY
 host-suffix,chatgpt.com,PROXY
+
+
+
+# Github.list
+# Action: PROXY
+
+DOMAIN-SUFFIX,github.com,PROXY
+DOMAIN-SUFFIX,githubusercontent.com,PROXY
+DOMAIN-SUFFIX,githubassets.com,PROXY
+DOMAIN-SUFFIX,githubapp.com,PROXY
+DOMAIN-SUFFIX,githubstatus.com,PROXY
+DOMAIN-SUFFIX,github.blog,PROXY
+DOMAIN-SUFFIX,github.io,PROXY
+
+DOMAIN-SUFFIX,api.github.com,PROXY
+DOMAIN-SUFFIX,codeload.github.com,PROXY
+DOMAIN-SUFFIX,raw.github.com,PROXY
+DOMAIN-SUFFIX,raw.githubusercontent.com,PROXY
+DOMAIN-SUFFIX,user-images.githubusercontent.com,PROXY
+DOMAIN-SUFFIX,avatars.githubusercontent.com,PROXY
+DOMAIN-SUFFIX,objects.githubusercontent.com,PROXY
+DOMAIN-SUFFIX,pkg.github.com,PROXY
+DOMAIN-SUFFIX,github-releases.githubusercontent.com,PROXY
+
+DOMAIN-SUFFIX,ghcr.io,PROXY
+DOMAIN-SUFFIX,githubcopilot.com,PROXY
+DOMAIN-SUFFIX,copilot.github.com,PROXY
+
+DOMAIN-SUFFIX,actions.githubusercontent.com,PROXY
+DOMAIN-SUFFIX,dependabot.com,PROXY
