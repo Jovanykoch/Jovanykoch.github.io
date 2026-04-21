@@ -1,9 +1,11 @@
+# Quantumult X Filter: China Common Services and Apps
+# Purpose: Route China internet, cloud, app, CDN, and major user-agent traffic via proxy
+# Maintained for production Quantumult X
 
-# Commonly usedUA
-
+# ======= Common User-Agent Patterns =======
 user-agent,%E4%BA%AC%E4%B8%9C%E5%88%B0%E5%AE%B6*,proxy
 user-agent,%E5%8D%B3%E5%88%BB*,proxy
-user-agent,*Vainglory* ,proxy
+user-agent,*Vainglory*,proxy
 user-agent,AdBlock*,proxy
 user-agent,arrowio*,proxy
 user-agent,balls*,proxy
@@ -21,19 +23,23 @@ user-agent,TIM*,proxy
 user-agent,ting_en,proxy
 user-agent,WebTorrent*,proxy
 user-agent,WeChat*,proxy
+user-agent,NeteaseMusic*,proxy
+user-agent,%E7%BD%91%E6%98%93%E4%BA%91%E9%9F%B3%E4%B9%90*,proxy
+user-agent,%E4%BC%98%E9%85%B7*,proxy
+user-agent,MicroMessenger%20Client,proxy
 
-# >> JD.com
+# ======= JD.com =======
 host-suffix,jd.com,proxy
 host-suffix,jdpay.com,proxy
 host-suffix,360buyimg.com,proxy
 
-# >> Didi
+# ======= Didi Mobility =======
 host-suffix,didi.cn,proxy
 host-suffix,didiglobal.com,proxy
 host-suffix,udache.com,proxy
 host-suffix,xiaojukeji.com,proxy
 
-# >> Jinshan & Xiaomi
+# ======= Kingsoft & Xiaomi =======
 host-suffix,iciba.com,proxy
 host-suffix,ksosoft.com,proxy
 host-suffix,wps.cn,proxy
@@ -43,25 +49,25 @@ host-suffix,miwifi.com,proxy
 host-suffix,xiaomi.com,proxy
 host-suffix,xiaomi.net,proxy
 
-# >> ByteDance
+# ======= ByteDance family =======
 host-suffix,pstatp.com,proxy
 host-suffix,snssdk.com,proxy
 host-suffix,iesdouyin.com,proxy
 host-suffix,toutiao.com,proxy
+host-suffix,bytedance.com,proxy
 
-# >> Baidu
+# ======= Baidu Group =======
 host-suffix,baidu.com,proxy
 host-suffix,baidubcr.com,proxy
 host-suffix,bdstatic.com,proxy
 host-suffix,yunjiasu-cdn.net,proxy
 host-suffix,bdimg.com,proxy
 
-# >> 360
+# ======= 360 Technology =======
 host-suffix,qhres.com,proxy
 host-suffix,qhimg.com,proxy
 
-# >> Ali
-user-agent,%E4%BC%98%E9%85%B7*,proxy
+# ======= Alibaba Group =======
 host-suffix,alibaba.com,proxy
 host-suffix,alicdn.com,proxy
 host-suffix,alipay.com,proxy
@@ -81,8 +87,7 @@ host-suffix,youku.com,proxy
 host-suffix,xiami.com,proxy
 host-suffix,xiami.net,proxy
 
-# >> Tencent Application
-user-agent,MicroMessenger%20Client,proxy
+# ======= Tencent Applications =======
 host-suffix,gtimg.com,proxy
 host-suffix,idqqimg.com,proxy
 host-suffix,igamecj.com,proxy
@@ -93,23 +98,21 @@ host-suffix,tencent.com,proxy
 host-suffix,tencent-cloud.net,proxy
 host-suffix,tenpay.com,proxy
 
-# >> Beautiful picture
+# ======= Picture and Group-buying Platforms =======
 host-suffix,meitu.com,proxy
 host-suffix,meitudata.com,proxy
 host-suffix,meitustat.com,proxy
 host-suffix,meipai.com,proxy
 host-suffix,sankuai.com,proxy
 
-# >> Meituan
+# ======= Meituan and Reviews =======
 host-suffix,maoyan.com,proxy
 host-suffix,maoyun.tv,proxy
 host-suffix,meituan.com,proxy
 host-suffix,meituan.net,proxy
 host-suffix,dianping.com,proxy
 
-# >> NetEase
-user-agent,NeteaseMusic*,proxy
-user-agent,%E7%BD%91%E6%98%93%E4%BA%91%E9%9F%B3%E4%B9%90*,proxy
+# ======= Netease Group =======
 host-suffix,163.com,proxy
 host-suffix,126.net,proxy
 host-suffix,127.net,proxy
@@ -118,7 +121,7 @@ host-suffix,lofter.com,proxy
 host-suffix,netease.com,proxy
 host-suffix,ydstatic.com,proxy
 
-# >> Sina
+# ======= Sina Group =======
 host-suffix,sina.com,proxy
 host-suffix,sinaapp.com,proxy
 host-suffix,sinaimg.cn,proxy
@@ -127,7 +130,7 @@ host-suffix,weibo.cn,proxy
 host-suffix,weibo.com,proxy
 host-suffix,weibocdn.com,proxy
 
-# >> Sohu
+# ======= Sohu Group =======
 host-suffix,sohu.com,proxy
 host-suffix,sohucs.com,proxy
 host-suffix,sohu-inc.com,proxy
@@ -135,25 +138,38 @@ host-suffix,v-56.com,proxy
 host-suffix,sogou.com,proxy
 host-suffix,sogoucdn.com,proxy
 
-# >> Sogou
+# ======= Sogou =======
 host-suffix,sogo.com,proxy
 
-# >> Zhihu
+# ======= Zhihu =======
 host-suffix,zhihu.com,proxy
 host-suffix,zhimg.com,proxy
 
-# Direct connection to other commonly used websites
+# ======= Video, Streaming, Social, E-commerce Additions =======
+host-suffix,bilibili.com,proxy
+host-suffix,biliimg.com,proxy
+host-suffix,kuaishou.com,proxy
+host-suffix,ks-cdn.com,proxy
+host-suffix,xiaohongshu.com,proxy
+host-suffix,redcdn.net,proxy
+host-suffix,pinduoduo.com,proxy
+host-suffix,yangkeduo.com,proxy
+host-suffix,douyu.com,proxy
+host-suffix,douyucdn.cn,proxy
+host-suffix,huya.com,proxy
+host-suffix,acfun.cn,proxy
+host-suffix,acfun.tv,proxy
+
+# ======= Commonly Used Sites and Cloud/CDN =======
 host-suffix,12306.cn,proxy
 host-suffix,36kr.com,proxy
 host-suffix,58.com,proxy
-host-suffix,acfun.tv,proxy
-host-suffix,acfun.cn,proxy
-host-suffix,api.crisp.chat,proxy
-host-suffix,appstore.com,proxy
 host-suffix,abchina.com,proxy
 host-suffix,aicoinstorge.com,proxy
 host-suffix,air-matters.com,proxy
 host-suffix,aixifan.com,proxy
+host-suffix,api.crisp.chat,proxy
+host-suffix,appstore.com,proxy
 host-suffix,battle.net,proxy
 host-suffix,bdatu.com,proxy
 host-suffix,beitaichufang.com,proxy
@@ -171,13 +187,8 @@ host-suffix,chinacache.net,proxy
 host-suffix,clouddn.com,proxy
 host-suffix,cmfu.com,proxy
 host-suffix,douyu.tv,proxy
-host-suffix,douyutv.com,proxy
-host-suffix,duokan.com,proxy
-host-suffix,dfcfw.com,proxy
-host-suffix,docschina.org,proxy
 host-suffix,douban.com,proxy
 host-suffix,doubanio.com,proxy
-host-suffix,douyu.com,proxy
 host-suffix,dxycdn.com,proxy
 host-suffix,dytt8.net,proxy
 host-suffix,eastmoney.com,proxy
@@ -186,7 +197,6 @@ host-suffix,easou.com,proxy
 host-suffix,ecitic.com,proxy
 host-suffix,ecitic.net,proxy
 host-suffix,fir.im,proxy
-host-suffix,fresh-ideas.cc,proxy
 host-suffix,feng.com,proxy
 host-suffix,fengkongcloud.com,proxy
 host-suffix,frdic.com,proxy
@@ -201,7 +211,6 @@ host-suffix,hicloud.com,proxy
 host-suffix,hongxiu.com,proxy
 host-suffix,huxiucdn.com,proxy
 host-suffix,huya.com,proxy
-host-suffix,haibian.com,proxy
 host-suffix,hao123.com,proxy
 host-suffix,haosou.com,proxy
 host-suffix,infinitynewtab.com,proxy
@@ -226,7 +235,6 @@ host-suffix,mobike.com,proxy
 host-suffix,mubu.com,proxy
 host-suffix,myzaker.com,proxy
 host-suffix,meizu.com,proxy
-host-suffix,mi.com,proxy
 host-suffix,miaopai.com,proxy
 host-suffix,mob.com,proxy
 host-suffix,moke.com,proxy
@@ -258,7 +266,6 @@ host-suffix,seafile.com,proxy
 host-suffix,smzdm.com,proxy
 host-suffix,s-reader.com,proxy
 host-suffix,sspai.com,proxy
-host-suffix,suning.com,proxy
 host-suffix,takungpao.com,proxy
 host-suffix,tianyancha.com,proxy
 host-suffix,tietuku.com,proxy
@@ -266,6 +273,7 @@ host-suffix,tudou.com,proxy
 host-suffix,umengcloud.com,proxy
 host-suffix,upaiyun.com,proxy
 host-suffix,upyun.com,proxy
+host-suffix,upyun.io,proxy
 host-suffix,uxengine.net,proxy
 host-suffix,wandoujia.com,proxy
 host-suffix,weico.cc,proxy
@@ -284,14 +292,13 @@ host-suffix,yhd.com,proxy
 host-suffix,yinxiang.com,proxy
 host-suffix,yixia.com,proxy
 host-suffix,youdao.com,proxy
-host-suffix,yangkeduo.com,proxy
 host-suffix,zealer.com,proxy
 host-suffix,zgslb.net,proxy
 
-# >> Rules for the bottom
+# ======= Rules at the very end =======
 host-suffix,cn,proxy
 
-# >> Common domestic cdn
+# ======= Major Domestic CDN =======
 host-suffix,8686c.com,proxy
 host-suffix,acgvideo.com,proxy
 host-suffix,akadns.net,proxy
@@ -304,3 +311,4 @@ host-suffix,ourdvs.com,proxy
 host-suffix,qiniucdn.com,proxy
 host-suffix,qyerstatic.com,proxy
 host-suffix,xmcdn.com,proxy
+host-suffix,staticfile.org,proxy
