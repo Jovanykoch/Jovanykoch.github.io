@@ -23,14 +23,13 @@ The `rules/` directory contains various domain lists, each serving a specific pu
 
 | File Name             | Description                                                                 | Policy (Typical) |
 | :-------------------- | :-------------------------------------------------------------------------- | :--------------- |
-| `allow.list`          | Domains that should always be directly connected.                           | DIRECT           |
+| `adblock.list`        | Domains for ad-blocking and tracker prevention.                             | REJECT           |
 | `reject.list`         | Domains to be blocked (e.g., ads, trackers, malicious sites).               | REJECT           |
 | `china.list`          | Domains primarily for Mainland China services, routed directly.             | DIRECT           |
+| `china_ip.list`       | IP-CIDR list for Mainland China IP ranges.                                  | DIRECT           |
 | `proxy.list`          | **Comprehensive Proxy List**: Includes International services, **Microsoft (Full)**, **GitHub**, **OpenAI**, **Telegram**, and **Education** domains. | PROXY            |
-| `apple.list`          | Apple-related services.                                                     | DIRECT           |
-| `bytedance.list`      | ByteDance services (e.g., TikTok, Douyin, Toutiao).                         | DIRECT           |
-| `direct.list` | A comprehensive list of domains for direct connection.                     | DIRECT           |
-| `httpdns-block.list`  | Domains to block HTTP DNS DNS requests.                                     | REJECT           |
+| `apple.list`          | Apple-related services (Optimized for MY).                                  | DIRECT           |
+| `direct.list`         | A comprehensive list of domains for direct connection.                      | DIRECT           |
 | `lan.list`            | Local Area Network (LAN) related domains.                                   | DIRECT           |
 
 > **Note**: `microsoft.list`, `github.list`, `Copilot.list`, and `edu.list` have been merged into `proxy.list` for easier maintenance and better performance.

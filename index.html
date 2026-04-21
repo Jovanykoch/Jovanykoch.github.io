@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <meta name="color-scheme" content="dark light" />
   <title>Surge 配置与分流 - jkoch14.me</title>
-  <meta name="description" content="Surge iOS 自用配置与分流规则订阅（US Snell + self-hosted rules）" />
+  <meta name="description" content="Surge iOS 自用配置 with self-hosted rules" />
 
   <style>
     :root{
@@ -156,7 +156,7 @@
 # - rules 来源：https://jkoch14.me/rules/*.list
 # - direct 来源：https://jkoch14.me/rules/direct.list
 # - 默认 FINAL -> US（Snell 美国节点）
-# - allow.list 在 reject.list 前（避免误杀）
+# - adblock.list 在 reject.list 前（建议）
 </pre>
       </section>
 
@@ -164,13 +164,13 @@
         <h2>订阅链接（rules）</h2>
         <p>这些文件可在 Surge 规则订阅中直接使用。</p>
         <ul>
-          <li><a href="/rules/allow.list">allow.list</a> <span class="tag">DIRECT 白名单</span></li>
+          <li><a href="/rules/adblock.list">adblock.list</a> <span class="tag" style="color:#ffb4b4;border-color:rgba(255,77,79,.35)">REJECT</span></li>
           <li><a href="/rules/reject.list">reject.list</a> <span class="tag" style="color:#ffb4b4;border-color:rgba(255,77,79,.35)">REJECT</span></li>
           <li><a href="/rules/direct.list">direct.list</a> <span class="tag" style="color:#b8ffd5;border-color:rgba(51,209,122,.35)">DOMAIN-SET</span></li>
           <li><a href="/rules/lan.list">lan.list</a></li>
           <li><a href="/rules/china.list">china.list</a> <span class="tag">DIRECT</span></li>
+          <li><a href="/rules/china_ip.list">china_ip.list</a> <span class="tag">IP-CIDR</span></li>
           <li><a href="/rules/apple.list">apple.list</a> <span class="tag">DIRECT</span></li>
-          <li><a href="/rules/bytedance.list">bytedance.list</a> <span class="tag">US</span></li>
           <li><a href="/rules/proxy.list">proxy.list</a> <span class="tag">US (Merged)</span></li>
         </ul>
         <p class="small">注：Microsoft, GitHub, Copilot, Edu 规则已合并至 proxy.list。</p>
@@ -180,11 +180,10 @@
     <section class="card" style="margin-top:14px;">
       <h2>使用说明（Surge 分流逻辑）</h2>
       <ul>
-        <li><strong>allow.list</strong>：白名单，优先 DIRECT（防止被广告规则误杀）</li>
-        <li><strong>reject.list</strong>：广告/追踪拦截（REJECT）</li>
-        <li><strong>direct.list</strong>：你手工维护的精确直连域名（DOMAIN-SET）</li>
+        <li><strong>adblock/reject</strong>：广告/追踪拦截（REJECT）</li>
+        <li><strong>direct.list</strong>：手工维护的精确直连域名（DOMAIN-SET）</li>
         <li><strong>china/apple</strong>：默认 DIRECT</li>
-        <li><strong>proxy/bytedance</strong>：走 US（Snell），其中 proxy 已包含 Microsoft/GitHub/Edu 等</li>
+        <li><strong>proxy</strong>：走 US（Snell），已包含 Microsoft/GitHub/Edu 等</li>
         <li><strong>FINAL</strong>：默认走 US</li>
       </ul>
       <p class="small">站点域名：<code>jkoch14.me</code>（避免 301 跳转导致部分客户端订阅不稳定）。</p>
