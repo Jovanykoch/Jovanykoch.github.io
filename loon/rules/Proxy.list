@@ -1,35 +1,49 @@
-# Loon Rule List (PROXY)
-# Target Policy: Proxy
-#
-# 适用场景：
-# - 在马来西亚（MY）访问需要“国际出口/更稳定国际链路”的服务
-# - 与回国（china.list）不冲突：回国只管 CN 服务；这里管国际受限/加速服务
+# ======= Proxy.list (Optimized) =======
 
-# Google / YouTube
+# ======= Google Ecosystem =======
 DOMAIN-SUFFIX,google.com
 DOMAIN-SUFFIX,googleapis.com
 DOMAIN-SUFFIX,gstatic.com
+DOMAIN-SUFFIX,googlevideo.com
+DOMAIN-SUFFIX,ggpht.com
+
+# ======= YouTube =======
 DOMAIN-SUFFIX,youtube.com
 DOMAIN-SUFFIX,ytimg.com
 
-# Telegram
+# ======= Telegram =======
 DOMAIN-SUFFIX,telegram.org
 DOMAIN-SUFFIX,t.me
+DOMAIN-SUFFIX,telegra.ph
+DOMAIN-SUFFIX,telegram.me
 
-# OpenAI / ChatGPT
+# ======= OpenAI =======
 DOMAIN-SUFFIX,openai.com
 DOMAIN-SUFFIX,chatgpt.com
 DOMAIN-SUFFIX,oaistatic.com
 DOMAIN-SUFFIX,oaiusercontent.com
 
-# Common AI / Dev acceleration (low-risk additions)
+# ======= AI / Dev =======
 DOMAIN-SUFFIX,anthropic.com
 DOMAIN-SUFFIX,claude.ai
 DOMAIN-SUFFIX,perplexity.ai
-DOMAIN-SUFFIX,cloudflare.com
+
+# ======= GitHub =======
+DOMAIN-SUFFIX,github.com
+DOMAIN-SUFFIX,githubusercontent.com
+DOMAIN-SUFFIX,githubassets.com
+DOMAIN-SUFFIX,githubapp.com
+DOMAIN-SUFFIX,github.io
+DOMAIN,raw.githubusercontent.com
+
+# ======= Cloudflare DNS =======
 DOMAIN-SUFFIX,cloudflare-dns.com
 
-# Common mail endpoints
+# ======= Optional CDN (disabled) =======
+# DOMAIN-SUFFIX,jsdelivr.net
+# DOMAIN-SUFFIX,unpkg.com
+
+# ======= Custom =======
 DOMAIN,mail.jjc.edu
 DOMAIN,smtp.jjc.edu
 DOMAIN,imap.jjc.edu
@@ -37,14 +51,4 @@ DOMAIN,pop.jjc.edu
 DOMAIN,autodiscover.jjc.edu
 DOMAIN,webmail.jjc.edu
 
-# Github
-
-DOMAIN-SUFFIX,github.com
-DOMAIN-SUFFIX,githubusercontent.com
-DOMAIN-SUFFIX,githubassets.com
-DOMAIN-SUFFIX,githubapp.com
-
-DOMAIN,api.github.com
-DOMAIN,raw.githubusercontent.com
-DOMAIN-SUFFIX,github.io
-
+# ======= End =======
