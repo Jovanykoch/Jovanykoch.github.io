@@ -28,3 +28,12 @@ DOMAIN-SUFFIX,claude.ai
 DOMAIN-SUFFIX,perplexity.ai
 DOMAIN-SUFFIX,cloudflare.com
 DOMAIN-SUFFIX,cloudflare-dns.com
+
+# Common mail endpoints
+DOMAIN,mail.jjc.edu
+DOMAIN,smtp.jjc.edu
+DOMAIN,imap.jjc.edu
+DOMAIN,pop.jjc.edu
+DOMAIN,autodiscover.jjc.edu
+DOMAIN,webmail.jjc.edu
+
