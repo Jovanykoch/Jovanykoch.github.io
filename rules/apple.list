@@ -4,6 +4,7 @@
 # === Core ===
 DOMAIN-SUFFIX,apple.com
 DOMAIN-SUFFIX,icloud.com
+DOMAIN-SUFFIX,icloud.com.cn
 DOMAIN-SUFFIX,icloud-content.com
 DOMAIN-SUFFIX,me.com
 DOMAIN-SUFFIX,mac.com
@@ -45,3 +46,5 @@ DOMAIN-SUFFIX,mask-h2.icloud.com
 
 # === Apple IP ===
 IP-CIDR,17.0.0.0/8
+
+# END
