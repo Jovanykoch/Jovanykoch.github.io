@@ -1,23 +1,33 @@
-# DomesticMedia.list
-# Mainland China streaming services
-# Action: DIRECT
+# ForeignMedia.list (Quantumult X Pure Rules)
+# International streaming services
+# Updated: 2026-04-03
+#
+# Usage (Quantumult X):
+# [filter_remote]
+# https://<your-domain>/qx/ForeignMedia.list, tag=ForeignMedia, force-policy=Proxy, update-interval=86400, opt-parser=false, enabled=true
+#
+# Notes:
+# - This file contains ONLY rules (no trailing ",PROXY").
+# - Policy is controlled by force-policy in your .conf.
 
-# iQIYI
-host-suffix,iqiyi.com,DIRECT
-host-suffix,qiyipic.com,DIRECT
+# Netflix
+host-suffix,netflix.com
+host-suffix,nflxvideo.net
+host-suffix,nflximg.net
+host-suffix,nflxso.net
 
-# Tencent Video
-host-suffix,v.qq.com,DIRECT
+# YouTube
+host-suffix,youtube.com
+host-suffix,googlevideo.com
+host-suffix,ytimg.com
 
-# Youku
-host-suffix,youku.com,DIRECT
-host-suffix,ykimg.com,DIRECT
+# Disney+
+host-suffix,disneyplus.com
+host-suffix,dssott.com
+host-suffix,bamgrid.com
 
-# Bilibili
-host-suffix,bilibili.com,DIRECT
-host-suffix,hdslb.com,DIRECT
+# Spotify
+host-suffix,spotify.com
+host-suffix,scdn.co
+host-suffix,spotifycdn.com
 
-# Live
-host-suffix,douyu.com,DIRECT
-host-suffix,douyu.tv,DIRECT
-host-suffix,huya.com,DIRECT
