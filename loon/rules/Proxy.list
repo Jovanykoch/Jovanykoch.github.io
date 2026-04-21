@@ -1,54 +1,100 @@
-# ======= Proxy.list (Optimized) =======
+# Loon Rule Set
+# Policy: Proxy
 
-# ======= Google Ecosystem =======
-DOMAIN-SUFFIX,google.com
-DOMAIN-SUFFIX,googleapis.com
-DOMAIN-SUFFIX,gstatic.com
-DOMAIN-SUFFIX,googlevideo.com
-DOMAIN-SUFFIX,ggpht.com
-
-# ======= YouTube =======
-DOMAIN-SUFFIX,youtube.com
-DOMAIN-SUFFIX,ytimg.com
-
-# ======= Telegram =======
+# Telegram / Swiftgram
+DOMAIN-SUFFIX,swiftgram.app
+DOMAIN-SUFFIX,swiftgram.org
+DOMAIN-SUFFIX,swiftgram.net
+DOMAIN-SUFFIX,swiftgram.pro
 DOMAIN-SUFFIX,telegram.org
 DOMAIN-SUFFIX,t.me
+DOMAIN-SUFFIX,tdesktop.com
 DOMAIN-SUFFIX,telegra.ph
 DOMAIN-SUFFIX,telegram.me
+DOMAIN-SUFFIX,telegram.dog
+DOMAIN-SUFFIX,telesco.pe
 
-# ======= OpenAI =======
+# Microsoft
+DOMAIN-SUFFIX,microsoft.com
+DOMAIN-SUFFIX,live.com
+DOMAIN-SUFFIX,outlook.com
+DOMAIN-SUFFIX,office.com
+DOMAIN-SUFFIX,office.net
+DOMAIN-SUFFIX,onedrive.com
+DOMAIN-SUFFIX,sharepoint.com
+DOMAIN-SUFFIX,skype.com
+DOMAIN-SUFFIX,teams.microsoft.com
+DOMAIN-SUFFIX,azure.com
+DOMAIN-SUFFIX,windows.net
+DOMAIN-SUFFIX,outlook.office365.com
+
+# X
+DOMAIN-SUFFIX,x.com
+DOMAIN-SUFFIX,twitter.com
+DOMAIN-SUFFIX,t.co
+DOMAIN-SUFFIX,twimg.com
+
+# OpenAI
 DOMAIN-SUFFIX,openai.com
 DOMAIN-SUFFIX,chatgpt.com
 DOMAIN-SUFFIX,oaistatic.com
 DOMAIN-SUFFIX,oaiusercontent.com
+DOMAIN-SUFFIX,auth0.com
 
-# ======= AI / Dev =======
-DOMAIN-SUFFIX,anthropic.com
-DOMAIN-SUFFIX,claude.ai
-DOMAIN-SUFFIX,perplexity.ai
+# Spotify
+DOMAIN-SUFFIX,spotify.com
+DOMAIN-SUFFIX,spotifycdn.com
+DOMAIN-SUFFIX,scdn.co
+DOMAIN-SUFFIX,spoti.fi
+DOMAIN-SUFFIX,spotifycharts.com
+DOMAIN-SUFFIX,spotifyforbrands.com
 
-# ======= GitHub =======
-DOMAIN-SUFFIX,github.com
-DOMAIN-SUFFIX,githubusercontent.com
+# Meta
+DOMAIN-SUFFIX,cdninstagram.com
+DOMAIN-SUFFIX,instagram.com
+
+# PayPal
+DOMAIN-SUFFIX,paypal.com
+DOMAIN-SUFFIX,paypalobjects.com
+DOMAIN-SUFFIX,pypl.com
+
+# Common
+DOMAIN-SUFFIX,discord.com
+DOMAIN-SUFFIX,discord.gg
+DOMAIN-SUFFIX,discordapp.com
+DOMAIN-SUFFIX,discordapp.net
+DOMAIN-SUFFIX,reddit.com
+DOMAIN-SUFFIX,redd.it
+DOMAIN-SUFFIX,wikipedia.org
+DOMAIN-SUFFIX,wikimedia.org
+
+# Google
+DOMAIN-SUFFIX,google.com
+DOMAIN-SUFFIX,googleapis.com
+DOMAIN-SUFFIX,gstatic.com
+DOMAIN-SUFFIX,youtube.com
+DOMAIN-SUFFIX,youtu.be
+DOMAIN-SUFFIX,googlevideo.com
+
+# GitHub
+DOMAIN,github.com
+DOMAIN,api.github.com
 DOMAIN-SUFFIX,githubassets.com
-DOMAIN-SUFFIX,githubapp.com
+DOMAIN-SUFFIX,githubusercontent.com
 DOMAIN-SUFFIX,github.io
-DOMAIN,raw.githubusercontent.com
 
-# ======= Cloudflare DNS =======
-DOMAIN-SUFFIX,cloudflare-dns.com
+# Education
+DOMAIN-SUFFIX,csun.edu
+DOMAIN-KEYWORD,csun
+DOMAIN-SUFFIX,canvaslms.com
+DOMAIN-SUFFIX,instructure.com
+DOMAIN-SUFFIX,duosecurity.com
 
-# ======= Optional CDN (disabled) =======
-# DOMAIN-SUFFIX,jsdelivr.net
-# DOMAIN-SUFFIX,unpkg.com
-
-# ======= Custom =======
-DOMAIN,mail.jjc.edu
-DOMAIN,smtp.jjc.edu
-DOMAIN,imap.jjc.edu
-DOMAIN,pop.jjc.edu
-DOMAIN,autodiscover.jjc.edu
-DOMAIN,webmail.jjc.edu
-
-# ======= End =======
+# Microsoft (Extended)
+DOMAIN-SUFFIX,microsoftonline.com
+DOMAIN-SUFFIX,office365.com
+DOMAIN-SUFFIX,azureedge.net
+DOMAIN-SUFFIX,bing.com
+DOMAIN-SUFFIX,bing.net
+DOMAIN-SUFFIX,msedge.net
+DOMAIN-SUFFIX,windowsupdate.com
