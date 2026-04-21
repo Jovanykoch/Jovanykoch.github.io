@@ -37,3 +37,14 @@ DOMAIN,pop.jjc.edu
 DOMAIN,autodiscover.jjc.edu
 DOMAIN,webmail.jjc.edu
 
+# Github
+
+DOMAIN-SUFFIX,github.com
+DOMAIN-SUFFIX,githubusercontent.com
+DOMAIN-SUFFIX,githubassets.com
+DOMAIN-SUFFIX,githubapp.com
+
+DOMAIN,api.github.com
+DOMAIN,raw.githubusercontent.com
+DOMAIN-SUFFIX,github.io
+
