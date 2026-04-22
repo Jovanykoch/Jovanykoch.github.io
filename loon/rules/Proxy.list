@@ -96,6 +96,20 @@ DOMAIN-SUFFIX,duosecurity.com
 DOMAIN-SUFFIX,sbctc.edu
 DOMAIN-SUFFIX,ctclink.us
 
+# ===== Penn State =====
+DOMAIN-SUFFIX,psu.edu
+DOMAIN-SUFFIX,pennstate.edu
+DOMAIN-SUFFIX,canvas.psu.edu
+DOMAIN-SUFFIX,accounts.psu.edu
+DOMAIN-SUFFIX,workday.psu.edu
+
+# Academic resources (it is recommended to go to the American node)
+DOMAIN-SUFFIX,jstor.org
+DOMAIN-SUFFIX,ieee.org
+DOMAIN-SUFFIX,springer.com
+DOMAIN-SUFFIX,sciencedirect.com
+DOMAIN-SUFFIX,nature.com
+
 # Microsoft (Extended)
 DOMAIN-SUFFIX,microsoftonline.com
 DOMAIN-SUFFIX,office365.com
