@@ -84,8 +84,10 @@ DOMAIN-SUFFIX,githubusercontent.com
 DOMAIN-SUFFIX,github.io
 
 # Education
+DOMAIN-SUFFIX,jjc.edu
 DOMAIN-SUFFIX,csun.edu
 DOMAIN-KEYWORD,csun
+DOMAIN-SUFFIX,jjc
 DOMAIN-SUFFIX,canvaslms.com
 DOMAIN-SUFFIX,instructure.com
 DOMAIN-SUFFIX,duosecurity.com
