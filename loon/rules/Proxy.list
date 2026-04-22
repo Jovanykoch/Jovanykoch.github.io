@@ -77,8 +77,6 @@ DOMAIN-SUFFIX,youtu.be
 DOMAIN-SUFFIX,googlevideo.com
 
 # GitHub
-DOMAIN,github.com
-DOMAIN,api.github.com
 DOMAIN-SUFFIX,githubassets.com
 DOMAIN-SUFFIX,githubusercontent.com
 DOMAIN-SUFFIX,github.io
@@ -87,9 +85,6 @@ DOMAIN-SUFFIX,github.io
 DOMAIN-SUFFIX,jjc.edu
 DOMAIN-SUFFIX,csun.edu
 DOMAIN-SUFFIX,spokane.edu
-DOMAIN-KEYWORD,spokane
-DOMAIN-KEYWORD,csun
-DOMAIN-KEYWORD,jjc
 DOMAIN-SUFFIX,canvaslms.com
 DOMAIN-SUFFIX,instructure.com
 DOMAIN-SUFFIX,duosecurity.com
