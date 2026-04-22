@@ -110,6 +110,41 @@ DOMAIN-SUFFIX,springer.com
 DOMAIN-SUFFIX,sciencedirect.com
 DOMAIN-SUFFIX,nature.com
 
+# Maricopa
+
+DOMAIN-SUFFIX,maricopa.edu
+
+# Subsystem
+
+DOMAIN-SUFFIX,district.maricopa.edu
+DOMAIN-SUFFIX,directory.maricopa.edu
+DOMAIN-SUFFIX,students.maricopa.edu
+DOMAIN-SUFFIX,my.maricopa.edu
+DOMAIN-SUFFIX,portal.maricopa.edu
+DOMAIN-SUFFIX,canvas.maricopa.edu
+
+# Colleges
+
+DOMAIN-SUFFIX,gatewaycc.edu
+DOMAIN-SUFFIX,gccaz.edu
+DOMAIN-SUFFIX,mesacc.edu
+DOMAIN-SUFFIX,phoenixcollege.edu
+DOMAIN-SUFFIX,scottsdalecc.edu
+DOMAIN-SUFFIX,paradisevalley.edu
+DOMAIN-SUFFIX,southmountaincc.edu
+DOMAIN-SUFFIX,estrellamountain.edu
+DOMAIN-SUFFIX,cgc.edu
+DOMAIN-SUFFIX,riosalado.edu
+
+# Learning system
+
+DOMAIN-SUFFIX,instructure.com
+DOMAIN-SUFFIX,canvaslms.com
+DOMAIN-SUFFIX,turnitin.com
+DOMAIN-SUFFIX,zoom.us
+
+
+
 # Microsoft (Extended)
 DOMAIN-SUFFIX,microsoftonline.com
 DOMAIN-SUFFIX,office365.com
