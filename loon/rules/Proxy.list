@@ -86,8 +86,10 @@ DOMAIN-SUFFIX,github.io
 # Education
 DOMAIN-SUFFIX,jjc.edu
 DOMAIN-SUFFIX,csun.edu
+DOMAIN-SUFFIX,spokane.edu
+DOMAIN-KEYWORD,spokane
 DOMAIN-KEYWORD,csun
-DOMAIN-SUFFIX,jjc
+DOMAIN-KEYWORD,jjc
 DOMAIN-SUFFIX,canvaslms.com
 DOMAIN-SUFFIX,instructure.com
 DOMAIN-SUFFIX,duosecurity.com
