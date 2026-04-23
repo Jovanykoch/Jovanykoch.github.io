@@ -14,6 +14,10 @@ IP-CIDR,198.11.136.0/24,no-resolve
 DOMAIN-SUFFIX,wechat.com
 DOMAIN-SUFFIX,weixin.qq.com
 
+# QQ
+DOMAIN-SUFFIX,qq.com
+DOMAIN-SUFFIX,qqmail.com
+
 # NetEase Cloud Music
 DOMAIN-SUFFIX,music.163.com
 DOMAIN-SUFFIX,163.com
