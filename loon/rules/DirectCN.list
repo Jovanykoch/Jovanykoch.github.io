@@ -125,7 +125,8 @@ DOMAIN-SUFFIX,im9.com
 DOMAIN-SUFFIX,smtcdns.net
 
 # === ByteDance / Douyin ====================================
-DOMAIN-SUFFIX,amemv.com
+# DOMAIN-SUFFIX,amemv.com
+# DOMAIN-SUFFIX,snssdk.com
 DOMAIN-SUFFIX,bdxiguaimg.com
 DOMAIN-SUFFIX,bdxiguastatic.com
 DOMAIN-SUFFIX,byted-static.com
@@ -153,7 +154,6 @@ DOMAIN-SUFFIX,iesdouyin.com
 DOMAIN-SUFFIX,ixigua.com
 DOMAIN-SUFFIX,kspkg.com
 DOMAIN-SUFFIX,pstatp.com
-DOMAIN-SUFFIX,snssdk.com
 DOMAIN-SUFFIX,toutiao.com
 DOMAIN-SUFFIX,toutiao13.com
 DOMAIN-SUFFIX,toutiaoapi.com
