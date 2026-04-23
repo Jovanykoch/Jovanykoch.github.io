@@ -33,6 +33,11 @@ DOMAIN-SUFFIX,xn--55qx5d
 DOMAIN-SUFFIX,xn--fiqs8s
 DOMAIN-SUFFIX,xn--io0a7i
 
+# === China DNS ============================================
+DOMAIN-SUFFIX,dns.alidns.com
+DOMAIN-SUFFIX,doh.360.cn
+DOMAIN-SUFFIX,doh.pub
+IP-CIDR,1.12.12.12/32
 
 # --------------------------- END ---------------------------
 
