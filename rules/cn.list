@@ -1,0 +1,25 @@
+# cn.list — Mainland-China domains & IP ranges
+# Generated: 2026-04-23
+# ------------------------------------------------------------------------------
+# Ali ecosystem
+DOMAIN-SUFFIX,alipay.com
+DOMAIN-SUFFIX,taobao.com
+DOMAIN-SUFFIX,alicdn.com
+DOMAIN-SUFFIX,aliyun.com
+DOMAIN-SUFFIX,tmall.com
+IP-CIDR,198.11.188.0/25,no-resolve
+IP-CIDR,198.11.136.0/24,no-resolve
+
+# WeChat
+DOMAIN-SUFFIX,wechat.com
+DOMAIN-SUFFIX,weixin.qq.com
+
+# NetEase Cloud Music
+DOMAIN-SUFFIX,music.163.com
+DOMAIN-SUFFIX,163.com
+
+# Baidu
+DOMAIN-SUFFIX,baidu.com
+
+# Country-code catch-all
+DOMAIN-SUFFIX,cn
