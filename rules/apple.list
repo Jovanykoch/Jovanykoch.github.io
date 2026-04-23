@@ -1,7 +1,6 @@
-# Apple Clean RULE-SET (Optimized for MY)
-# Only real Apple services, no CDN pollution
+# Apple RULE-SET (Optimized / Clean / MY Scenario)
 
-# === Core ===
+# === Core Identity ===
 DOMAIN-SUFFIX,apple.com
 DOMAIN-SUFFIX,icloud.com
 DOMAIN-SUFFIX,icloud.com.cn
@@ -10,17 +9,16 @@ DOMAIN-SUFFIX,me.com
 DOMAIN-SUFFIX,mac.com
 
 # === Apple ID / Auth ===
-DOMAIN-SUFFIX,appleid.com
-DOMAIN-SUFFIX,identity.apple.com
+DOMAIN-SUFFIX,appleid.apple.com
+DOMAIN-SUFFIX,idmsa.apple.com
 DOMAIN-SUFFIX,setup.icloud.com
 
 # === App Store ===
 DOMAIN-SUFFIX,apps.apple.com
-DOMAIN-SUFFIX,appstore.com
-DOMAIN-SUFFIX,itunes.com
 DOMAIN-SUFFIX,itunes.apple.com
+DOMAIN-SUFFIX,appstore.com
 
-# === Media ===
+# === Media Services ===
 DOMAIN-SUFFIX,music.apple.com
 DOMAIN-SUFFIX,tv.apple.com
 DOMAIN-SUFFIX,applemusic.com
@@ -31,20 +29,23 @@ DOMAIN-SUFFIX,ls.apple.com
 # === Push / System ===
 DOMAIN-SUFFIX,push.apple.com
 DOMAIN-SUFFIX,ess.apple.com
+DOMAIN-SUFFIX,gsp-ssl.ls.apple.com
 
-# === Connectivity ===
+# === Connectivity Check ===
 DOMAIN-SUFFIX,captive.apple.com
 
-# === Apple CDN（仅官方）===
+# === Apple CDN（控制范围）===
 DOMAIN-SUFFIX,mzstatic.com
 DOMAIN-SUFFIX,applecdn.com
 DOMAIN-SUFFIX,cdn-apple.com
+
+# ⚠️ It is not recommended to expand CDN (to avoid accidentally hurting non-Apple business)
 
 # === Private Relay ===
 DOMAIN-SUFFIX,mask.icloud.com
 DOMAIN-SUFFIX,mask-h2.icloud.com
 
-# === Apple IP ===
-IP-CIDR,17.0.0.0/8
+# === Apple IP（可选，建议 no-resolve）===
+IP-CIDR,17.0.0.0/8,no-resolve
 
 # END
