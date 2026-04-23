@@ -1,74 +1,54 @@
-# LAN and local domain rules for Malaysia + General
-# Last updated: 2026-03-27
-# Surge RULE-SET (LAN / LOCAL / PRIVATE) - IPv4 safe
-# -----------------------
+# LAN / Local / Private (Optimized for Surge iOS)
 
+# -----------------------
+# Router / Gateway Access
+# -----------------------
 DOMAIN,asusrouter.com
 DOMAIN,router.asus.com
-DOMAIN,www.asusrouter.com
-
-DOMAIN,instant.arubanetworks.com
-DOMAIN,setmeup.arubanetworks.com
-
-DOMAIN,oasisauth.h3c.com
-
-# Common router portals (low-risk additions)
 DOMAIN,routerlogin.com
 DOMAIN,routerlogin.net
 DOMAIN,tplinkwifi.net
 
 # -----------------------
-# Local naming / service discovery
+# Local Discovery
 # -----------------------
 DOMAIN-SUFFIX,local
 DOMAIN-SUFFIX,home.arpa
 DOMAIN-SUFFIX,localdomain
-
-DOMAIN-SUFFIX,my.router
-DOMAIN-SUFFIX,router.ctc
-DOMAIN-SUFFIX,zte.home
-DOMAIN-SUFFIX,ts.net
-DOMAIN-SUFFIX,plex.direct
+DOMAIN-SUFFIX,lan
 
 # -----------------------
-# Malaysia ISP / local access portals (optional)
-# -----------------------
-DOMAIN-SUFFIX,tm.com.my
-DOMAIN-SUFFIX,unifi.com.my
-DOMAIN-SUFFIX,maxis.com.my
-DOMAIN-SUFFIX,fiberhome.home
-
-# -----------------------
-# Reverse DNS / ARPA
+# Reverse DNS
 # -----------------------
 DOMAIN-SUFFIX,in-addr.arpa
 DOMAIN-SUFFIX,ip6.arpa
 
 # -----------------------
-# IPv4 private / reserved ranges (DIRECT, no-resolve)
+# IPv4 Private (核心必备)
 # -----------------------
-IP-CIDR,0.0.0.0/8,no-resolve
 IP-CIDR,10.0.0.0/8,no-resolve
+IP-CIDR,172.16.0.0/12,no-resolve
+IP-CIDR,192.168.0.0/16,no-resolve
+
+# -----------------------
+# Carrier NAT（移动网络关键）
+# -----------------------
 IP-CIDR,100.64.0.0/10,no-resolve
+
+# -----------------------
+# Loopback / Link-local
+# -----------------------
 IP-CIDR,127.0.0.0/8,no-resolve
 IP-CIDR,169.254.0.0/16,no-resolve
-IP-CIDR,172.16.0.0/12,no-resolve
-IP-CIDR,192.0.0.0/24,no-resolve
-IP-CIDR,192.0.2.0/24,no-resolve
-IP-CIDR,192.168.0.0/16,no-resolve
-IP-CIDR,192.88.99.0/24,no-resolve
-IP-CIDR,198.18.0.0/15,no-resolve
-IP-CIDR,198.51.100.0/24,no-resolve
-IP-CIDR,203.0.113.0/24,no-resolve
-IP-CIDR,224.0.0.0/3,no-resolve
 
-# IPv6 local / reserved ranges (INLINE rules; more compatible than RULE-SET for Surge)
-IP-CIDR6,::/128,DIRECT,no-resolve
-IP-CIDR6,::1/128,DIRECT,no-resolve
-IP-CIDR6,::ffff:0:0/96,DIRECT,no-resolve
-IP-CIDR6,64:ff9b::/96,DIRECT,no-resolve
-IP-CIDR6,fc00::/7,DIRECT,no-resolve
-IP-CIDR6,fe80::/10,DIRECT,no-resolve
-IP-CIDR6,ff00::/8,DIRECT,no-resolve
+# -----------------------
+# Multicast / Reserved（保留最关键）
+# -----------------------
+IP-CIDR,224.0.0.0/4,no-resolve
 
-
+# -----------------------
+# IPv6（仅保留必要）
+# -----------------------
+IP-CIDR6,::1/128,no-resolve
+IP-CIDR6,fc00::/7,no-resolve
+IP-CIDR6,fe80::/10,no-resolve
