@@ -1,13 +1,12 @@
-# MY Direct Rule Set (Optimized)
+# Direct.list
+# Combined: MY-Direct + Unbreak + LAN
+# Last-Update: 2026-04-23
+# -------------------------------------------------
 
-# -----------------------
-# Malaysia: Government
-# -----------------------
+# === Malaysia · Government ===
 DOMAIN-SUFFIX,gov.my
 
-# -----------------------
-# Malaysia: Banks / Finance
-# -----------------------
+# === Malaysia · Banks / Finance ===
 DOMAIN-SUFFIX,maybank2u.com.my
 DOMAIN-SUFFIX,cimbclicks.com.my
 DOMAIN-SUFFIX,publicbank.com.my
@@ -16,8 +15,6 @@ DOMAIN-SUFFIX,bankislam.biz
 DOMAIN-SUFFIX,bankrakyat.com.my
 DOMAIN-SUFFIX,bsn.com.my
 DOMAIN-SUFFIX,affinalways.com
-
-# ⚠️ General domain (put it behind or can be considered to remove)
 DOMAIN-SUFFIX,maybank.com
 DOMAIN-SUFFIX,cimb.com
 DOMAIN-SUFFIX,rhbgroup.com
@@ -25,30 +22,18 @@ DOMAIN-SUFFIX,uob.com.my
 DOMAIN-SUFFIX,ocbc.com.my
 DOMAIN-SUFFIX,standardchartered.com.my
 
-# -----------------------
-# Payment Systems
-# -----------------------
+# === Payment Systems ===
 DOMAIN-SUFFIX,paynet.my
 DOMAIN-SUFFIX,fpx.com.my
 DOMAIN-SUFFIX,duitnow.my
-
 DOMAIN-SUFFIX,tngdigital.com.my
 DOMAIN-SUFFIX,touchngo.com.my
 
-# -----------------------
-# Local Services（⚠️ 精细化）
-# -----------------------
-
-# Grab（建议分流，不建议强制 DIRECT）
-# DOMAIN-SUFFIX,grab.com
-# DOMAIN-SUFFIX,grabpay.com
-
+# === Local Services ===
 DOMAIN-SUFFIX,shopee.com.my
 DOMAIN-SUFFIX,lazada.com.my
 
-# -----------------------
-# Telco / ISP
-# -----------------------
+# === Telco / ISP ===
 DOMAIN-SUFFIX,tm.com.my
 DOMAIN-SUFFIX,unifi.com.my
 DOMAIN-SUFFIX,celcom.com.my
@@ -56,15 +41,66 @@ DOMAIN-SUFFIX,digi.com.my
 DOMAIN-SUFFIX,maxis.com.my
 DOMAIN-SUFFIX,u.com.my
 
-# -----------------------
-# Captive Portal
-# -----------------------
+# === Captive Portal ===
 DOMAIN,captive.apple.com
 DOMAIN-SUFFIX,hotspot.t-mobile.com
 
-# -----------------------
-# LAN
-# -----------------------
+# === Unbreak · Epic Games ===
+DOMAIN-SUFFIX,ol.epicgames.com
+
+# === Unbreak · Getui ===
+DOMAIN-SUFFIX,dizhensubao.getui.com
+
+# === Unbreak · Google ===
+DOMAIN,dl.google.com
+DOMAIN-SUFFIX,googletraveladservices.com
+
+# === Unbreak · Mozilla ===
+DOMAIN-SUFFIX,tracking-protection.cdn.mozilla.net
+
+# === Unbreak · Origin ===
+DOMAIN,origin-a.akamaihd.net
+
+# === Unbreak · Tencent ===
+DOMAIN,fairplay.l.qq.com
+DOMAIN,livew.l.qq.com
+DOMAIN,vd.l.qq.com
+
+# === Unbreak · Umeng ===
+DOMAIN,errlog.umeng.com
+DOMAIN,msg.umeng.com
+DOMAIN,msg.umengcloud.com
+
+# === Unbreak · MIUI ===
+DOMAIN,tracking.miui.com
+
+# === Unbreak · General ===
+DOMAIN,app.adjust.com
+DOMAIN,bdtj.tagtic.cn
+
+# === Unbreak · Hypixel ===
+DOMAIN,rewards.hypixel.net
+
+# === Koodo Mobile ===
+DOMAIN-SUFFIX,koodomobile.com
+DOMAIN-SUFFIX,koodomobile.ca
+
+# === Synology DDNS ===
+DOMAIN-SUFFIX,synology.me
+DOMAIN-SUFFIX,DiskStation.me
+DOMAIN-SUFFIX,i234.me
+DOMAIN-SUFFIX,myDS.me
+DOMAIN-SUFFIX,DSCloud.biz
+DOMAIN-SUFFIX,DSCloud.me
+DOMAIN-SUFFIX,DSCloud.mobi
+DOMAIN-SUFFIX,DSmyNAS.com
+DOMAIN-SUFFIX,DSmyNAS.net
+DOMAIN-SUFFIX,DSmyNAS.org
+DOMAIN-SUFFIX,FamilyDS.com
+DOMAIN-SUFFIX,FamilyDS.net
+DOMAIN-SUFFIX,FamilyDS.org
+
+# === LAN IPv4 ===
 IP-CIDR,192.168.0.0/16,no-resolve
 IP-CIDR,10.0.0.0/8,no-resolve
 IP-CIDR,172.16.0.0/12,no-resolve
