@@ -1,56 +1,53 @@
-# MY Direct Rule Set (for Malaysia local services)
-# Target: DIRECT
-# Optimized for "Overseas -> Back to China" scenario
-# Clean / minimal / no pollution
+# MY Direct Rule Set (Optimized)
 
 # -----------------------
 # Malaysia: Government
 # -----------------------
 DOMAIN-SUFFIX,gov.my
-DOMAIN-SUFFIX,hasil.gov.my
 
 # -----------------------
 # Malaysia: Banks / Finance
 # -----------------------
 DOMAIN-SUFFIX,maybank2u.com.my
-DOMAIN-SUFFIX,maybank.com
-DOMAIN-SUFFIX,cimb.com
 DOMAIN-SUFFIX,cimbclicks.com.my
 DOMAIN-SUFFIX,publicbank.com.my
-DOMAIN-SUFFIX,hongleongconnect.my
 DOMAIN-SUFFIX,hlb.com.my
-DOMAIN-SUFFIX,ambank.com.my
 DOMAIN-SUFFIX,bankislam.biz
-DOMAIN-SUFFIX,rhbgroup.com
 DOMAIN-SUFFIX,bankrakyat.com.my
 DOMAIN-SUFFIX,bsn.com.my
 DOMAIN-SUFFIX,affinalways.com
+
+# ⚠️ General domain (put it behind or can be considered to remove)
+DOMAIN-SUFFIX,maybank.com
+DOMAIN-SUFFIX,cimb.com
+DOMAIN-SUFFIX,rhbgroup.com
 DOMAIN-SUFFIX,uob.com.my
 DOMAIN-SUFFIX,ocbc.com.my
 DOMAIN-SUFFIX,standardchartered.com.my
 
 # -----------------------
-# Malaysia: Payment Systems
+# Payment Systems
 # -----------------------
 DOMAIN-SUFFIX,paynet.my
 DOMAIN-SUFFIX,fpx.com.my
 DOMAIN-SUFFIX,duitnow.my
 
-# Touch 'n Go
 DOMAIN-SUFFIX,tngdigital.com.my
 DOMAIN-SUFFIX,touchngo.com.my
 
 # -----------------------
-# Malaysia: Local Services
+# Local Services（⚠️ 精细化）
 # -----------------------
-DOMAIN-SUFFIX,grab.com
-DOMAIN-SUFFIX,grabpay.com
+
+# Grab（建议分流，不建议强制 DIRECT）
+# DOMAIN-SUFFIX,grab.com
+# DOMAIN-SUFFIX,grabpay.com
 
 DOMAIN-SUFFIX,shopee.com.my
 DOMAIN-SUFFIX,lazada.com.my
 
 # -----------------------
-# Malaysia: Telco / ISP
+# Telco / ISP
 # -----------------------
 DOMAIN-SUFFIX,tm.com.my
 DOMAIN-SUFFIX,unifi.com.my
@@ -60,13 +57,13 @@ DOMAIN-SUFFIX,maxis.com.my
 DOMAIN-SUFFIX,u.com.my
 
 # -----------------------
-# Captive Portal (WiFi login)
+# Captive Portal
 # -----------------------
 DOMAIN,captive.apple.com
 DOMAIN-SUFFIX,hotspot.t-mobile.com
 
 # -----------------------
-# LAN / Local Network
+# LAN
 # -----------------------
 IP-CIDR,192.168.0.0/16,no-resolve
 IP-CIDR,10.0.0.0/8,no-resolve
