@@ -1,29 +1,7 @@
-# Surge 5 RULE-SET (DOMAIN-SUFFIX rules)
-# Target Policy: Proxy
-# Includes:
-#   - Swiftgram/Telegram
-#   - Microsoft (Full list merged)
-#   - Education (Merged)
-#   - X (Twitter)
-#   - OpenAI (ChatGPT/API)
-#   - Spotify
-#   - Meta (FB/IG/WhatsApp/Messenger + CDNs)
-#   - PayPal
-#   - GitHub (all services)
-# Plus a few common extras (Discord/Reddit/Wikipedia).
-#
-# Usage (Surge):
-#   [Rule]
-#   RULE-SET,https://your-domain-or-raw-link/proxy.list,Proxy
-#
-# Recommended order:
-#   RULE-SET,allow.list,DIRECT
-#   RULE-SET,reject.list,REJECT
-#   RULE-SET,apple.list,DIRECT
-#   RULE-SET,proxy.list,Proxy
-#   RULE-SET,china.list,DIRECT
-#   GEOIP,CN,DIRECT
-#   FINAL,Proxy
+# rules/proxy.list — generated 2026‑04‑23
+# Only comments (lines starting with “#”) and DOMAIN-SUFFIX rules
+# Sections keep original logical grouping for easy maintenance
+# ----------------------------------------------------------------
 
 # -----------------------
 # Telegram / Swiftgram
@@ -31,7 +9,7 @@
 DOMAIN-SUFFIX,swiftgram.app
 DOMAIN-SUFFIX,swiftgram.org
 DOMAIN-SUFFIX,swiftgram.net
-DOMAIN-SUFFIX,swiftgram.pro    # TODO verify ownership
+DOMAIN-SUFFIX,swiftgram.pro # TODO verify ownership
 DOMAIN-SUFFIX,telegram.org
 DOMAIN-SUFFIX,t.me
 DOMAIN-SUFFIX,tdesktop.com
@@ -123,107 +101,103 @@ DOMAIN-SUFFIX,imap.gmail.com
 # -----------------------
 # GitHub - Core
 # -----------------------
-DOMAIN,github.com
-DOMAIN,www.github.com
-DOMAIN,api.github.com
-DOMAIN,uploads.github.com
-DOMAIN,codeload.github.com
-DOMAIN,raw.github.com
-DOMAIN,gist.github.com
-DOMAIN,www.gist.github.com
+DOMAIN-SUFFIX,github.com
+DOMAIN-SUFFIX,www.github.com
+DOMAIN-SUFFIX,api.github.com
+DOMAIN-SUFFIX,uploads.github.com
+DOMAIN-SUFFIX,codeload.github.com
+DOMAIN-SUFFIX,raw.github.com
+DOMAIN-SUFFIX,gist.github.com
+DOMAIN-SUFFIX,www.gist.github.com
 
 # -----------------------
 # GitHub - Assets / static
 # -----------------------
 DOMAIN-SUFFIX,githubassets.com
-DOMAIN,github.githubassets.com
-DOMAIN,collector.githubassets.com
+DOMAIN-SUFFIX,github.githubassets.com
+DOMAIN-SUFFIX,collector.githubassets.com
 
 # -----------------------
 # GitHub - User content / blobs / avatars / media
 # -----------------------
 DOMAIN-SUFFIX,githubusercontent.com
-DOMAIN,raw.githubusercontent.com
-DOMAIN,user-images.githubusercontent.com
-DOMAIN,avatars.githubusercontent.com
-DOMAIN,avatars0.githubusercontent.com
-DOMAIN,avatars1.githubusercontent.com
-DOMAIN,avatars2.githubusercontent.com
-DOMAIN,avatars3.githubusercontent.com
-DOMAIN,avatars4.githubusercontent.com
-DOMAIN,avatars5.githubusercontent.com
-DOMAIN,avatars6.githubusercontent.com
-DOMAIN,avatars7.githubusercontent.com
-DOMAIN,avatars8.githubusercontent.com
-DOMAIN,avatars9.githubusercontent.com
-DOMAIN,objects.githubusercontent.com
-DOMAIN,media.githubusercontent.com
-DOMAIN,camo.githubusercontent.com
-DOMAIN,cloud.githubusercontent.com
-DOMAIN,favicons.githubusercontent.com
-DOMAIN,private-user-images.githubusercontent.com
+DOMAIN-SUFFIX,raw.githubusercontent.com
+DOMAIN-SUFFIX,user-images.githubusercontent.com
+DOMAIN-SUFFIX,avatars.githubusercontent.com
+DOMAIN-SUFFIX,avatars0.githubusercontent.com
+DOMAIN-SUFFIX,avatars1.githubusercontent.com
+DOMAIN-SUFFIX,avatars2.githubusercontent.com
+DOMAIN-SUFFIX,avatars3.githubusercontent.com
+DOMAIN-SUFFIX,avatars4.githubusercontent.com
+DOMAIN-SUFFIX,avatars5.githubusercontent.com
+DOMAIN-SUFFIX,avatars6.githubusercontent.com
+DOMAIN-SUFFIX,avatars7.githubusercontent.com
+DOMAIN-SUFFIX,avatars8.githubusercontent.com
+DOMAIN-SUFFIX,avatars9.githubusercontent.com
+DOMAIN-SUFFIX,objects.githubusercontent.com
+DOMAIN-SUFFIX,media.githubusercontent.com
+DOMAIN-SUFFIX,camo.githubusercontent.com
+DOMAIN-SUFFIX,cloud.githubusercontent.com
+DOMAIN-SUFFIX,favicons.githubusercontent.com
+DOMAIN-SUFFIX,private-user-images.githubusercontent.com
 
 # -----------------------
 # GitHub - Pages
 # -----------------------
 DOMAIN-SUFFIX,github.io
-DOMAIN,www.github.io
+DOMAIN-SUFFIX,www.github.io
 
 # -----------------------
 # GitHub - Releases / downloads
 # -----------------------
-DOMAIN,github-releases.githubusercontent.com
-DOMAIN,github-registry-files.githubusercontent.com
+DOMAIN-SUFFIX,github-releases.githubusercontent.com
+DOMAIN-SUFFIX,github-registry-files.githubusercontent.com
 
 # -----------------------
 # GitHub - App / OAuth
 # -----------------------
 DOMAIN-SUFFIX,githubapp.com
-DOMAIN,api.githubapp.com
+DOMAIN-SUFFIX,api.githubapp.com
 
 # -----------------------
 # GitHub - Actions
 # -----------------------
-DOMAIN,actions.githubusercontent.com
+DOMAIN-SUFFIX,actions.githubusercontent.com
 
 # -----------------------
 # GitHub - Packages / registries
 # -----------------------
-DOMAIN,pkg.github.com
-DOMAIN,npm.pkg.github.com
-DOMAIN,maven.pkg.github.com
-DOMAIN,nuget.pkg.github.com
-DOMAIN,rubygems.pkg.github.com
-DOMAIN,docker.pkg.github.com
-DOMAIN,container.pkg.github.com
+DOMAIN-SUFFIX,pkg.github.com
+DOMAIN-SUFFIX,npm.pkg.github.com
+DOMAIN-SUFFIX,maven.pkg.github.com
+DOMAIN-SUFFIX,nuget.pkg.github.com
+DOMAIN-SUFFIX,rubygems.pkg.github.com
+DOMAIN-SUFFIX,docker.pkg.github.com
+DOMAIN-SUFFIX,container.pkg.github.com
 
 # -----------------------
 # GitHub - Status
 # -----------------------
-DOMAIN,githubstatus.com
-DOMAIN,www.githubstatus.com
-DOMAIN,githubcopilot.com
+DOMAIN-SUFFIX,githubstatus.com
+DOMAIN-SUFFIX,www.githubstatus.com
+DOMAIN-SUFFIX,githubcopilot.com
 
 # -----------------------
-# Education (Merged)
+# Education
 # -----------------------
 DOMAIN-SUFFIX,stujjc.edu
 DOMAIN-SUFFIX,jjc.edu
-DOMAIN-KEYWORD,jjc
 DOMAIN-SUFFIX,canvaslms.com
 DOMAIN-SUFFIX,icampus.instructure.com
 DOMAIN-SUFFIX,jjc.instructure.com
 DOMAIN-SUFFIX,csun.edu
-DOMAIN-KEYWORD,csun
 DOMAIN-SUFFIX,scc.spokane.edu
 DOMAIN-SUFFIX,spokane.edu
-DOMAIN-KEYWORD,spokane
 DOMAIN-SUFFIX,sfcollege.edu
-DOMAIN-KEYWORD,sfcollege
 DOMAIN-SUFFIX,duosecurity.com
-DOMAIN-KEYWORD,duo
+
 # -----------------------
-# Microsoft (Merged from microsoft.list)
+# Microsoft (Merged)
 # -----------------------
 DOMAIN-SUFFIX,microsoftonline.com
 DOMAIN-SUFFIX,microsoftonline-p.com
@@ -247,17 +221,14 @@ DOMAIN-SUFFIX,store.microsoft.com
 DOMAIN-SUFFIX,xbox.com
 DOMAIN-SUFFIX,xboxlive.com
 DOMAIN-SUFFIX,microsoftstore.com
-DOMAIN-SUFFIX,github.com
-DOMAIN-SUFFIX,githubstatus.com
 DOMAIN-SUFFIX,github.blog
-DOMAIN-SUFFIX,githubcopilot.com
 DOMAIN-SUFFIX,api.msn.com
 DOMAIN-SUFFIX,assets.msn.com
 DOMAIN-SUFFIX,bing.com
 DOMAIN-SUFFIX,bing.net
 DOMAIN-SUFFIX,bingapis.com
 DOMAIN-SUFFIX,copilot.microsoft.com
-DOMAIN-SUFFIX,dealczars.bing-shopping.microsoft-falcon.io # TODO verify ownership
+DOMAIN-SUFFIX,dealczars.bing-shopping.microsoft-falcon.io
 DOMAIN-SUFFIX,gateway.bingviz.microsoftapp.net
 DOMAIN-SUFFIX,location.microsoft.com
 DOMAIN-SUFFIX,login.microsoftonline.com
@@ -265,7 +236,7 @@ DOMAIN-SUFFIX,msn.cn
 DOMAIN-SUFFIX,sapphire.api.microsoftapp.net
 DOMAIN-SUFFIX,self.events.data.microsoft.com
 DOMAIN-SUFFIX,services.bingapis.com
-DOMAIN-SUFFIX,shopping.bing-shopping.microsoft-falcon.io # TODO verify ownership
+DOMAIN-SUFFIX,shopping.bing-shopping.microsoft-falcon.io
 DOMAIN-SUFFIX,sr.bing.com
 DOMAIN-SUFFIX,ssl.bing.com
 DOMAIN-SUFFIX,sydney.bing.com
