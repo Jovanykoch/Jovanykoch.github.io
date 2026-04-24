@@ -3,142 +3,142 @@
 # -----------------------
 # Telegram / Swiftgram
 # -----------------------
-DOMAIN-SUFFIX,swiftgram.app,PROXY
-DOMAIN-SUFFIX,swiftgram.org,PROXY
-DOMAIN-SUFFIX,swiftgram.net,PROXY
-DOMAIN-SUFFIX,swiftgram.pro,PROXY     # TODO: verify swiftgram.pro owner
-DOMAIN-SUFFIX,telegram.org,PROXY
-DOMAIN-SUFFIX,t.me,PROXY
-DOMAIN-SUFFIX,tdesktop.com,PROXY
-DOMAIN-SUFFIX,telegra.ph,PROXY
-DOMAIN-SUFFIX,telegram.me,PROXY
-DOMAIN-SUFFIX,telegram.dog,PROXY
-DOMAIN-SUFFIX,telesco.pe,PROXY
-IP-ASN,44907,PROXY
-IP-ASN,62014,PROXY
-IP-ASN,59930,PROXY
-IP-ASN,62041,PROXY
-IP-ASN,211157,PROXY
-IP-CIDR,5.28.192.0/18,PROXY
-IP-CIDR,109.239.140.0/24,PROXY
+host-suffix, swiftgram.app, PROXY
+host-suffix, swiftgram.org, PROXY
+host-suffix, swiftgram.net, PROXY
+host-suffix, swiftgram.pro, PROXY # TODO: verify swiftgram.pro owner
+host-suffix, telegram.org, PROXY
+host-suffix, t.me, PROXY
+host-suffix, tdesktop.com, PROXY
+host-suffix, telegra.ph, PROXY
+host-suffix, telegram.me, PROXY
+host-suffix, telegram.dog, PROXY
+host-suffix, telesco.pe, PROXY
+ip-asn, 44907, PROXY
+ip-asn, 62014, PROXY
+ip-asn, 59930, PROXY
+ip-asn, 62041, PROXY
+ip-asn, 211157, PROXY
+ip-cidr, 5.28.192.0/18, PROXY
+ip-cidr, 109.239.140.0/24, PROXY
 
 # -----------------------
 # Microsoft
 # -----------------------
-DOMAIN-SUFFIX,microsoft.com,PROXY
-DOMAIN-SUFFIX,live.com,PROXY
-DOMAIN-SUFFIX,live.net,PROXY
-DOMAIN-SUFFIX,msn.com,PROXY
-DOMAIN-SUFFIX,passport.net,PROXY
-DOMAIN-SUFFIX,outlook.com,PROXY
-DOMAIN-SUFFIX,office.com,PROXY
-DOMAIN-SUFFIX,office.net,PROXY
-DOMAIN-SUFFIX,office365.com,PROXY
-DOMAIN-SUFFIX,onedrive.com,PROXY
-DOMAIN-SUFFIX,sharepoint.com,PROXY
-DOMAIN-SUFFIX,sharepointonline.com,PROXY
-DOMAIN-SUFFIX,skype.com,PROXY
-DOMAIN-SUFFIX,teams.microsoft.com,PROXY
-DOMAIN-SUFFIX,azure.com,PROXY
-DOMAIN-SUFFIX,azure.net,PROXY
-DOMAIN-SUFFIX,azureedge.net,PROXY
-DOMAIN-SUFFIX,windows.net,PROXY
-DOMAIN-SUFFIX,windows.com,PROXY
-DOMAIN-SUFFIX,windowsupdate.com,PROXY
-DOMAIN-SUFFIX,xbox.com,PROXY
-DOMAIN-SUFFIX,xboxlive.com,PROXY
-DOMAIN-SUFFIX,bing.com,PROXY
-DOMAIN-SUFFIX,bing.net,PROXY
-DOMAIN-SUFFIX,bingapis.com,PROXY
-DOMAIN-SUFFIX,msauth.net,PROXY
-DOMAIN-SUFFIX,msftauth.net,PROXY
-DOMAIN-SUFFIX,msidentity.com,PROXY
-DOMAIN-SUFFIX,msedge.net,PROXY
-DOMAIN-SUFFIX,msedgechrome.com,PROXY
+host-suffix, microsoft.com, PROXY
+host-suffix, live.com, PROXY
+host-suffix, live.net, PROXY
+host-suffix, msn.com, PROXY
+host-suffix, passport.net, PROXY
+host-suffix, outlook.com, PROXY
+host-suffix, office.com, PROXY
+host-suffix, office.net, PROXY
+host-suffix, office365.com, PROXY
+host-suffix, onedrive.com, PROXY
+host-suffix, sharepoint.com, PROXY
+host-suffix, sharepointonline.com, PROXY
+host-suffix, skype.com, PROXY
+host-suffix, teams.microsoft.com, PROXY
+host-suffix, azure.com, PROXY
+host-suffix, azure.net, PROXY
+host-suffix, azureedge.net, PROXY
+host-suffix, windows.net, PROXY
+host-suffix, windows.com, PROXY
+host-suffix, windowsupdate.com, PROXY
+host-suffix, xbox.com, PROXY
+host-suffix, xboxlive.com, PROXY
+host-suffix, bing.com, PROXY
+host-suffix, bing.net, PROXY
+host-suffix, bingapis.com, PROXY
+host-suffix, msauth.net, PROXY
+host-suffix, msftauth.net, PROXY
+host-suffix, msidentity.com, PROXY
+host-suffix, msedge.net, PROXY
+host-suffix, msedgechrome.com, PROXY
 
 # -----------------------
 # X (Twitter)
 # -----------------------
-DOMAIN-SUFFIX,x.com,PROXY
-DOMAIN-SUFFIX,twitter.com,PROXY
-DOMAIN-SUFFIX,t.co,PROXY
-DOMAIN-SUFFIX,twimg.com,PROXY
+host-suffix, x.com, PROXY
+host-suffix, twitter.com, PROXY
+host-suffix, t.co, PROXY
+host-suffix, twimg.com, PROXY
 
 # -----------------------
 # OpenAI / ChatGPT
 # -----------------------
-DOMAIN-SUFFIX,openai.com,PROXY
-DOMAIN-SUFFIX,chatgpt.com,PROXY
-DOMAIN-SUFFIX,oaistatic.com,PROXY
-DOMAIN-SUFFIX,oaiusercontent.com,PROXY
-DOMAIN-SUFFIX,auth0.com,PROXY
+host-suffix, openai.com, PROXY
+host-suffix, chatgpt.com, PROXY
+host-suffix, oaistatic.com, PROXY
+host-suffix, oaiusercontent.com, PROXY
+host-suffix, auth0.com, PROXY
 
 # -----------------------
 # Spotify
 # -----------------------
-DOMAIN-SUFFIX,spotify.com,PROXY
-DOMAIN-SUFFIX,spotifycdn.com,PROXY
-DOMAIN-SUFFIX,scdn.co,PROXY
-DOMAIN-SUFFIX,spoti.fi,PROXY
+host-suffix, spotify.com, PROXY
+host-suffix, spotifycdn.com, PROXY
+host-suffix, scdn.co, PROXY
+host-suffix, spoti.fi, PROXY
 
 # -----------------------
 # Meta (Instagram)
 # -----------------------
-DOMAIN-SUFFIX,instagram.com,PROXY
-DOMAIN-SUFFIX,cdninstagram.com,PROXY
+host-suffix, instagram.com, PROXY
+host-suffix, cdninstagram.com, PROXY
 
 # -----------------------
 # PayPal
 # -----------------------
-DOMAIN-SUFFIX,paypal.com,PROXY
-DOMAIN-SUFFIX,paypalobjects.com,PROXY
-DOMAIN-SUFFIX,pypl.com,PROXY
+host-suffix, paypal.com, PROXY
+host-suffix, paypalobjects.com, PROXY
+host-suffix, pypl.com, PROXY
 
 # -----------------------
 # Discord / Reddit / Wiki
 # -----------------------
-DOMAIN-SUFFIX,discord.com,PROXY
-DOMAIN-SUFFIX,discord.gg,PROXY
-DOMAIN-SUFFIX,discordapp.com,PROXY
-DOMAIN-SUFFIX,reddit.com,PROXY
-DOMAIN-SUFFIX,redd.it,PROXY
-DOMAIN-SUFFIX,wikipedia.org,PROXY
-DOMAIN-SUFFIX,wikimedia.org,PROXY
+host-suffix, discord.com, PROXY
+host-suffix, discord.gg, PROXY
+host-suffix, discordapp.com, PROXY
+host-suffix, reddit.com, PROXY
+host-suffix, redd.it, PROXY
+host-suffix, wikipedia.org, PROXY
+host-suffix, wikimedia.org, PROXY
 
 # -----------------------
 # Google
 # -----------------------
-DOMAIN-SUFFIX,google.com,PROXY
-DOMAIN-SUFFIX,googleapis.com,PROXY
-DOMAIN-SUFFIX,gstatic.com,PROXY
-DOMAIN-SUFFIX,googlevideo.com,PROXY
-DOMAIN-SUFFIX,youtube.com,PROXY
-DOMAIN-SUFFIX,youtu.be,PROXY
-DOMAIN-SUFFIX,gmail.com,PROXY        # 可选：完整收拢 Gmail / Hotmail
-DOMAIN-SUFFIX,hotmail.com,PROXY
+host-suffix, google.com, PROXY
+host-suffix, googleapis.com, PROXY
+host-suffix, gstatic.com, PROXY
+host-suffix, googlevideo.com, PROXY
+host-suffix, youtube.com, PROXY
+host-suffix, youtu.be, PROXY
+host-suffix, gmail.com, PROXY # 可选：完整收拢 Gmail / Hotmail
+host-suffix, hotmail.com, PROXY
 
 # -----------------------
 # GitHub
 # -----------------------
-DOMAIN-SUFFIX,github.com,PROXY
-DOMAIN-SUFFIX,githubassets.com,PROXY
-DOMAIN-SUFFIX,githubusercontent.com,PROXY
-DOMAIN-SUFFIX,github.io,PROXY
-DOMAIN-SUFFIX,githubapp.com,PROXY
-DOMAIN-SUFFIX,githubstatus.com,PROXY
-DOMAIN-SUFFIX,githubcopilot.com,PROXY
-DOMAIN-SUFFIX,pkg.github.com,PROXY
-DOMAIN-SUFFIX,actions.githubusercontent.com,PROXY
+host-suffix, github.com, PROXY
+host-suffix, githubassets.com, PROXY
+host-suffix, githubusercontent.com, PROXY
+host-suffix, github.io, PROXY
+host-suffix, githubapp.com, PROXY
+host-suffix, githubstatus.com, PROXY
+host-suffix, githubcopilot.com, PROXY
+host-suffix, pkg.github.com, PROXY
+host-suffix, actions.githubusercontent.com, PROXY
 
 # -----------------------
 # Education / Others
 # -----------------------
-DOMAIN-SUFFIX,canvaslms.com,PROXY
-DOMAIN-SUFFIX,instructure.com,PROXY
-DOMAIN-SUFFIX,csun.edu,PROXY
-DOMAIN-SUFFIX,jjc.edu,PROXY
-DOMAIN-SUFFIX,spokane.edu,PROXY
-DOMAIN-SUFFIX,sfcollege.edu,PROXY
-DOMAIN-SUFFIX,duosecurity.com,PROXY
+host-suffix, canvaslms.com, PROXY
+host-suffix, instructure.com, PROXY
+host-suffix, csun.edu, PROXY
+host-suffix, jjc.edu, PROXY
+host-suffix, spokane.edu, PROXY
+host-suffix, sfcollege.edu, PROXY
+host-suffix, duosecurity.com, PROXY
 
 # --------- END ---------
