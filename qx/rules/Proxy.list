@@ -133,12 +133,33 @@ host-suffix, actions.githubusercontent.com, PROXY
 # -----------------------
 # Education / Others
 # -----------------------
-host-suffix, canvaslms.com, PROXY
-host-suffix, instructure.com, PROXY
-host-suffix, csun.edu, PROXY
-host-suffix, jjc.edu, PROXY
-host-suffix, spokane.edu, PROXY
-host-suffix, sfcollege.edu, PROXY
-host-suffix, duosecurity.com, PROXY
+# JJC
+HOST-SUFFIX, jjc.edu, PROXY
+HOST-SUFFIX, stujjc.edu, PROXY
+HOST-SUFFIX, jjc.instructure.com, PROXY
+
+# Canvas / Instructure
+HOST-SUFFIX, canvaslms.com, PROXY
+HOST-SUFFIX, instructure.com, PROXY
+
+# CSUN
+HOST-SUFFIX, csun.edu, PROXY
+
+# Spokane
+HOST-SUFFIX, spokane.edu, PROXY
+HOST-SUFFIX, scc.spokane.edu, PROXY
+
+# SF College
+HOST-SUFFIX, sfcollege.edu, PROXY
+
+# Duo MFA
+HOST-SUFFIX, duosecurity.com, PROXY
+HOST-SUFFIX, duo.com, PROXY
+
+# Common education auth / identity
+HOST-SUFFIX, microsoftonline.com, PROXY
+HOST-SUFFIX, office365.com, PROXY
+HOST-SUFFIX, live.com, PROXY
+
 
 # --------- END ---------
