@@ -1,0 +1,69 @@
+# Direct.list → Quantumult X (host 格式)
+# --------------------------------
+
+# Malaysia · Government
+host-suffix, gov.my, direct
+
+# Banks / Finance
+host-suffix, maybank2u.com.my, direct
+host-suffix, cimbclicks.com.my, direct
+host-suffix, publicbank.com.my, direct
+host-suffix, hlb.com.my, direct
+host-suffix, bankislam.biz, direct
+host-suffix, bankrakyat.com.my, direct
+host-suffix, bsn.com.my, direct
+host-suffix, affinalways.com, direct
+host-suffix, maybank.com, direct
+host-suffix, cimb.com, direct
+host-suffix, rhbgroup.com, direct
+host-suffix, uob.com.my, direct
+host-suffix, ocbc.com.my, direct
+host-suffix, standardchartered.com.my, direct
+
+# Payment
+host-suffix, paynet.my, direct
+host-suffix, fpx.com.my, direct
+host-suffix, duitnow.my, direct
+host-suffix, tngdigital.com.my, direct
+host-suffix, touchngo.com.my, direct
+
+# Local
+host-suffix, shopee.com.my, direct
+host-suffix, lazada.com.my, direct
+
+# Telco
+host-suffix, tm.com.my, direct
+host-suffix, unifi.com.my, direct
+host-suffix, celcom.com.my, direct
+host-suffix, digi.com.my, direct
+host-suffix, maxis.com.my, direct
+host-suffix, u.com.my, direct
+
+# Captive
+host, captive.apple.com, direct
+host-suffix, hotspot.t-mobile.com, direct
+
+# Unbreak
+host-suffix, ol.epicgames.com, direct
+host-suffix, dizhensubao.getui.com, direct
+host, dl.google.com, direct
+host-suffix, googletraveladservices.com, direct
+host-suffix, tracking-protection.cdn.mozilla.net, direct
+host, origin-a.akamaihd.net, direct
+
+host, fairplay.l.qq.com, direct
+host, livew.l.qq.com, direct
+host, vd.l.qq.com, direct
+
+host, errlog.umeng.com, direct
+host, msg.umeng.com, direct
+host, msg.umengcloud.com, direct
+
+host, tracking.miui.com, direct
+host, app.adjust.com, direct
+host, bdtj.tagtic.cn, direct
+host, rewards.hypixel.net, direct
+
+# Koodo
+host-suffix, koodomobile.com, direct
+host-suffix, koodomobile.ca, direct
