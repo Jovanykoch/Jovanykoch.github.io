@@ -1,0 +1,179 @@
+# Loon Rule List - Return-to-China (适配马来西亚回国)
+# Target Policy: PROXY (Back to China / 回国线路)
+#
+# 适用场景：
+# - 你人在马来西亚，需要访问“仅中国大陆可用/更快/更稳定”的业务
+# - 该列表命中的域名应走你的“回国节点/回国策略组”
+#
+# 用法（Loon）：
+# - 作为 Remote Rule List，策略选择：你的回国策略（例如 CN / BackToCN / 回国）
+#
+# 放置顺序建议（从上到下优先级递减）：
+# 1) allow.list (DIRECT)
+# 2) apple.list (DIRECT)
+# 3) reject.list (REJECT)
+# 4) proxy.list / github.list (Proxy)
+# 5) china.list (回国 PROXY)
+#
+# 说明：
+# - 不建议写泛化规则（如 *.cn 全走回国）以免误伤海外站点/CDN
+# - 这里覆盖“常见回国场景”：支付/社交/网盘/视频/音乐/地图/出行/电商/游戏/办公/开发
+
+# --- Alibaba / Ant / Aliyun / Taobao / Tmall / CDN ---
+DOMAIN-SUFFIX,alibaba.com
+DOMAIN-SUFFIX,alipay.com
+DOMAIN-SUFFIX,antgroup.com
+DOMAIN-SUFFIX,aliyun.com
+DOMAIN-SUFFIX,aliyuncs.com
+DOMAIN-SUFFIX,alicdn.com
+DOMAIN-SUFFIX,taobao.com
+DOMAIN-SUFFIX,tmall.com
+DOMAIN-SUFFIX,1688.com
+DOMAIN-SUFFIX,hichina.com
+DOMAIN-SUFFIX,mmstat.com
+DOMAIN-SUFFIX,umeng.com
+DOMAIN-SUFFIX,fliggy.com
+
+# --- Tencent / WeChat / QQ / Qcloud / CDN ---
+DOMAIN-SUFFIX,tencent.com
+DOMAIN-SUFFIX,tencentcloud.com
+DOMAIN-SUFFIX,tencent-cloud.com
+DOMAIN-SUFFIX,myqcloud.com
+DOMAIN-SUFFIX,qcloud.com
+DOMAIN-SUFFIX,qq.com
+DOMAIN-SUFFIX,gtimg.com
+DOMAIN-SUFFIX,gdt.qq.com
+DOMAIN-SUFFIX,wechat.com
+DOMAIN-SUFFIX,weixin.qq.com
+DOMAIN-SUFFIX,tenpay.com
+DOMAIN-SUFFIX,myapp.com
+
+# --- Baidu / Maps / Tieba ---
+DOMAIN-SUFFIX,baidu.com
+DOMAIN-SUFFIX,bdimg.com
+DOMAIN-SUFFIX,bdstatic.com
+DOMAIN-SUFFIX,baidubce.com
+DOMAIN-SUFFIX,map.baidu.com
+
+# --- ByteDance (国内系：抖音/头条/西瓜/飞书CN) ---
+DOMAIN-SUFFIX,bytedance.com
+DOMAIN-SUFFIX,toutiao.com
+DOMAIN-SUFFIX,douyin.com
+DOMAIN-SUFFIX,iesdouyin.com
+DOMAIN-SUFFIX,douyincdn.com
+DOMAIN-SUFFIX,douyinvod.com
+DOMAIN-SUFFIX,douyinstatic.com
+DOMAIN-SUFFIX,ixigua.com
+DOMAIN-SUFFIX,huoshan.com
+DOMAIN-SUFFIX,feishu.cn
+DOMAIN-SUFFIX,volces.com
+DOMAIN-SUFFIX,snssdk.com
+DOMAIN-SUFFIX,byteimg.com
+DOMAIN-SUFFIX,ibytedtos.com
+DOMAIN-SUFFIX,ipstatp.com
+
+# --- JD ---
+DOMAIN-SUFFIX,jd.com
+DOMAIN-SUFFIX,360buyimg.com
+DOMAIN-SUFFIX,jdpay.com
+
+# --- Meituan / Dianping ---
+DOMAIN-SUFFIX,meituan.com
+DOMAIN-SUFFIX,dianping.com
+
+# --- Streaming / Video / Live ---
+DOMAIN-SUFFIX,bilibili.com
+DOMAIN-SUFFIX,biliapi.net
+DOMAIN-SUFFIX,hdslb.com
+DOMAIN-SUFFIX,iqiyi.com
+DOMAIN-SUFFIX,pps.tv
+DOMAIN-SUFFIX,youku.com
+DOMAIN-SUFFIX,ykimg.com
+DOMAIN-SUFFIX,mgtv.com
+DOMAIN-SUFFIX,le.com
+DOMAIN-SUFFIX,letv.com
+DOMAIN-SUFFIX,cctv.com
+DOMAIN-SUFFIX,douyu.com
+DOMAIN-SUFFIX,huya.com
+
+# --- Music ---
+DOMAIN-SUFFIX,kugou.com
+DOMAIN-SUFFIX,kuwo.cn
+DOMAIN-SUFFIX,migu.cn
+DOMAIN-SUFFIX,music.163.com
+DOMAIN-SUFFIX,163.com
+DOMAIN-SUFFIX,126.com
+DOMAIN-SUFFIX,netease.com
+
+# --- Social / Community / News ---
+DOMAIN-SUFFIX,weibo.com
+DOMAIN-SUFFIX,zhihu.com
+DOMAIN-SUFFIX,douban.com
+DOMAIN-SUFFIX,sohu.com
+DOMAIN-SUFFIX,sina.com.cn
+DOMAIN-SUFFIX,eastday.com
+DOMAIN-SUFFIX,xiaohongshu.com
+DOMAIN-SUFFIX,xhscdn.com
+
+# --- Payments / Banks / Fintech ---
+DOMAIN-SUFFIX,unionpay.com
+DOMAIN-SUFFIX,icbc.com.cn
+DOMAIN-SUFFIX,ccb.com
+DOMAIN-SUFFIX,boc.cn
+DOMAIN-SUFFIX,abchina.com
+DOMAIN-SUFFIX,bocom.com.cn
+
+# --- Travel / Tickets / Delivery ---
+DOMAIN-SUFFIX,ctrip.com
+DOMAIN-SUFFIX,ctriptravel.com
+DOMAIN-SUFFIX,qunar.com
+DOMAIN-SUFFIX,12306.cn
+DOMAIN-SUFFIX,trip.com
+DOMAIN-SUFFIX,qyer.com
+
+# --- Maps / Taxi ---
+DOMAIN-SUFFIX,amap.com
+DOMAIN-SUFFIX,gaode.com
+DOMAIN-SUFFIX,diDi.cn
+DOMAIN-SUFFIX,didiglobal.com
+
+# --- Cloud drive / Docs / Office ---
+DOMAIN-SUFFIX,pan.baidu.com
+DOMAIN-SUFFIX,jianguoyun.com
+DOMAIN-SUFFIX,qq.com
+DOMAIN-SUFFIX,weiyun.com
+DOMAIN-SUFFIX,doc.weixin.qq.com
+DOMAIN-SUFFIX,work.weixin.qq.com
+DOMAIN-SUFFIX,qqmail.com
+
+# --- Xiaomi / Huawei / Oppo / Vivo ---
+DOMAIN-SUFFIX,mi.com
+DOMAIN-SUFFIX,xiaomi.com
+DOMAIN-SUFFIX,miui.com
+DOMAIN-SUFFIX,huawei.com
+DOMAIN-SUFFIX,vmall.com
+DOMAIN-SUFFIX,hicloud.com
+DOMAIN-SUFFIX,oppo.com
+DOMAIN-SUFFIX,vivo.com
+DOMAIN-SUFFIX,vivo.com.cn
+
+# --- 360 / Security / CDN ---
+DOMAIN-SUFFIX,360.cn
+DOMAIN-SUFFIX,qhimg.com
+DOMAIN-SUFFIX,qihucdn.com
+
+# --- DNSPod (国内常用DNS) ---
+DOMAIN-SUFFIX,dnspod.cn
+DOMAIN-SUFFIX,dnspod.com
+DOMAIN-SUFFIX,dnspod.net
+
+# --- Mainland Code Hosting ---
+DOMAIN-SUFFIX,gitee.com
+
+# --- China carriers / ISP portals ---
+DOMAIN-SUFFIX,chinatelecom.com.cn
+DOMAIN-SUFFIX,10000.com
+DOMAIN-SUFFIX,chinaunicom.com
+DOMAIN-SUFFIX,10010.com
+DOMAIN-SUFFIX,chinamobile.com
+DOMAIN-SUFFIX,10086.cn
