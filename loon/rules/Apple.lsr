@@ -1,0 +1,60 @@
+# Loon Rule List (APPLE / Optimized for MY + China Routing)
+
+# -----------------------
+# MUST be DIRECT (Core connectivity)
+# -----------------------
+
+# Apple Main Domains
+DOMAIN-SUFFIX,apple.com
+DOMAIN-SUFFIX,apple.co
+DOMAIN-SUFFIX,apple.com.cn
+DOMAIN-SUFFIX,apple.com.hk
+DOMAIN-SUFFIX,apple.com.tw
+DOMAIN-SUFFIX,apple.news
+DOMAIN-SUFFIX,apple-dns.net
+DOMAIN-SUFFIX,aaplimg.com
+DOMAIN-SUFFIX,cdn-apple.com
+DOMAIN-SUFFIX,itunes.com
+DOMAIN-SUFFIX,itunes.apple.com
+DOMAIN-SUFFIX,mzstatic.com
+
+# iCloud Domains
+DOMAIN-SUFFIX,icloud.com
+DOMAIN-SUFFIX,icloud.com.cn
+DOMAIN-SUFFIX,icloud-content.com
+DOMAIN-SUFFIX,icloud-apple.cn
+DOMAIN-SUFFIX,me.com
+DOMAIN-SUFFIX,apple-icloud.cn
+DOMAIN-SUFFIX,appleicloud.cn
+DOMAIN-SUFFIX,applemx-icloud.com
+DOMAIN-SUFFIX,icloud-isupport.com
+DOMAIN-SUFFIX,icloud-sandbox.com
+DOMAIN-SUFFIX,icloudads.net
+DOMAIN-SUFFIX,icloudapple.cn
+DOMAIN-SUFFIX,icloudbox.net
+DOMAIN-SUFFIX,icloudbrowser.net
+DOMAIN-SUFFIX,icloude.com
+DOMAIN-SUFFIX,icloudhome.com
+DOMAIN-SUFFIX,icloudmail.net
+DOMAIN-SUFFIX,icloudmusic.net
+DOMAIN-SUFFIX,icloudnet.net
+DOMAIN-SUFFIX,icloudpay.net
+DOMAIN-SUFFIX,icloudo.com
+DOMAIN-SUFFIX,icloudo.de
+DOMAIN-SUFFIX,icloudo.net
+DOMAIN-SUFFIX,icloudos.de
+DOMAIN-SUFFIX,icloudos.net
+DOMAIN-SUFFIX,icloudsecure.net
+DOMAIN-SUFFIX,icloudsetup.com
+DOMAIN-SUFFIX,ios-icloud.com
+DOMAIN-SUFFIX,myicloud.net
+
+# App Store & Services
+DOMAIN-SUFFIX,appstore.com
+DOMAIN-SUFFIX,digicert.com
+DOMAIN-SUFFIX,entrust.net
+DOMAIN-SUFFIX,apple-mapkit.com
+
+# Other Apple Domains
+DOMAIN-SUFFIX,akadns.net
+DOMAIN-SUFFIX,crashlytics.com
