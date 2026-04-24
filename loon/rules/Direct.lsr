@@ -1,0 +1,53 @@
+# Loon Rule List (ALLOW / WHITELIST)
+# Target Policy: DIRECT
+#
+# Usage (Loon):
+# - Add as Remote Rule List and set policy: DIRECT
+#
+# Purpose:
+# - Whitelist critical services that should stay DIRECT (avoid being affected by reject/proxy lists)
+# - Include Malaysia local services for stability (banking/OTP/government)
+
+# -----------------------
+# Malaysia Government
+# -----------------------
+DOMAIN-SUFFIX,gov.my
+
+# -----------------------
+# Malaysia Banks
+# -----------------------
+DOMAIN-SUFFIX,maybank.com.my
+DOMAIN-SUFFIX,cimb.com
+DOMAIN-SUFFIX,publicbank.com.my
+DOMAIN-SUFFIX,hongleongconnect.my
+DOMAIN-SUFFIX,hlb.com.my
+DOMAIN-SUFFIX,ambank.com.my
+DOMAIN-SUFFIX,bankislam.biz
+DOMAIN-SUFFIX,rhbgroup.com
+DOMAIN-SUFFIX,bankrakyat.com.my
+DOMAIN-SUFFIX,bsn.com.my
+DOMAIN-SUFFIX,affinalways.com
+DOMAIN-SUFFIX,uob.com.my
+DOMAIN-SUFFIX,ocbc.com.my
+DOMAIN-SUFFIX,standardchartered.com.my
+
+# -----------------------
+# Payment
+# -----------------------
+DOMAIN-SUFFIX,paynet.my
+DOMAIN-SUFFIX,fpx.com.my
+DOMAIN-SUFFIX,duitnow.my
+
+# TNG
+DOMAIN-SUFFIX,tngdigital.com.my
+DOMAIN-SUFFIX,touchngo.com.my
+
+# -----------------------
+# Telco
+# -----------------------
+DOMAIN-SUFFIX,tm.com.my
+DOMAIN-SUFFIX,unifi.com.my
+DOMAIN-SUFFIX,celcom.com.my
+DOMAIN-SUFFIX,digi.com.my
+DOMAIN-SUFFIX,maxis.com.my
+DOMAIN-SUFFIX,u.com.my
