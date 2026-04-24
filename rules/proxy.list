@@ -14,6 +14,13 @@ DOMAIN-SUFFIX,telegra.ph
 DOMAIN-SUFFIX,telegram.me
 DOMAIN-SUFFIX,telegram.dog
 DOMAIN-SUFFIX,telesco.pe
+IP-ASN, 44907
+IP-ASN, 62014
+IP-ASN, 59930
+IP-ASN, 62041
+IP-ASN, 211157
+IP-CIDR, 5.28.192.0/18
+IP-CIDR, 109.239.140.0/24
 # TODO: verify swiftgram.pro owner
 
 # -----------------------
