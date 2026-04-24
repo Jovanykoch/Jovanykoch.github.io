@@ -1,0 +1,10 @@
+#!name=DouYin.list diversion
+#!Desc=divide selection supported areas
+#!author=Jkoch14
+#!homepage=https://JovanyKoch.github.io
+#!date=2025-07-19 10:10:00
+#############################################
+
+host-suffix, amemv.com
+host-suffix, snssdk.com
+host-suffix, douyinvod.com
