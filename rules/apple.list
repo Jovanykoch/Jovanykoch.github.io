@@ -1,6 +1,6 @@
 # Apple RULE-SET (Optimized / Clean / MY Scenario)
 
-# === Core Identity ===
+# === Core Identity ====
 DOMAIN-SUFFIX,apple.com
 DOMAIN-SUFFIX,icloud.com
 DOMAIN-SUFFIX,icloud.com.cn
