@@ -1,5 +1,5 @@
-# 规则名称: ChinaIp
-# 规则统计: 7456
+# Rule Name: ChinaIp
+# Rule statistics: 7456
 
 IP-CIDR,1.0.1.0/24,ChinaIp
 IP-CIDR,1.0.2.0/23,ChinaIp
