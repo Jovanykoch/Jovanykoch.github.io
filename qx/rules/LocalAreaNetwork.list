@@ -1,8 +1,10 @@
 # Local/LAN address
 # ACL4SSR logo If there is no, it means that the ACL4SSR rule is not used.
+
+
+# Local/LAN address
 DOMAIN-SUFFIX,acl4.ssr
 
-# 本地/局域网地址
 DOMAIN-SUFFIX,ip6-localhost
 DOMAIN-SUFFIX,ip6-loopback
 DOMAIN-SUFFIX,internal
