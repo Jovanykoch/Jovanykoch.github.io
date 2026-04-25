@@ -167,5 +167,13 @@ DOMAIN-SUFFIX,microsoftonline.com
 DOMAIN-SUFFIX,office365.com
 DOMAIN-SUFFIX,live.com
 
+# Apple_relay
+
+DOMAIN-SUFFIX,apple-relay.apple.com
+DOMAIN-SUFFIX,apple-relay.cloudflare.com
+DOMAIN-KEYWORD,apple-relay
+DOMAIN-SUFFIX,googleapis.com
+DOMAIN-SUFFIX,diabrowser.engineering
+
 
 # --------------------------- END ---------------------------
