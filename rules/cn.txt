@@ -1,0 +1,88 @@
+# Mainland China Domain List (Strict)
+# Format: DOMAIN-SET for Surge
+
+# === Alibaba ===
+alibaba.com
+aliyun.com
+alicdn.com
+taobao.com
+tmall.com
+1688.com
+
+# === Tencent ===
+qq.com
+wechat.com
+weixin.qq.com
+tencent.com
+gtimg.com
+qpic.cn
+
+# === Baidu ===
+baidu.com
+bdstatic.com
+bdimg.com
+
+# === ByteDance ===
+bytedance.com
+douyin.com
+toutiao.com
+ixigua.com
+pstatp.com
+snssdk.com
+
+# === NetEase ===
+163.com
+126.com
+yeah.net
+netease.com
+
+# === JD ===
+jd.com
+jd.hk
+360buyimg.com
+
+# === Bilibili ===
+bilibili.com
+bilivideo.com
+
+# === Xiaomi ===
+mi.com
+xiaomi.com
+
+# === Huawei ===
+huawei.com
+hicloud.com
+
+# === Meituan ===
+meituan.com
+meituan.net
+dianping.com
+
+# === Others Common CN Services ===
+zhihu.com
+youku.com
+iqiyi.com
+sohu.com
+ifeng.com
+ctrip.com
+qunar.com
+
+# === Banking / Payment ===
+alipay.com
+unionpay.com
+95516.com
+
+# === Cloud / CDN ===
+chinacache.com
+wangsu.com
+cloudflare.cn
+
+# === Gov / Education ===
+gov.cn
+edu.cn
+
+# === Generic Mainland TLDs ===
+cn
+com.cn
+net.cn
+org.cn
