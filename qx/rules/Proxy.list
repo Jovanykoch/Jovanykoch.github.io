@@ -144,6 +144,7 @@ HOST-SUFFIX, instructure.com, PROXY
 
 # CSUN
 HOST-SUFFIX, csun.edu, PROXY
+HOST-SUFFIX, shibboleth.csun.edu, PROXY
 
 # Spokane
 HOST-SUFFIX, spokane.edu, PROXY
