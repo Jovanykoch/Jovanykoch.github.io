@@ -1,0 +1,99 @@
+# China Mainland Core Domains
+
+# Tencent
+HOST-SUFFIX,qq.com
+HOST-SUFFIX,wechat.com
+HOST-SUFFIX,weixin.com
+HOST-SUFFIX,tencent.com
+HOST-SUFFIX,tencent-cloud.com
+HOST-SUFFIX,qpic.cn
+HOST-SUFFIX,gtimg.com
+
+# Alibaba
+HOST-SUFFIX,taobao.com
+HOST-SUFFIX,tmall.com
+HOST-SUFFIX,alicdn.com
+HOST-SUFFIX,aliyun.com
+HOST-SUFFIX,aliyuncs.com
+HOST-SUFFIX,alipay.com
+
+# ByteDance
+HOST-SUFFIX,bytedance.com
+HOST-SUFFIX,bytecdn.cn
+HOST-SUFFIX,ixigua.com
+HOST-SUFFIX,douyin.com
+HOST-SUFFIX,toutiao.com
+
+# Baidu
+HOST-SUFFIX,baidu.com
+HOST-SUFFIX,bdstatic.com
+
+# NetEase
+HOST-SUFFIX,163.com
+HOST-SUFFIX,126.com
+HOST-SUFFIX,netease.com
+
+# JD
+HOST-SUFFIX,jd.com
+HOST-SUFFIX,jd.hk
+
+# Bilibili
+HOST-SUFFIX,bilibili.com
+HOST-SUFFIX,hdslb.com
+
+# Xiaomi / Huawei
+HOST-SUFFIX,mi.com
+HOST-SUFFIX,xiaomi.com
+HOST-SUFFIX,huawei.com
+HOST-SUFFIX,hicloud.com
+
+# China CDN / Cloud
+HOST-SUFFIX,chinacache.com
+HOST-SUFFIX,wangsu.com
+HOST-SUFFIX,cloudflare.cn
+
+# Government / Basic Infra
+HOST-SUFFIX,gov.cn
+HOST-SUFFIX,edu.cn
+
+# DNS / Connectivity
+HOST-SUFFIX,114dns.com
+HOST-SUFFIX,dns.alidns.com
+
+# ------------------------
+# China Mainland IP Ranges (sample high-confidence blocks)
+
+IP-CIDR,1.0.1.0/24
+IP-CIDR,1.0.2.0/23
+IP-CIDR,1.1.0.0/24
+IP-CIDR,1.2.4.0/22
+IP-CIDR,14.0.0.0/8
+IP-CIDR,27.0.0.0/8
+IP-CIDR,36.0.0.0/8
+IP-CIDR,39.0.0.0/8
+IP-CIDR,42.0.0.0/8
+IP-CIDR,49.0.0.0/8
+IP-CIDR,58.0.0.0/8
+IP-CIDR,59.0.0.0/8
+IP-CIDR,60.0.0.0/7
+IP-CIDR,101.0.0.0/8
+IP-CIDR,103.0.0.0/8
+IP-CIDR,106.0.0.0/8
+IP-CIDR,110.0.0.0/7
+IP-CIDR,112.0.0.0/5
+IP-CIDR,116.0.0.0/6
+IP-CIDR,120.0.0.0/6
+IP-CIDR,124.0.0.0/7
+IP-CIDR,139.0.0.0/8
+IP-CIDR,140.0.0.0/8
+IP-CIDR,150.0.0.0/8
+IP-CIDR,163.0.0.0/8
+IP-CIDR,171.0.0.0/8
+IP-CIDR,175.0.0.0/8
+IP-CIDR,180.0.0.0/6
+IP-CIDR,182.0.0.0/7
+IP-CIDR,202.0.0.0/7
+IP-CIDR,203.0.0.0/8
+IP-CIDR,210.0.0.0/7
+IP-CIDR,218.0.0.0/7
+IP-CIDR,220.0.0.0/6
