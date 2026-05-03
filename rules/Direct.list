@@ -2,6 +2,10 @@
 # Combined: MY-Direct + Unbreak + LAN
 # Last-Update: 2026-04-23
 # -------------------------------------------------
+# === Facebook
+DOMAIN-SUFFIX,facebook.com
+DOMAIN-SUFFIX,fbcdn.net
+
 
 # === Malaysia · Government ===
 DOMAIN-SUFFIX,gov.my
