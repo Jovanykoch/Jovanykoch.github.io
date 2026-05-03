@@ -1,0 +1,150 @@
+# Loon Rule Set
+# Policy: ProxyLite
+
+# Telegram / Swiftgram
+DOMAIN-SUFFIX,swiftgram.app
+DOMAIN-SUFFIX,swiftgram.org
+DOMAIN-SUFFIX,swiftgram.net
+DOMAIN-SUFFIX,swiftgram.pro
+DOMAIN-SUFFIX,telegram.org
+DOMAIN-SUFFIX,t.me
+DOMAIN-SUFFIX,tdesktop.com
+DOMAIN-SUFFIX,telegra.ph
+DOMAIN-SUFFIX,telegram.me
+DOMAIN-SUFFIX,telegram.dog
+DOMAIN-SUFFIX,telesco.pe
+
+# Microsoft
+DOMAIN-SUFFIX,microsoft.com
+DOMAIN-SUFFIX,live.com
+DOMAIN-SUFFIX,outlook.com
+DOMAIN-SUFFIX,office.com
+DOMAIN-SUFFIX,office.net
+DOMAIN-SUFFIX,onedrive.com
+DOMAIN-SUFFIX,sharepoint.com
+DOMAIN-SUFFIX,skype.com
+DOMAIN-SUFFIX,teams.microsoft.com
+DOMAIN-SUFFIX,azure.com
+DOMAIN-SUFFIX,windows.net
+DOMAIN-SUFFIX,outlook.office365.com
+
+# X
+DOMAIN-SUFFIX,x.com
+DOMAIN-SUFFIX,twitter.com
+DOMAIN-SUFFIX,t.co
+DOMAIN-SUFFIX,twimg.com
+
+# OpenAI
+DOMAIN-SUFFIX,openai.com
+DOMAIN-SUFFIX,chatgpt.com
+DOMAIN-SUFFIX,oaistatic.com
+DOMAIN-SUFFIX,oaiusercontent.com
+DOMAIN-SUFFIX,auth0.com
+
+# Spotify
+DOMAIN-SUFFIX,spotify.com
+DOMAIN-SUFFIX,spotifycdn.com
+DOMAIN-SUFFIX,scdn.co
+DOMAIN-SUFFIX,spoti.fi
+DOMAIN-SUFFIX,spotifycharts.com
+DOMAIN-SUFFIX,spotifyforbrands.com
+
+# Meta
+DOMAIN-SUFFIX,cdninstagram.com
+DOMAIN-SUFFIX,instagram.com
+
+# PayPal
+DOMAIN-SUFFIX,paypal.com
+DOMAIN-SUFFIX,paypalobjects.com
+DOMAIN-SUFFIX,pypl.com
+
+# Common
+DOMAIN-SUFFIX,discord.com
+DOMAIN-SUFFIX,discord.gg
+DOMAIN-SUFFIX,discordapp.com
+DOMAIN-SUFFIX,discordapp.net
+DOMAIN-SUFFIX,reddit.com
+DOMAIN-SUFFIX,redd.it
+DOMAIN-SUFFIX,wikipedia.org
+DOMAIN-SUFFIX,wikimedia.org
+
+# Google
+DOMAIN-SUFFIX,google.com
+DOMAIN-SUFFIX,googleapis.com
+DOMAIN-SUFFIX,gstatic.com
+DOMAIN-SUFFIX,youtube.com
+DOMAIN-SUFFIX,youtu.be
+DOMAIN-SUFFIX,googlevideo.com
+
+# GitHub
+DOMAIN-SUFFIX,githubassets.com
+DOMAIN-SUFFIX,githubusercontent.com
+DOMAIN-SUFFIX,github.io
+
+# Education
+DOMAIN-SUFFIX,jjc.edu
+DOMAIN-SUFFIX,csun.edu
+DOMAIN-SUFFIX,spokane.edu
+DOMAIN-SUFFIX,canvaslms.com
+DOMAIN-SUFFIX,instructure.com
+DOMAIN-SUFFIX,duosecurity.com
+DOMAIN-SUFFIX,sbctc.edu
+DOMAIN-SUFFIX,ctclink.us
+
+# ===== Penn State =====
+DOMAIN-SUFFIX,psu.edu
+DOMAIN-SUFFIX,pennstate.edu
+DOMAIN-SUFFIX,canvas.psu.edu
+DOMAIN-SUFFIX,accounts.psu.edu
+DOMAIN-SUFFIX,workday.psu.edu
+
+# Academic resources (it is recommended to go to the American node)
+DOMAIN-SUFFIX,jstor.org
+DOMAIN-SUFFIX,ieee.org
+DOMAIN-SUFFIX,springer.com
+DOMAIN-SUFFIX,sciencedirect.com
+DOMAIN-SUFFIX,nature.com
+
+# Maricopa
+
+DOMAIN-SUFFIX,maricopa.edu
+
+# Subsystem
+
+DOMAIN-SUFFIX,district.maricopa.edu
+DOMAIN-SUFFIX,directory.maricopa.edu
+DOMAIN-SUFFIX,students.maricopa.edu
+DOMAIN-SUFFIX,my.maricopa.edu
+DOMAIN-SUFFIX,portal.maricopa.edu
+DOMAIN-SUFFIX,canvas.maricopa.edu
+
+# Colleges
+
+DOMAIN-SUFFIX,gatewaycc.edu
+DOMAIN-SUFFIX,gccaz.edu
+DOMAIN-SUFFIX,mesacc.edu
+DOMAIN-SUFFIX,phoenixcollege.edu
+DOMAIN-SUFFIX,scottsdalecc.edu
+DOMAIN-SUFFIX,paradisevalley.edu
+DOMAIN-SUFFIX,southmountaincc.edu
+DOMAIN-SUFFIX,estrellamountain.edu
+DOMAIN-SUFFIX,cgc.edu
+DOMAIN-SUFFIX,riosalado.edu
+
+# Learning system
+
+DOMAIN-SUFFIX,instructure.com
+DOMAIN-SUFFIX,canvaslms.com
+DOMAIN-SUFFIX,turnitin.com
+DOMAIN-SUFFIX,zoom.us
+
+
+
+# Microsoft (Extended)
+DOMAIN-SUFFIX,microsoftonline.com
+DOMAIN-SUFFIX,office365.com
+DOMAIN-SUFFIX,azureedge.net
+DOMAIN-SUFFIX,bing.com
+DOMAIN-SUFFIX,bing.net
+DOMAIN-SUFFIX,msedge.net
+DOMAIN-SUFFIX,windowsupdate.com
