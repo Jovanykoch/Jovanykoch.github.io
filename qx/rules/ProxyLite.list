@@ -1,172 +1,207 @@
-# Proxy.list
+# ProxyLite.list — cleaned 2026-04-23
 
 # -----------------------
 # Telegram / Swiftgram
 # -----------------------
-host-suffix, swiftgram.app
-host-suffix, swiftgram.org
-host-suffix, swiftgram.net
-host-suffix, swiftgram.pro
-host-suffix, telegram.org
-host-suffix, t.me
-host-suffix, tdesktop.com
-host-suffix, telegra.ph
-host-suffix, telegram.me
-host-suffix, telegram.dog
-host-suffix, telesco.pe
-ip-asn, 44907
-ip-asn, 62014
-ip-asn, 59930
-ip-asn, 62041
-ip-asn, 211157
-ip-cidr, 5.28.192.0/18
-ip-cidr, 109.239.140.0/24
+host-suffix,swiftgram.app
+host-suffix,swiftgram.org
+host-suffix,swiftgram.net
+host-suffix,swiftgram.pro
+host-suffix,telegram.org
+host-suffix,t.me
+host-suffix,tdesktop.com
+host-suffix,telegra.ph
+host-suffix,telegram.me
+host-suffix,telegram.dog
+host-suffix,telesco.pe
+ip-asn,44907
+ip-asn,62014
+ip-asn,59930
+ip-asn,62041
+ip-asn,211157
+ip-cidr,5.28.192.0/18
+ip-cidr,109.239.140.0/24
+# TODO: verify swiftgram.pro owner
 
 # -----------------------
 # Microsoft
 # -----------------------
-host-suffix, microsoft.com
-host-suffix, live.com
-host-suffix, live.net
-host-suffix, msn.com
-host-suffix, passport.net
-host-suffix, outlook.com
-host-suffix, office.com
-host-suffix, office.net
-host-suffix, office365.com
-host-suffix, onedrive.com
-host-suffix, sharepoint.com
-host-suffix, sharepointonline.com
-host-suffix, skype.com
-host-suffix, teams.microsoft.com
-host-suffix, azure.com
-host-suffix, azure.net
-host-suffix, azureedge.net
-host-suffix, windows.net
-host-suffix, windows.com
-host-suffix, windowsupdate.com
-host-suffix, xbox.com
-host-suffix, xboxlive.com
-host-suffix, bing.com
-host-suffix, bing.net
-host-suffix, bingapis.com
-host-suffix, msauth.net
-host-suffix, msftauth.net
-host-suffix, msidentity.com
-host-suffix, msedge.net
-host-suffix, msedgechrome.com
+host-suffix,microsoft.com
+host-suffix,live.com
+host-suffix,live.net
+host-suffix,msn.com
+host-suffix,passport.net
+host-suffix,outlook.com
+host-suffix,office.com
+host-suffix,office.net
+host-suffix,office365.com
+host-suffix,onedrive.com
+host-suffix,sharepoint.com
+host-suffix,sharepointonline.com
+host-suffix,skype.com
+host-suffix,teams.microsoft.com
+host-suffix,azure.com
+host-suffix,azure.net
+host-suffix,azureedge.net
+host-suffix,windows.net
+host-suffix,windows.com
+host-suffix,windowsupdate.com
+host-suffix,xbox.com
+host-suffix,xboxlive.com
+host-suffix,bing.com
+host-suffix,bing.net
+host-suffix,bingapis.com
+host-suffix,msauth.net
+host-suffix,msftauth.net
+host-suffix,msidentity.com
+host-suffix,msedge.net
+host-suffix,msedgechrome.com
 
 # -----------------------
 # X (Twitter)
 # -----------------------
-host-suffix, x.com
-host-suffix, twitter.com
-host-suffix, t.co
-host-suffix, twimg.com
+host-suffix,x.com
+host-suffix,twitter.com
+host-suffix,t.co
+host-suffix,twimg.com
 
 # -----------------------
 # OpenAI / ChatGPT
 # -----------------------
-host-suffix, openai.com
-host-suffix, chatgpt.com
-host-suffix, oaistatic.com
-host-suffix, oaiusercontent.com
-host-suffix, auth0.com
+host-suffix,chat.com
+host-suffix,sora.com
+host-suffix,crixet.com
+host-suffix,openai.com
+host-suffix,chatgpt.com
+host-suffix,oaistatic.com
+host-suffix,host.livekit.cloud
+host-suffix,oaiusercontent.com
+host-suffix,turn.livekit.cloud
+host-suffix,chatgpt.livekit.cloud
+host-suffix,openai.com.cdn.cloudflare.net
+host,openaicom.imgix.net
+host,o33249.ingest.sentry.io
+host,browser-intake-datadoghq.com
+host,openaiapi-site.azureedge.net
+host,production-openaicom-storage.azureedge.net
+host,openaicomproductionae4b.blob.core.windows.net
+host,openaicom-api-bdcpf8c6d2e9atf6.z01.azurefd.net
+
+# -----------------------
+# Anthropic AI
+# ------------------------
+host-suffix,clau.de
+host-suffix,claude.ai
+host-suffix,claude.com
+host-suffix,anthropic.com
+host-suffix,claudemcpclient.com
+host-suffix,claudeusercontent.com
+host,servd-anthropic-website.b-cdn.net
 
 # -----------------------
 # Perplexity Ai
 # -----------------------
-host-suffix, perplexity.ai
-host-suffix, perplexitylabs.com
+host-suffix,perplexity.ai
+host-suffix,perplexitylabs.com
 
 # -----------------------
 # Spotify
 # -----------------------
-host-suffix, spotify.com
-host-suffix, spotifycdn.com
-host-suffix, scdn.co
-host-suffix, spoti.fi
+host-suffix,spotify.com
+host-suffix,spotifycdn.com
+host-suffix,scdn.co
+host-suffix,spoti.fi
 
 # -----------------------
 # Meta (Instagram)
 # -----------------------
-host-suffix, instagram.com
-host-suffix, cdninstagram.com
+host-suffix,instagram.com
+host-suffix,cdninstagram.com
 
 # -----------------------
 # PayPal
 # -----------------------
-host-suffix, paypal.com
-host-suffix, paypalobjects.com
-host-suffix, pypl.com
+host-suffix,paypal.com
+host-suffix,paypalobjects.com
+host-suffix,pypl.com
 
 # -----------------------
 # Discord / Reddit / Wiki
 # -----------------------
-host-suffix, discord.com
-host-suffix, discord.gg
-host-suffix, discordapp.com
-host-suffix, reddit.com
-host-suffix, redd.it
-host-suffix, wikipedia.org
-host-suffix, wikimedia.org
+host-suffix,discord.com
+host-suffix,discord.gg
+host-suffix,discordapp.com
+host-suffix,reddit.com
+host-suffix,redd.it
+host-suffix,wikipedia.org
+host-suffix,wikimedia.org
 
 # -----------------------
 # Google
 # -----------------------
-host-suffix, google.com
-host-suffix, googleapis.com
-host-suffix, gstatic.com
-host-suffix, googlevideo.com
-host-suffix, youtube.com
-host-suffix, youtu.be
-host-suffix, gmail.com
-host-suffix, hotmail.com
+host-suffix,google.com
+host-suffix,googleapis.com
+host-suffix,gstatic.com
+host-suffix,googlevideo.com
+host-suffix,youtube.com
+host-suffix,youtu.be
+# 可选：若要完整收拢 Gmail / Hotmail
+host-suffix,gmail.com
+host-suffix,hotmail.com
 
 # -----------------------
 # GitHub
 # -----------------------
-host-suffix, github.com
-host-suffix, githubassets.com
-host-suffix, githubusercontent.com
-host-suffix, github.io
-host-suffix, githubapp.com
-host-suffix, githubstatus.com
-host-suffix, githubcopilot.com
-host-suffix, pkg.github.com
-host-suffix, actions.githubusercontent.com
+host-suffix,github.com
+host-suffix,githubassets.com
+host-suffix,githubusercontent.com
+host-suffix,github.io
+host-suffix,githubapp.com
+host-suffix,githubstatus.com
+host-suffix,githubcopilot.com
+host-suffix,pkg.github.com
+host-suffix,actions.githubusercontent.com
 
 # -----------------------
 # Education / Others
 # -----------------------
 # JJC
-HOST-SUFFIX, jjc.edu
-HOST-SUFFIX, stujjc.edu
-HOST-SUFFIX, jjc.instructure.com
+host-suffix,jjc.edu
+host-suffix,stujjc.edu
+host,jjc.instructure.com
 
 # Canvas / Instructure
-HOST-SUFFIX, canvaslms.com
-HOST-SUFFIX, instructure.com
+host-suffix,canvaslms.com
+host-suffix,instructure.com
 
 # CSUN
-HOST-SUFFIX, csun.edu
-HOST-SUFFIX, shibboleth.csun.edu
+host-suffix,csun.edu
 
 # Spokane
-HOST-SUFFIX, spokane.edu
-HOST-SUFFIX, scc.spokane.edu
+host-suffix,spokane.edu
+host,scc.spokane.edu
 
 # SF College
-HOST-SUFFIX, sfcollege.edu
+host-suffix,sfcollege.edu
+
+# Maricopa edu
+host-suffix,maricopa.edu
 
 # Duo MFA
-HOST-SUFFIX, duosecurity.com
-HOST-SUFFIX, duo.com
+host-suffix,duosecurity.com
+host-suffix,duo.com
 
 # Common education auth / identity
-HOST-SUFFIX, microsoftonline.com
-HOST-SUFFIX, office365.com
-HOST-SUFFIX, live.com
+host-suffix,login.microsoftonline.com
+host-suffix,microsoftonline.com
+host-suffix,office365.com
+host-suffix,live.com
 
+# Apple_relay
+host-suffix,apple-relay.apple.com
+host-suffix,apple-relay.cloudflare.com
+host-keyword,apple-relay
+host-suffix,googleapis.com
+host-suffix,diabrowser.engineering
 
-# --------- END ---------
+# --------------------------- END ---------------------------
