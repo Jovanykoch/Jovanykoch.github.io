@@ -1,0 +1,109 @@
+# ProxyLite.list — cleaned 2026-04-23
+
+# -----------------------
+# Telegram / Swiftgram
+# -----------------------
+DOMAIN-SUFFIX,swiftgram.app
+DOMAIN-SUFFIX,swiftgram.org
+DOMAIN-SUFFIX,swiftgram.net
+DOMAIN-SUFFIX,swiftgram.pro
+DOMAIN-SUFFIX,telegram.org
+DOMAIN-SUFFIX,t.me
+DOMAIN-SUFFIX,tdesktop.com
+DOMAIN-SUFFIX,telegra.ph
+DOMAIN-SUFFIX,telegram.me
+DOMAIN-SUFFIX,telegram.dog
+DOMAIN-SUFFIX,telesco.pe
+IP-ASN, 44907
+IP-ASN, 62014
+IP-ASN, 59930
+IP-ASN, 62041
+IP-ASN, 211157
+IP-CIDR, 5.28.192.0/18
+IP-CIDR, 109.239.140.0/24
+# TODO: verify swiftgram.pro owner
+
+
+
+# -----------------------
+# X (Twitter)
+# -----------------------
+DOMAIN-SUFFIX,x.com
+DOMAIN-SUFFIX,twitter.com
+DOMAIN-SUFFIX,t.co
+DOMAIN-SUFFIX,twimg.com
+
+# -----------------------
+# OpenAI / ChatGPT
+# -----------------------
+DOMAIN-SUFFIX,openai.com
+DOMAIN-SUFFIX,chatgpt.com
+DOMAIN-SUFFIX,oaistatic.com
+DOMAIN-SUFFIX,oaiusercontent.com
+DOMAIN-SUFFIX,auth0.com
+
+# -----------------------
+# Perplexity Ai
+# -----------------------
+DOMAIN-SUFFIX,perplexity.ai
+DOMAIN-SUFFIX,perplexitylabs.com
+
+# -----------------------
+# Spotify
+# -----------------------
+DOMAIN-SUFFIX,spotify.com
+DOMAIN-SUFFIX,spotifycdn.com
+DOMAIN-SUFFIX,scdn.co
+DOMAIN-SUFFIX,spoti.fi
+
+# -----------------------
+# Meta (Instagram)
+# -----------------------
+DOMAIN-SUFFIX,instagram.com
+DOMAIN-SUFFIX,cdninstagram.com
+
+# -----------------------
+# PayPal
+# -----------------------
+DOMAIN-SUFFIX,paypal.com
+DOMAIN-SUFFIX,paypalobjects.com
+DOMAIN-SUFFIX,pypl.com
+
+# -----------------------
+# Discord / Reddit / Wiki
+# -----------------------
+DOMAIN-SUFFIX,discord.com
+DOMAIN-SUFFIX,discord.gg
+DOMAIN-SUFFIX,discordapp.com
+DOMAIN-SUFFIX,reddit.com
+DOMAIN-SUFFIX,redd.it
+DOMAIN-SUFFIX,wikipedia.org
+DOMAIN-SUFFIX,wikimedia.org
+
+# -----------------------
+# Google
+# -----------------------
+DOMAIN-SUFFIX,google.com
+DOMAIN-SUFFIX,googleapis.com
+DOMAIN-SUFFIX,gstatic.com
+DOMAIN-SUFFIX,googlevideo.com
+DOMAIN-SUFFIX,youtube.com
+DOMAIN-SUFFIX,youtu.be
+# 可选：若要完整收拢 Gmail / Hotmail
+DOMAIN-SUFFIX,gmail.com
+DOMAIN-SUFFIX,hotmail.com
+
+# -----------------------
+# GitHub
+# -----------------------
+DOMAIN-SUFFIX,github.com
+DOMAIN-SUFFIX,githubassets.com
+DOMAIN-SUFFIX,githubusercontent.com      # covers raw, avatars, media…
+DOMAIN-SUFFIX,github.io
+DOMAIN-SUFFIX,githubapp.com
+DOMAIN-SUFFIX,githubstatus.com
+DOMAIN-SUFFIX,githubcopilot.com
+DOMAIN-SUFFIX,pkg.github.com             # 包管理子域
+DOMAIN-SUFFIX,actions.githubusercontent.com
+
+- END ---------------------------
