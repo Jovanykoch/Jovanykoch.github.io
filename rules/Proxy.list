@@ -103,7 +103,8 @@ DOMAIN-SUFFIX,github.io
 DOMAIN-SUFFIX,githubapp.com
 DOMAIN-SUFFIX,githubstatus.com
 DOMAIN-SUFFIX,githubcopilot.com
-DOMAIN-SUFFIX,pkg.github.com             # 包管理子域
+DOMAIN-SUFFIX,pkg.github.com
+
 DOMAIN-SUFFIX,actions.githubusercontent.com
 
-- END ---------------------------
+##==============================
