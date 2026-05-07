@@ -1,0 +1,35 @@
+# ✅ ② student-mail-storage.list → DIRECT
+# 📄 rule/student-mail-storage.list
+# ==================================================
+# NAME: Student Mail & Storage
+# SCENE: Studying abroad with US nodes
+# ACTION: DIRECT
+# PLATFORM: Surge
+# RULE: DOMAIN-SUFFIX only
+# ==================================================
+
+############################
+# Microsoft Mail & Office
+############################
+
+DOMAIN-SUFFIX,outlook.com
+DOMAIN-SUFFIX,outlookmobile.com
+DOMAIN-SUFFIX,office.com
+DOMAIN-SUFFIX,office365.com
+DOMAIN-SUFFIX,live.com
+
+############################
+# Microsoft Cloud Storage
+############################
+
+DOMAIN-SUFFIX,onedrive.com
+DOMAIN-SUFFIX,sharepoint.com
+DOMAIN-SUFFIX,onenote.com
+
+############################
+# Microsoft Base Static
+############################
+
+DOMAIN-SUFFIX,microsoft.com
+DOMAIN-SUFFIX,microsoft365.com
+DOMAIN-SUFFIX,msocdn.com
