@@ -1,5 +1,5 @@
 # 🚫 rejec.list
-# Surge rule list for Apple services
+# Surge rule list for Reject services
 # Generated: 2026-05-09
 # Format: DOMAIN,example.com  or DOMAIN-SUFFIX,example.com
 # -------------------------------------------------------
@@ -36812,11 +36812,4 @@ DOMAIN-SUFFIX,axp.wreg.com
 DOMAIN-SUFFIX,axp.wric.com
 DOMAIN-SUFFIX,axp.wsav.com
 DOMAIN-SUFFIX,axp.wspa.com
-DOMAIN-SUFFIX,axp.wtaj.com
-DOMAIN-SUFFIX,axp.wtnh.com
-DOMAIN-SUFFIX,axp.wtrf.com
-DOMAIN-SUFFIX,axp.wvnstv.com
-DOMAIN-SUFFIX,axp.wwlp.com
-DOMAIN-SUFFIX,axp.wytv.com
-DOMAIN-SUFFIX,axp.yourbasin.com
-DOMAIN-SUFFIX,axp.your
+DOMAIN-SUFFIX,axp.wta
