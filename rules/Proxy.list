@@ -75,15 +75,54 @@ DOMAIN-SUFFIX,wikimedia.org
 # -----------------------
 # Google
 # -----------------------
+# Gemini 相关媒体与内容
+
+
 DOMAIN-SUFFIX,google.com
 DOMAIN-SUFFIX,googleapis.com
 DOMAIN-SUFFIX,gstatic.com
 DOMAIN-SUFFIX,googlevideo.com
 DOMAIN-SUFFIX,youtube.com
 DOMAIN-SUFFIX,youtu.be
+DOMAIN-SUFFIX,ytimg.com
 # 可选：若要完整收拢 Gmail / Hotmail
 DOMAIN-SUFFIX,gmail.com
 DOMAIN-SUFFIX,hotmail.com
+# Google Gemini 官方服务域名规则
+# 文件: rules/google_gemini.list
+# 用途: Surge 中 Google Gemini AI 服务分流
+# 规则类型: 仅 DOMAIN 和 DOMAIN-SUFFIX
+
+# Gemini 官方网页入口
+DOMAIN-SUFFIX,gemini.google.com
+DOMAIN-SUFFIX,gemini.googleapis.com
+
+# Gemini AI 模型和 API 接口
+DOMAIN-SUFFIX,ai.google
+DOMAIN-SUFFIX,genai.google
+DOMAIN-SUFFIX,genai.googleapis.com
+
+# 与 Gemini 相关的 Cloud 和开发者服务
+DOMAIN-SUFFIX,cloud.google.com
+DOMAIN-SUFFIX,console.cloud.google.com
+DOMAIN-SUFFIX,developers.google.com
+DOMAIN-SUFFIX,apis.google.com
+DOMAIN-SUFFIX,firebase.google.com
+
+# Gemini AI 模型下载与数据请求
+DOMAIN-SUFFIX,storage.googleapis.com
+DOMAIN-SUFFIX,clients1.google.com
+DOMAIN-SUFFIX,clients2.google.com
+DOMAIN-SUFFIX,clients3.google.com
+DOMAIN-SUFFIX,clients4.google.com
+DOMAIN-SUFFIX,clients5.google.com
+DOMAIN-SUFFIX,clients6.google.com
+
+# Gemini 相关分析与日志
+DOMAIN-SUFFIX,google-analytics.com
+DOMAIN-SUFFIX,googletagmanager.com
+DOMAIN-SUFFIX,googleadservices.com
+
 
 # -----------------------
 # GitHub
