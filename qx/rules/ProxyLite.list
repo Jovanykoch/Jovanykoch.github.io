@@ -156,51 +156,6 @@ host-suffix,githubstatus.com
 host-suffix,githubcopilot.com
 host-suffix,pkg.github.com
 host-suffix,actions.githubusercontent.com
-host-keyword,github
-# -----------------------
-# Education / Others
-# -----------------------
-# JJC
-host-keyword,jjc
-host-suffix,jjc.edu
-host-suffix,stujjc.edu
-host,jjc.instructure.com
 
-# Canvas / Instructure
-host-suffix,canvaslms.com
-host-suffix,instructure.com
-
-# CSUN
-host-keyword,csun
-host-suffix,csun.edu
-
-# Spokane
-host-keyword,spokane
-host-suffix,spokane.edu
-host,scc.spokane.edu
-
-# SF College
-host-keyword,sfcollege
-host-suffix,sfcollege.edu
-
-# Maricopa edu
-host-suffix,maricopa.edu
-
-# Duo MFA
-host-suffix,duosecurity.com
-host-suffix,duo.com
-
-# Common education auth / identity
-host-suffix,login.microsoftonline.com
-host-suffix,microsoftonline.com
-host-suffix,office365.com
-host-suffix,live.com
-
-# Apple_relay
-host-suffix,apple-relay.apple.com
-host-suffix,apple-relay.cloudflare.com
-host-keyword,apple-relay
-host-suffix,googleapis.com
-host-suffix,diabrowser.engineering
 
 # --------------------------- END ---------------------------
