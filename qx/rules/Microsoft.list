@@ -109,6 +109,10 @@ host-suffix,sfcollege.edu
 # Maricopa edu
 host-suffix,maricopa.edu
 
+# Liberty edu
+host-suffix,liberty.edu
+host,liberty.edu
+
 # Duo MFA
 host-suffix,duosecurity.com
 host-suffix,duo.com
