@@ -113,6 +113,11 @@ DOMAIN-SUFFIX,jjc.edu
 DOMAIN-SUFFIX,stujjc.edu
 DOMAIN,jjc.instructure.com
 
+# Liberty edu
+DOMAIN-KEYWORD,liberty
+DOMAIN-SUFFIX,liberty.edu
+DOMAIN,liberty.edu
+
 # Canvas / Instructure
 DOMAIN-SUFFIX,canvaslms.com
 DOMAIN-SUFFIX,instructure.com
