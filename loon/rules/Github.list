@@ -1,6 +1,5 @@
 # 🐙 GitHub.list (full version/ DOMAIN + DOMAIN-SUFFIX）
 
-
 # ===== Core GitHub =====
 DOMAIN-SUFFIX,github.com
 DOMAIN,api.github.com
@@ -38,7 +37,9 @@ DOMAIN-SUFFIX,cloud.githubusercontent.com
 DOMAIN-SUFFIX,desktop.githubusercontent.com
 DOMAIN-SUFFIX,favicons.githubusercontent.com
 DOMAIN-SUFFIX,media.githubusercontent.com
-DOMAIN-SUFFIX,objects.githubusercontent.com   # GitHub workflow CDN（官方确认） [9F742443-6C92-4C44-BF58-8F5A7C53B6F1](https://github.com/orgs/community/discussions/58455?citationMarker=9F742443-6C92-4C44-BF58-8F5A7C53B6F1&citationId=C56EBA1E-FB52-4679-A81A-F45376BD733F&citationTitle=Github&citationFullTitle=Github&chatItemId=auNtsWhYJ33UxNXDLYNSt)
+DOMAIN-SUFFIX,objects.githubusercontent.com   # GitHub Actions 工件 CDN
 
 # ===== GitHub Releases CDN =====
-DOMAIN-SUFFIX,github-releases.githubusercontent.com   # Releases 资源 CDN（S3 + CDN） [9F742443-6C92-4C44-BF58-8F5A7C53B6F1](https://www.ipaddress.com/website/github-releases.githubusercontent.com?citationMarker=9F742443-6C92-4C44-BF58-8F5A7C53B6F1&citationId=4560A742-9BA7-4614-90EC-7761ACD006F3&citationTitle=IPAddress.com&citationFullTitle=IPAddress.com&chatItemId=auNtsWhYJ33UxNXDLYNSt)
+DOMAIN-SUFFIX,github-releases.githubusercontent.com
+
+
