@@ -1,0 +1,41 @@
+# ====================================
+# Surge RULE-SET Template: International/Foreign Traffic Diversion
+# Suitable for directing international traffic to proxy nodes overseas (such as Malaysia)
+# ====================================
+
+# ----------------- 谷歌服务 (Google) -----------------
+DOMAIN-SUFFIX,google.com
+DOMAIN-SUFFIX,googleapis.com
+DOMAIN-SUFFIX,googlevideo.com
+DOMAIN-SUFFIX,youtube.com
+DOMAIN-SUFFIX,ytimg.com
+
+# ----------------- 社交与娱乐 (Social & Entertainment) -----------------
+DOMAIN-SUFFIX,facebook.com
+DOMAIN-SUFFIX,instagram.com
+DOMAIN-SUFFIX,twitter.com
+DOMAIN-SUFFIX,x.com
+DOMAIN-SUFFIX,netflix.com
+DOMAIN-SUFFIX,disneyplus.com
+DOMAIN-SUFFIX,spotify.com
+DOMAIN-SUFFIX,twitch.tv
+
+# ----------------- 工作与效率 (Work & Tools) -----------------
+DOMAIN-SUFFIX,github.com
+DOMAIN-SUFFIX,githubassets.com
+DOMAIN-SUFFIX,microsoft.com
+DOMAIN-SUFFIX,office.com
+DOMAIN-SUFFIX,notion.so
+DOMAIN-SUFFIX,zoom.us
+DOMAIN-SUFFIX,slack.com
+
+# ----------------- AI 服务 (Artificial Intelligence) -----------------
+DOMAIN-SUFFIX,openai.com
+DOMAIN-SUFFIX,chatgpt.com
+DOMAIN-SUFFIX,anthropic.com
+DOMAIN-SUFFIX,claude.ai
+
+# ----------------- 常见海外 CDN 与公共服务 -----------------
+DOMAIN-SUFFIX,cloudflare.com
+DOMAIN-SUFFIX,cloudfront.net
+DOMAIN-SUFFIX,akamaihd.net
