@@ -123,21 +123,6 @@ DOMAIN-SUFFIX,google-analytics.com
 DOMAIN-SUFFIX,googletagmanager.com
 DOMAIN-SUFFIX,googleadservices.com
 
-
-# -----------------------
-# GitHub
-# -----------------------
-DOMAIN-SUFFIX,github.com
-DOMAIN-SUFFIX,githubassets.com
-DOMAIN-SUFFIX,githubusercontent.com
-DOMAIN-SUFFIX,github.io
-DOMAIN-SUFFIX,githubapp.com
-DOMAIN-SUFFIX,githubstatus.com
-DOMAIN-SUFFIX,githubcopilot.com
-DOMAIN-SUFFIX,pkg.github.com
-DOMAIN-SUFFIX,actions.githubusercontent.com
-DOMAIN-KEYWORD,github
-
 # cloudflare
 DOMAIN-KEYWORD,cloudflare
 DOMAIN-SUFFIX,cloudflare-dns.com
