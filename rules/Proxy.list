@@ -13,9 +13,9 @@ DOMAIN-KEYWORD,github,no-resolve
 # -----------------------
 # Telegram / Swiftgram
 # -----------------------
-DOMAIN-SUFFIX,telegram.org
-DOMAIN-SUFFIX,t.me
-DOMAIN-SUFFIX,telegram.me
+DOMAIN-SUFFIX,telegram.org,no-resolve
+DOMAIN-SUFFIX,t.me,no-resolve
+DOMAIN-SUFFIX,telegram.me,no-resolve
 IP-ASN,44907,no-resolve
 IP-ASN,62014,no-resolve
 IP-ASN,59930,no-resolve
