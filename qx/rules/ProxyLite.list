@@ -71,6 +71,7 @@ host-suffix,gstatic.com
 host-suffix,googlevideo.com
 host-suffix,youtube.com
 host-suffix,youtu.be
+host-keyword,google
 # 可选：若要完整收拢 Gmail / Hotmail
 host-suffix,gmail.com
 host-suffix,hotmail.com
