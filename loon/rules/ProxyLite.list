@@ -30,14 +30,6 @@ IP-CIDR,109.239.140.0/24,no-resolve
 # TODO: verify swiftgram.pro owner
 
 # -----------------------
-# X (Twitter)
-# -----------------------
-DOMAIN-SUFFIX,x.com
-DOMAIN-SUFFIX,twitter.com
-DOMAIN-SUFFIX,t.co
-DOMAIN-SUFFIX,twimg.com
-
-# -----------------------
 # OpenAI / ChatGPT
 # -----------------------
 DOMAIN-SUFFIX,openai.com
@@ -52,20 +44,6 @@ DOMAIN-SUFFIX,auth0.com
 DOMAIN-SUFFIX,perplexity.ai
 DOMAIN-SUFFIX,perplexitylabs.com
 
-# -----------------------
-# Spotify
-# -----------------------
-DOMAIN-KEYWORD,spotify
-DOMAIN-SUFFIX,spotify.com
-DOMAIN-SUFFIX,spotifycdn.com
-DOMAIN-SUFFIX,scdn.co
-DOMAIN-SUFFIX,spoti.fi
-
-# -----------------------
-# Meta (Instagram)
-# -----------------------
-DOMAIN-SUFFIX,instagram.com
-DOMAIN-SUFFIX,cdninstagram.com
 
 # -----------------------
 # PayPal
@@ -74,17 +52,6 @@ DOMAIN-KEYWORD,paypal
 DOMAIN-SUFFIX,paypal.com
 DOMAIN-SUFFIX,paypalobjects.com
 DOMAIN-SUFFIX,pypl.com
-
-# -----------------------
-# Discord / Reddit / Wiki
-# -----------------------
-DOMAIN-SUFFIX,discord.com
-DOMAIN-SUFFIX,discord.gg
-DOMAIN-SUFFIX,discordapp.com
-DOMAIN-SUFFIX,reddit.com
-DOMAIN-SUFFIX,redd.it
-DOMAIN-SUFFIX,wikipedia.org
-DOMAIN-SUFFIX,wikimedia.org
 
 # -----------------------
 # Google
@@ -132,21 +99,6 @@ DOMAIN-SUFFIX,google-analytics.com
 DOMAIN-SUFFIX,googletagmanager.com
 DOMAIN-SUFFIX,googleadservices.com
 
-
-# -----------------------
-# GitHub
-# -----------------------
-DOMAIN-SUFFIX,github.com
-DOMAIN-SUFFIX,githubassets.com
-DOMAIN-SUFFIX,githubusercontent.com
-DOMAIN-SUFFIX,github.io
-DOMAIN-SUFFIX,githubapp.com
-DOMAIN-SUFFIX,githubstatus.com
-DOMAIN-SUFFIX,githubcopilot.com
-DOMAIN-SUFFIX,pkg.github.com
-DOMAIN-SUFFIX,actions.githubusercontent.com
-DOMAIN-KEYWORD,github
-
 # cloudflare
 DOMAIN-KEYWORD,cloudflare
 DOMAIN-SUFFIX,cloudflare-dns.com
@@ -161,6 +113,7 @@ DOMAIN-SUFFIX,truecaller.com
 
 
 # Amazon
+DOMAIN-KEYWORD,amazon
 DOMAIN-SUFFIX,amazon.co.jp
 DOMAIN-SUFFIX,amazon.com
 DOMAIN-SUFFIX,amazonaws.com
