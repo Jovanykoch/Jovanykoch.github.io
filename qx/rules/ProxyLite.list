@@ -16,14 +16,6 @@ ip-asn,211157
 ip-cidr,5.28.192.0/18
 ip-cidr,109.239.140.0/24
 # TODO: verify swiftgram.pro owner
-#
-# -----------------------
-# X (Twitter)
-# -----------------------
-host-suffix,x.com
-host-suffix,twitter.com
-host-suffix,t.co
-host-suffix,twimg.com
 
 # -----------------------
 # OpenAI / ChatGPT
@@ -63,21 +55,6 @@ host,servd-anthropic-website.b-cdn.net
 # -----------------------
 host-suffix,perplexity.ai
 host-suffix,perplexitylabs.com
-#
-# -----------------------
-# Spotify
-# -----------------------
-host-suffix,spotify.com
-host-suffix,spotifycdn.com
-host-suffix,scdn.co
-host-suffix,spoti.fi
-#
-# -----------------------
-# Meta (Instagram)
-# -----------------------
-host-suffix,instagram.com
-host-suffix,cdninstagram.com
-#
 # -----------------------
 # PayPal
 # -----------------------
@@ -85,17 +62,6 @@ host-suffix,paypal.com
 host-suffix,paypalobjects.com
 host-suffix,pypl.com
 
-# -----------------------
-# Discord / Reddit / Wiki
-# -----------------------
-host-suffix,discord.com
-host-suffix,discord.gg
-host-suffix,discordapp.com
-host-suffix,reddit.com
-host-suffix,redd.it
-host-suffix,wikipedia.org
-host-suffix,wikimedia.org
-#
 # -----------------------
 # Google
 # -----------------------
@@ -108,18 +74,4 @@ host-suffix,youtu.be
 # 可选：若要完整收拢 Gmail / Hotmail
 host-suffix,gmail.com
 host-suffix,hotmail.com
-# -----------------------
-# GitHub
-# -----------------------
-host-suffix,github.com
-host-suffix,githubassets.com
-host-suffix,githubusercontent.com
-host-suffix,github.io
-host-suffix,githubapp.com
-host-suffix,githubstatus.com
-host-suffix,githubcopilot.com
-host-suffix,pkg.github.com
-host-suffix,actions.githubusercontent.com
-
-
 # --------------------------- END ---------------------------
