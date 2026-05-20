@@ -1,7 +1,11 @@
 # (Video)
 
-# > qishua
-DOMAIN-SUFFIX,qishua.com
+# > qishui (sodamusic)
+DOMAIN-SUFFIX,bytedance.com
+DOMAIN-SUFFIX,byteimg.com
+DOMAIN-SUFFIX,ibytedtos.com
+DOMAIN-SUFFIX,douyin.com
+DOMAIN-KEYWORD,qishui
 
 # > Tencent Video
 DOMAIN-SUFFIX,video.qq.com
