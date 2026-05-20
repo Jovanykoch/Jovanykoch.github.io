@@ -30,12 +30,19 @@ DOMAIN-SUFFIX,claude.ai
 DOMAIN-SUFFIX,cloudflare.com
 DOMAIN-SUFFIX,cloudfront.net
 DOMAIN-SUFFIX,akamaihd.net
-
+DOMAIN-KEYWORD,cloudflare
 # ----------------- Dropbox -----------------
 DOMAIN-KEYWORD,dropbox
 DOMAIN-SUFFIX,dropbox.com
 
 # ----------------- truecaller -----------------
 DOMAIN-SUFFIX,truecaller.com
+
+
+# ----------------- Gmail / Hotmail -----------------
+DOMAIN-SUFFIX,gmail.com
+DOMAIN-SUFFIX,hotmail.com
+DOMAIN-KEYWORD,gmail
+DOMAIN-KEYWORD,hotmail
 
 ##==============================
