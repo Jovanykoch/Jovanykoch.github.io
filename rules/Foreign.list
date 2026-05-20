@@ -12,7 +12,6 @@ DOMAIN-SUFFIX,ytimg.com
 DOMAIN-KEYWORD,www.google
 
 # ----------------- (Social & Entertainment) -----------------
-
 DOMAIN-SUFFIX,spotify.com
 DOMAIN-SUFFIX,twitch.tv
 
@@ -31,3 +30,12 @@ DOMAIN-SUFFIX,claude.ai
 DOMAIN-SUFFIX,cloudflare.com
 DOMAIN-SUFFIX,cloudfront.net
 DOMAIN-SUFFIX,akamaihd.net
+
+# ----------------- Dropbox -----------------
+DOMAIN-KEYWORD,dropbox
+DOMAIN-SUFFIX,dropbox.com
+
+# ----------------- truecaller -----------------
+DOMAIN-SUFFIX,truecaller.com
+
+##==============================
