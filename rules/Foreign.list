@@ -9,7 +9,7 @@ DOMAIN-SUFFIX,googleapis.com
 DOMAIN-SUFFIX,googlevideo.com
 DOMAIN-SUFFIX,youtube.com
 DOMAIN-SUFFIX,ytimg.com
-DOMAIN-KEYWORD,www.google
+DOMAIN-KEYWORD,google
 
 # ----------------- (Social & Entertainment) -----------------
 DOMAIN-SUFFIX,spotify.com
