@@ -1,0 +1,63 @@
+# Local Domain
+DOMAIN-SUFFIX,local
+DOMAIN-SUFFIX,lan
+DOMAIN-SUFFIX,home.arpa
+
+# Bonjour / mDNS
+DOMAIN,_dns-sd._udp.local
+DOMAIN-SUFFIX,localdomain
+
+# NTP
+DOMAIN-SUFFIX,pool.ntp.org
+DOMAIN-SUFFIX,time.apple.com
+DOMAIN-SUFFIX,time.windows.com
+
+# Router / NAS Common
+DOMAIN-SUFFIX,routerlogin.net
+DOMAIN-SUFFIX,miwifi.com
+DOMAIN-SUFFIX,asusrouter.com
+DOMAIN-SUFFIX,synology.com
+DOMAIN-SUFFIX,quickconnect.to
+
+# Tailscale / Zerotier
+DOMAIN-SUFFIX,tailscale.com
+DOMAIN-SUFFIX,ts.net
+DOMAIN-SUFFIX,zerotier.com
+
+# STUN
+DOMAIN-SUFFIX,stun.l.google.com
+
+# RFC1918
+IP-CIDR,10.0.0.0/8
+IP-CIDR,172.16.0.0/12
+IP-CIDR,192.168.0.0/16
+
+# Loopback
+IP-CIDR,127.0.0.0/8
+
+# Link Local
+IP-CIDR,169.254.0.0/16
+
+# Carrier NAT
+IP-CIDR,100.64.0.0/10
+
+# Multicast
+IP-CIDR,224.0.0.0/4
+
+# Reserved
+IP-CIDR,240.0.0.0/4
+
+# Broadcast
+IP-CIDR,255.255.255.255/32
+
+# IPv6 Loopback
+IP-CIDR6,::1/128
+
+# IPv6 Local
+IP-CIDR6,fc00::/7
+
+# IPv6 Link Local
+IP-CIDR6,fe80::/10
+
+# IPv6 Multicast
+IP-CIDR6,ff00::/8
