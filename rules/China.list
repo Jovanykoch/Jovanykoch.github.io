@@ -2,7 +2,7 @@ DOMAIN-SUFFIX,cn
 DOMAIN-SUFFIX,lan
 DOMAIN-SUFFIX,local
 
-# 中文域名       // .公司       // .中国       // .网络
+# Chinese domain name
 DOMAIN-SUFFIX,xn--55qx5d 
 DOMAIN-SUFFIX,xn--fiqs8s
 DOMAIN-SUFFIX,xn--io0a7i
