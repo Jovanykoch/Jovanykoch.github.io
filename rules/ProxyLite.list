@@ -3,14 +3,12 @@
 # Surge RULE-SET
 # Updated: 2026
 
-# OpenAI
-DOMAIN,chat.openai.com
-DOMAIN,auth.openai.com
-DOMAIN,platform.openai.com
-DOMAIN,api.openai.com
-DOMAIN,cdn.oaistatic.com
-DOMAIN-SUFFIX,openai.com
-DOMAIN-SUFFIX,oaistatic.com
+# GitHub
+DOMAIN,github.com
+DOMAIN,api.github.com
+DOMAIN,githubusercontent.com
+DOMAIN-SUFFIX,githubusercontent.com
+DOMAIN-SUFFIX,githubassets.com
 
 # Anthropic
 DOMAIN,claude.ai
@@ -23,13 +21,6 @@ DOMAIN,aistudio.google.com
 DOMAIN,gemini.google.com
 DOMAIN-SUFFIX,deepmind.google
 DOMAIN-SUFFIX,bard.google.com
-
-# GitHub
-DOMAIN,github.com
-DOMAIN,api.github.com
-DOMAIN,githubusercontent.com
-DOMAIN-SUFFIX,githubusercontent.com
-DOMAIN-SUFFIX,githubassets.com
 
 # Cloudflare
 DOMAIN,workers.dev
