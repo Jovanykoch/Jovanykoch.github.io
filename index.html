@@ -1,15 +1,14 @@
 <!doctype html>
-<html lang="zh-Hans">
+<html lang="en">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Surge 配置与分流 - jkoch14.me</title>
-  <meta name="description" content="Surge iOS 自用配置与规则分流订阅" />
+  <title>Jovanykoch</title>
+  <meta name="description" content="Jovanykoch personal homepage" />
   <style>
     :root{
       --bg:#0f1115;--panel:#161a22;--text:#e6e6e6;--muted:#aeb6c2;
-      --border:#2a3140;--brand:#2f81f7;--danger:#ff4d4f;--ok:#33d17a;
-      --mono:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,monospace;
+      --border:#2a3140;--brand:#2f81f7;
       --sans:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
     }
     *{box-sizing:border-box}
@@ -27,12 +26,10 @@
     h2{margin:0 0 10px;font-size:16px}
     p,li{color:var(--muted);line-height:1.65}
     .grid{display:grid;grid-template-columns:1fr;gap:14px;margin-top:14px}
-    @media(min-width:880px){.grid{grid-template-columns:1.1fr .9fr}}
-    code,pre{font-family:var(--mono)}
-    pre{
-      margin:10px 0 0;padding:12px;border-radius:12px;
-      border:1px solid var(--border);background:#111521;
-      overflow:auto;font-size:12.5px;line-height:1.55;
+    @media(min-width:880px){.grid{grid-template-columns:1fr 1fr}}
+    .tag{
+      display:inline-block;margin-left:6px;padding:2px 8px;border-radius:999px;
+      border:1px solid var(--border);color:var(--muted);font-size:12px;
     }
     .btns{display:flex;flex-wrap:wrap;gap:10px;margin-top:12px}
     .btn{
@@ -40,13 +37,6 @@
       border:1px solid var(--border);color:var(--text);
       background:rgba(47,129,247,.16);text-decoration:none;font-weight:600;
     }
-    .tag{
-      display:inline-block;margin-left:6px;padding:2px 8px;border-radius:999px;
-      border:1px solid var(--border);color:var(--muted);font-size:12px;
-    }
-    .note{border-left:3px solid var(--brand);padding:10px 12px;background:rgba(47,129,247,.08);border-radius:10px}
-    .warn{border-left-color:var(--danger);background:rgba(255,77,79,.08)}
-    .ok{border-left-color:var(--ok);background:rgba(51,209,122,.08)}
     footer{text-align:center;color:var(--muted);font-size:13px;margin-top:18px}
   </style>
 </head>
@@ -54,97 +44,62 @@
 <body>
 <div class="wrap">
   <header>
-    <h1>Surge iOS 配置与分流订阅</h1>
-    <p>
-      当前配置采用 <strong>WireGuard HongKong</strong> 作为主节点，
-      策略组包含 <strong>Proxy</strong>、<strong>AI</strong>、<strong>🇭🇰 HK</strong>、<strong>🇺🇸 US</strong>。
-      分流规则覆盖广告拦截、中国大陆直连、Apple、AI、Microsoft、GitHub 与兜底代理。
-    </p>
-    <div class="note warn">
-      安全提醒：当前配置中包含 WireGuard 私钥、PSK、服务器 IP 与 API 密码，公开仓库前必须替换或移除。
-    </div>
+    <h1>Jovanykoch</h1>
+    <p>JJC Student · Network &amp; Automation</p>
   </header>
 
   <div class="grid">
     <section class="card">
-      <h2>配置入口 <span class="tag">Surge iOS</span></h2>
-      <p>推荐在 Surge iOS 中直接导入完整配置文件。</p>
-      <pre><code>https://jkoch14.me/surge.conf</code></pre>
+      <h2>About <span class="tag">Profile</span></h2>
+      <p>
+        Welcome to my personal homepage. I share curated network rule resources and
+        automation-friendly links for daily usage and maintenance.
+      </p>
+    </section>
+
+    <section class="card">
+      <h2>Surge Rules <span class="tag">Rules</span></h2>
+      <p>Browse rule lists prepared for Surge usage.</p>
       <div class="btns">
-        <a class="btn" href="/surge.conf">下载 Surge 配置</a>
-        <a class="btn" href="/rules/">查看规则库</a>
+        <a class="btn" href="/rules/">View Surge Rules</a>
       </div>
     </section>
 
     <section class="card">
-      <h2>代理策略 <span class="tag">Proxy Group</span></h2>
-      <pre><code>Proxy = select, 🇭🇰 HK, 🇺🇸 US
-AI = select, 🇺🇸 US, Proxy
-
-🇭🇰 HK = url-test, policy-regex-filter=港|HK|Hong, interval=600, tolerance=50
-🇺🇸 US = url-test, policy-regex-filter=美|US|States, interval=600, tolerance=50</code></pre>
-      <p>AI 默认优先走美国节点，其余流量默认进入 Proxy 手动选择组。</p>
-    </section>
-
-    <section class="card">
-      <h2>分流规则 <span class="tag">Rule</span></h2>
-      <pre><code>RULE-SET,https://jkoch14.me/rules/Advertising,REJECT
-RULE-SET,https://jkoch14.me/rules/China.list,DIRECT
-RULE-SET,https://jkoch14.me/rules/Apple.list,DIRECT
-RULE-SET,https://jkoch14.me/rules/OpenAI.list,AI
-RULE-SET,https://jkoch14.me/rules/Microsoft,Proxy
-RULE-SET,https://jkoch14.me/rules/GitHub.list,Proxy
-GEOIP,CN,DIRECT
-FINAL,Proxy,dns-failed</code></pre>
-      <div class="note">
-        已修正：原配置中 <code>Apple.list,DIRECR</code> 拼写错误，应为 <code>DIRECT</code>。
+      <h2>Loon Rules <span class="tag">Rules</span></h2>
+      <p>Access rule resources and compatible lists for Loon.</p>
+      <div class="btns">
+        <a class="btn" href="/loon/">Open Loon Rules</a>
       </div>
     </section>
 
     <section class="card">
-      <h2>DNS 与网络优化 <span class="tag">General</span></h2>
-      <ul>
-        <li>DNS 使用 system、腾讯 DNS、阿里 DNS。</li>
-        <li>劫持 Google / Cloudflare 公共 DNS，避免应用绕过 Surge。</li>
-        <li>启用 UDP 优先与代理 UDP 测试。</li>
-        <li>LAN 网段、Tailscale、银行、认证页走直连。</li>
-      </ul>
-      <pre><code>dns-server = system,119.29.29.29,223.5.5.5
-proxy-test-url = http://cp.cloudflare.com/generate_204
-proxy-test-udp = cp.cloudflare.com@1.1.1.1
-block-quic = all-proxy
-udp-priority = true</code></pre>
+      <h2>Quantumult X Rules <span class="tag">Rules</span></h2>
+      <p>Check Quantumult X rule files and related updates.</p>
+      <div class="btns">
+        <a class="btn" href="/qx/">Open Quantumult X Rules</a>
+      </div>
     </section>
 
     <section class="card">
-      <h2>已发现问题 <span class="tag">Fix Required</span></h2>
-      <ul>
-        <li><code>DIRECR</code> 应改为 <code>DIRECT</code>。</li>
-        <li><code>direct = Direct</code> 与策略组中的 <code>DIRECT</code> 不是同一个概念，建议删除该代理项。</li>
-        <li><code>external-controller-access</code> 与 <code>http-api</code> 暴露到 <code>0.0.0.0</code>，公网环境存在风险。</li>
-        <li>WireGuard 私钥、PSK、endpoint 不应出现在公开页面或公开仓库。</li>
-      </ul>
+      <h2>Tools <span class="tag">Utilities</span></h2>
+      <p>Scripts and helper tools for rule generation and maintenance.</p>
+      <div class="btns">
+        <a class="btn" href="/tools/">Explore Tools</a>
+      </div>
     </section>
 
     <section class="card">
-      <h2>推荐修正片段 <span class="tag">Safe Patch</span></h2>
-      <pre><code>[Proxy]
-HomeServer = wireguard, section-name=HongKong
-
-[Rule]
-RULE-SET,https://jkoch14.me/rules/Advertising,REJECT
-RULE-SET,https://jkoch14.me/rules/China.list,DIRECT
-RULE-SET,https://jkoch14.me/rules/Apple.list,DIRECT
-RULE-SET,https://jkoch14.me/rules/OpenAI.list,AI
-RULE-SET,https://jkoch14.me/rules/Microsoft,Proxy
-RULE-SET,https://jkoch14.me/rules/GitHub.list,Proxy
-GEOIP,CN,DIRECT
-FINAL,Proxy,dns-failed</code></pre>
+      <h2>GitHub <span class="tag">Source</span></h2>
+      <p>Follow source updates, commits, and project history.</p>
+      <div class="btns">
+        <a class="btn" href="https://github.com/Jovanykoch/Jovanykoch.github.io" target="_blank" rel="noopener noreferrer">View Repository</a>
+      </div>
     </section>
   </div>
 
   <footer>
-    Surge iOS 配置与分流规则 · jkoch14.me
+    Jovanykoch · Personal Homepage
   </footer>
 </div>
 </body>
